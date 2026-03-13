@@ -1,0 +1,21 @@
+build*
+compile_commands.json
+
+.cache/
+
+# ignore all clang files
+*.clang*
+
+# ignore all ai agent files
+agents.md
+progress.md
+
+# ignore docs
+docs/
+
+# ignore reports
+reports/
+
+# ignore .vscode files
+.vscode/
+.VSCode*
