@@ -1,0 +1,46 @@
+{
+    "version": 8,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 24,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default (Debug)",
+            "description": "Debug build configuration",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+        },
+        {
+            "name": "release",
+            "displayName": "Release",
+            "description": "Release build configuration",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install-release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "displayName": "Build Default (Debug)",
+            "description": "Build using the default debug configuration",
+            "configurePreset": "default"
+        },
+        {
+            "name": "release",
+            "displayName": "Build Release",
+            "description": "Build using the release configuration",
+            "configurePreset": "release"
+        }
+    ]
+}

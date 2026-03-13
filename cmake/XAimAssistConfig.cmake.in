@@ -1,0 +1,26 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(Qt6 6.5 REQUIRED COMPONENTS
+  Core
+  Gui
+  Widgets
+  Sql
+  Qml
+  Quick
+  QuickWidgets
+  QuickControls2
+)
+
+find_dependency(VTK 9.2 REQUIRED COMPONENTS
+  CommonColor
+  CommonCore
+  FiltersSources
+  GUISupportQt
+  InteractionStyle
+  RenderingCore
+  RenderingOpenGL2
+)
+
+include("${CMAKE_CURRENT_LIST_DIR}/XAimAssistTargets.cmake")

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/xaimassist/ui">
+        <file>MainView.qml</file>
+        <file>components/AppHeaderBar.qml</file>
+        <file>components/NavigationTabs.qml</file>
+        <file>components/ModeSelectionPanel.qml</file>
+        <file>components/StatisticsPanel.qml</file>
+        <file>components/InfoMetricChip.qml</file>
+        <file>components/PerformanceTierBadge.qml</file>
+        <file>components/ResultCard.qml</file>
+        <file>components/MenuOverviewPanel.qml</file>
+        <file>components/ColorEditor.qml</file>
+        <file>components/SettingsPanel.qml</file>
+        <file>components/PauseTrainingCard.qml</file>
+        <file>components/TrainingHudBar.qml</file>
+        <file>components/FpsCounterOverlay.qml</file>
+        <file>components/TrainingCrosshairOverlay.qml</file>
+        <file>components/TrainingStateOverlays.qml</file>
+    </qresource>
+</RCC>
