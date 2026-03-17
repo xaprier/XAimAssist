@@ -1,0 +1,7 @@
+<map id="WorldRenderSync.hpp" name="WorldRenderSync.hpp">
+<area shape="rect" id="Node000001" title="Synchronises dirty world entities with the render backend." alt="" coords="67,5,231,31"/>
+<area shape="rect" id="Node000002" href="$Application_8cpp.html" title=" " alt="" coords="5,79,128,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,42,82,80,78,76,124,38"/>
+<area shape="rect" id="Node000003" href="$WorldRenderSync_8cpp.html" title=" " alt="" coords="152,79,315,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,38,221,76,218,80,172,42"/>
+</map>

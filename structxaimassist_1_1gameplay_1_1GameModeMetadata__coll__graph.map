@@ -1,0 +1,12 @@
+<map id="xaimassist::gameplay::GameModeMetadata" name="xaimassist::gameplay::GameModeMetadata">
+<area shape="rect" id="Node000001" title="Static descriptor published by each mode for UI and orchestration." alt="" coords="5,432,172,472"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="45,95,132,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,133,91,432,86,432,86,133"/>
+<area shape="rect" id="Node000005" href="$structxaimassist_1_1gameplay_1_1GameModeSettingMetadata.html" title="Descriptor for a single numeric setting exposed by a game mode." alt="" coords="126,197,339,237"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="117,126,209,195,206,199,113,130"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="19,5,158,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,59,91,94,86,94,86,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="105,329,405,369"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,379,121,434,119,430,211,374"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="241,251,255,329,249,330,236,252"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="xaimassist::core::events::SessionStartedEvent" name="xaimassist::core::events::SessionStartedEvent">
+<area shape="rect" id="Node000001" title="Emitted once at the beginning of a training session." alt="" coords="5,285,187,325"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="53,95,139,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,134,91,183,91,238,96,285,91,285,86,239,85,183,90,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="153,183,322,223"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="126,125,210,180,207,185,123,130"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,5,165,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,59,99,94,93,94,93,59"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,233,124,287,121,283,198,229"/>
+</map>

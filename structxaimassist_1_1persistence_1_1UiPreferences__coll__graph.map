@@ -1,0 +1,9 @@
+<map id="xaimassist::persistence::UiPreferences" name="xaimassist::persistence::UiPreferences">
+<area shape="rect" id="Node000001" title=" " alt="" coords="572,47,748,87"/>
+<area shape="rect" id="Node000002" href="$structxaimassist_1_1persistence_1_1CrosshairPreferences.html" title="Crosshair visual parameters." alt="" coords="269,5,445,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="459,36,572,52,571,57,458,42"/>
+<area shape="rect" id="Node000003" href="$structxaimassist_1_1persistence_1_1ColorRgb.html" title="Normalised RGB colour with components in [0, 1]." alt="" coords="5,5,181,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,23,269,23,269,28,195,28"/>
+<area shape="rect" id="Node000004" href="$structxaimassist_1_1persistence_1_1FpsCounterPreferences.html" title=" " alt="" coords="267,69,448,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="462,82,548,76,571,74,572,79,548,81,462,87"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="xaimassist::persistence::AppSettings" name="xaimassist::persistence::AppSettings">
+<area shape="rect" id="Node000001" title="Root aggregate of all persisted application settings." alt="" coords="1651,119,1827,159"/>
+<area shape="rect" id="Node000002" href="$structxaimassist_1_1persistence_1_1InputPreferences.html" title=" " alt="" coords="1357,23,1533,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1521,65,1677,116,1675,121,1520,70"/>
+<area shape="rect" id="Node000003" href="$structxaimassist_1_1persistence_1_1SensitivityPreferences.html" title="Physical&#45;first sensitivity parameters." alt="" coords="995,5,1171,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1185,28,1357,36,1357,41,1185,33"/>
+<area shape="rect" id="Node000004" href="$structxaimassist_1_1persistence_1_1GameplayPreferences.html" title=" " alt="" coords="1357,211,1533,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1522,204,1673,156,1675,161,1524,209"/>
+<area shape="rect" id="Node000005" href="$structxaimassist_1_1persistence_1_1TargetPreferences.html" title=" " alt="" coords="995,197,1171,237"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1185,218,1357,225,1357,230,1185,224"/>
+<area shape="rect" id="Node000006" href="$structxaimassist_1_1persistence_1_1ColorRgb.html" title="Normalised RGB colour with components in [0, 1]." alt="" coords="673,165,849,205"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="863,199,874,200,995,210,995,216,873,205,863,204"/>
+<area shape="rect" id="Node000013" href="$structxaimassist_1_1persistence_1_1CrosshairPreferences.html" title="Crosshair visual parameters." alt="" coords="995,133,1171,173"/>
+<area shape="poly" id="edge15_Node000013_Node000006" title=" " alt="" coords="863,173,995,159,995,165,863,178"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="193,323,280,349"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="275,315,352,287,399,276,446,272,1085,272,1156,269,1229,263,1357,245,1358,250,1229,268,1157,275,1085,277,446,277,400,281,354,292,277,320"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="963,313,1204,367"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="294,334,962,337,962,342,294,339"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="363,373,532,413"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="272,353,305,367,363,381,362,386,303,372,270,358"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,316,144,356"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="157,333,193,333,193,339,157,339"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1217,332,1276,322,1332,306,1381,279,1421,249,1424,253,1384,284,1334,310,1277,327,1218,337"/>
+<area shape="rect" id="Node000010" href="$structxaimassist_1_1persistence_1_1ModePreferences.html" title="Per&#45;mode overrides stored in the profile." alt="" coords="673,373,849,413"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="863,378,938,367,962,362,963,368,939,372,864,383"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="546,391,673,391,673,396,546,396"/>
+<area shape="rect" id="Node000012" href="$structxaimassist_1_1persistence_1_1UiPreferences.html" title=" " alt="" coords="1357,119,1533,159"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="1547,136,1650,136,1650,141,1547,141"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1185,147,1357,140,1357,145,1185,152"/>
+<area shape="rect" id="Node000014" href="$structxaimassist_1_1persistence_1_1FpsCounterPreferences.html" title=" " alt="" coords="993,69,1174,109"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="1188,101,1358,124,1357,129,1187,106"/>
+</map>

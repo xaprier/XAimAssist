@@ -1,0 +1,27 @@
+<map id="NextShotMode.hpp" name="NextShotMode.hpp">
+<area shape="rect" id="Node000001" title="Target&#45;chaining flick mode with a preview." alt="" coords="614,5,761,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="110,225,166,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="614,25,464,36,282,59,195,75,117,97,55,123,32,138,15,154,9,165,10,176,16,186,28,195,61,212,98,224,96,229,59,216,25,199,12,189,5,177,4,164,11,150,29,133,52,118,115,92,194,70,282,53,463,31,614,20"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="767,225,834,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="737,28,784,44,834,69,879,104,897,126,911,151,914,164,912,176,898,196,875,213,848,225,846,220,872,208,895,193,908,174,909,164,906,153,893,129,875,108,831,74,782,49,736,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="650,79,725,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="690,31,690,65,685,65,685,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="749,79,821,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="705,29,759,68,756,72,701,33"/>
+<area shape="rect" id="Node000006" href="$GameMode_8hpp.html" title="Base class and metadata types for all training game modes." alt="" coords="431,79,626,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="663,33,568,75,566,71,661,28"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="615,101,710,121,750,134,777,150,788,164,795,179,802,211,797,212,790,181,783,166,774,154,748,139,709,126,614,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="838,152,897,177"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="588,101,820,149,825,151,824,156,819,155,587,107"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="275,152,399,177"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="499,107,382,149,380,144,497,102"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="423,152,485,177"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="519,106,478,144,474,141,515,102"/>
+<area shape="rect" id="Node000010" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="510,152,763,177"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="548,102,609,142,606,147,545,106"/>
+<area shape="rect" id="Node000011" href="$SettingsProvider_8hpp.html" title="Runtime gameplay settings interface." alt="" coords="25,152,251,177"/>
+<area shape="poly" id="edge13_Node000006_Node000011" title=" " alt="" coords="466,107,215,152,214,147,465,101"/>
+<area shape="poly" id="edge11_Node000010_Node000002" title=" " alt="" coords="557,180,180,233,179,228,556,175"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="664,175,763,217,761,222,662,180"/>
+<area shape="poly" id="edge14_Node000011_Node000002" title=" " alt="" coords="141,178,141,212,135,212,135,178"/>
+</map>

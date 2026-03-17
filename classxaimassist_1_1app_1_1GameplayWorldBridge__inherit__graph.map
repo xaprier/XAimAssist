@@ -1,0 +1,5 @@
+<map id="xaimassist::app::GameplayWorldBridge" name="xaimassist::app::GameplayWorldBridge">
+<area shape="rect" id="Node000001" title="Translates gameplay spawn/update/destroy commands into World entity mutations." alt="" coords="5,93,205,133"/>
+<area shape="rect" id="Node000002" href="$classxaimassist_1_1gameplay_1_1ISceneCommandSink.html" title="Abstract command interface for target scene manipulation." alt="" coords="21,5,189,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,59,108,93,103,93,103,59"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="xaimassist::world::TransformComponent" name="xaimassist::world::TransformComponent">
+<area shape="rect" id="Node000001" title="Spatial placement (position, rotation, scale) of an entity." alt="" coords="11,123,174,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,122,90,122,90,44"/>
+</map>

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['language_0',['language',['../structxaimassist_1_1persistence_1_1UiPreferences.html#a4d629ad01c91d5be49b6febeee18e825',1,'xaimassist::persistence::UiPreferences']]],
+  ['languagecode_1',['languageCode',['../classxaimassist_1_1ui_1_1UiViewModel.html#ab1a804d5e51aa8baacfa5021d8278db9',1,'xaimassist::ui::UiViewModel']]],
+  ['languagetostring_2',['LanguageToString',['../namespacexaimassist_1_1app_1_1SettingsConverter.html#a3f3bee1ecaf8f5c008759c05450901ef',1,'xaimassist::app::SettingsConverter']]],
+  ['latestresult_3',['latestResult',['../classxaimassist_1_1ui_1_1UiViewModel.html#a65a78be08e4350a4d737f88c515d5179',1,'xaimassist::ui::UiViewModel']]],
+  ['latestresultchanged_4',['latestResultChanged',['../classxaimassist_1_1ui_1_1UiViewModel.html#a443761c4449fe31db8258c0b7419b18a',1,'xaimassist::ui::UiViewModel']]],
+  ['license_5',['License',['../index.html#autotoc_md14',1,'']]],
+  ['light_6',['Light',['../namespacexaimassist_1_1persistence.html#a99af571897eeb475c6cfdd75df77e8c7a9914a0ce04a7b7b6a8e39bec55064b82',1,'xaimassist::persistence']]],
+  ['linesenabled_7',['linesEnabled',['../structxaimassist_1_1persistence_1_1CrosshairPreferences.html#aae45a975d9836a8710239b78d853ff63',1,'xaimassist::persistence::CrosshairPreferences']]],
+  ['load_8',['Load',['../classxaimassist_1_1persistence_1_1SettingsManager.html#a8c79c023882726d21305a6faabdab5c0',1,'xaimassist::persistence::SettingsManager']]],
+  ['log_9',['Log',['../classxaimassist_1_1core_1_1Logger.html#a10c7606355196b3f6179e108632e5890',1,'xaimassist::core::Logger']]],
+  ['logger_10',['logger',['../classxaimassist_1_1core_1_1Logger.html',1,'xaimassist::core::Logger'],['../structxaimassist_1_1app_1_1RuntimeServices.html#ad75e6719ed9841a6a5f5c21b9c9ccf4b',1,'xaimassist::app::RuntimeServices::logger'],['../classxaimassist_1_1core_1_1Logger.html#a5370ea18165eac616eeca1fcf35f2a34',1,'xaimassist::core::Logger::Logger()'],['../classxaimassist_1_1core_1_1Logger.html#a26babb17cfca77103008c549cc189bf9',1,'xaimassist::core::Logger::Logger(Sink sink)']]],
+  ['logger_2ecpp_11',['Logger.cpp',['../Logger_8cpp.html',1,'']]],
+  ['logger_2ehpp_12',['Logger.hpp',['../Logger_8hpp.html',1,'']]],
+  ['logif_13',['LogIf',['../classxaimassist_1_1core_1_1Logger.html#ab7a632eb3357c9ea583f29567c969711',1,'xaimassist::core::Logger']]],
+  ['loglevel_14',['LogLevel',['../namespacexaimassist_1_1core.html#ac1db639bf08d4a8b85d67567467a76b9',1,'xaimassist::core']]],
+  ['lookaction_15',['LookAction',['../structxaimassist_1_1input_1_1LookAction.html',1,'xaimassist::input']]],
+  ['lookhandler_16',['LookHandler',['../classxaimassist_1_1input_1_1InputManager.html#a60fda270c9d96442821181bcd77b1c39',1,'xaimassist::input::InputManager']]],
+  ['lowerisbetter_17',['LowerIsBetter',['../namespacexaimassist_1_1app_1_1PerformanceClassifier.html#aae6fbfea69c82d6d26166b2602ae5121aa4373d76485ecf64e9d6b4c1ccd17575',1,'xaimassist::app::PerformanceClassifier']]]
+];

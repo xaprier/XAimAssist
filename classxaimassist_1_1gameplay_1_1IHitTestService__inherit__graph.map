@@ -1,0 +1,5 @@
+<map id="xaimassist::gameplay::IHitTestService" name="xaimassist::gameplay::IHitTestService">
+<area shape="rect" id="Node000001" title="Interface used by TargetSystem to resolve shot&#45;to&#45;target hits." alt="" coords="33,5,200,45"/>
+<area shape="rect" id="Node000002" href="$classxaimassist_1_1app_1_1WorldRaycastHitTest.html" title="Casts a ray from the camera centre through world colliders to determine which target (if any) was hit..." alt="" coords="5,93,228,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,59,119,93,114,93,114,59"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="StatTracker.hpp" name="StatTracker.hpp">
+<area shape="rect" id="Node000001" title="Real&#45;time metric aggregation from EventBus game events." alt="" coords="108,5,229,31"/>
+<area shape="rect" id="Node000002" href="$CompositionRoot_8cpp.html" title=" " alt="" coords="5,79,167,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,42,101,80,98,76,143,38"/>
+<area shape="rect" id="Node000003" href="$StatTracker_8cpp.html" title=" " alt="" coords="191,79,311,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,38,240,76,236,80,191,42"/>
+</map>

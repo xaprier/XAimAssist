@@ -1,0 +1,22 @@
+<map id="GameplayWorldBridge.hpp" name="GameplayWorldBridge.hpp">
+<area shape="rect" id="Node000001" title="Adapts ISceneCommandSink to the World entity&#45;component store." alt="" coords="198,5,394,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="217,152,341,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,31,284,139,279,138,292,31"/>
+<area shape="rect" id="Node000003" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="5,79,259,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,33,172,76,170,71,269,28"/>
+<area shape="rect" id="Node000006" href="$World_8hpp.html" title="Lightweight entity&#45;component store for the game world." alt="" coords="369,79,495,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="319,28,399,70,397,75,317,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="241,225,297,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="127,105,112,139,110,159,116,176,138,199,167,215,198,225,228,231,227,236,197,230,165,220,135,203,111,179,104,159,106,138,122,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="125,152,192,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="139,103,152,138,147,140,134,105"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="408,106,317,149,315,144,406,102"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="389,107,206,154,204,149,387,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="561,152,676,177"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="463,102,576,145,575,149,461,107"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="701,152,763,177"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="483,101,688,149,687,154,482,107"/>
+<area shape="rect" id="Node000009" href="$Components_8hpp.html" title="Lightweight data components attached to world entities." alt="" coords="365,152,537,177"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="438,104,447,138,442,140,433,105"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="423,180,311,223,310,218,421,175"/>
+</map>

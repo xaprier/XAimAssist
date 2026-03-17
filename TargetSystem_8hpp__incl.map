@@ -1,0 +1,43 @@
+<map id="TargetSystem.hpp" name="TargetSystem.hpp">
+<area shape="rect" id="Node000001" title="Manages live targets, hit resolution and per&#45;frame updates." alt="" coords="309,5,447,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="407,299,474,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,26,201,38,145,50,92,65,48,85,19,110,11,124,8,139,11,157,20,176,43,199,81,220,129,239,183,256,298,283,394,300,393,306,297,288,182,261,127,244,78,224,40,203,16,179,6,158,3,139,6,122,15,106,45,80,90,60,143,44,201,33,308,21"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="563,152,641,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="397,29,574,142,571,147,394,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="196,225,320,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,32,360,97,343,139,321,179,304,200,286,218,282,214,300,197,317,176,338,136,355,95,373,30"/>
+<area shape="rect" id="Node000005" href="$CoreEvents_8hpp.html" title="Defines all event types transported through the EventBus." alt="" coords="383,152,539,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="387,30,449,139,445,141,382,32"/>
+<area shape="rect" id="Node000009" href="$EventBus_8hpp.html" title="Thread&#45;safe publish/subscribe event dispatch." alt="" coords="164,79,307,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="356,33,272,75,269,70,354,28"/>
+<area shape="rect" id="Node000012" href="$TargetFactory_8hpp.html" title="Creates concrete Target subclasses from a TargetDefinition." alt="" coords="531,79,735,104"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="419,28,579,72,578,78,418,33"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="462,178,447,285,441,285,456,177"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="429,180,304,223,303,218,427,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="571,225,638,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="485,175,570,217,568,221,482,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="345,225,403,251"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="448,179,400,219,397,214,445,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="479,225,547,251"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="471,176,498,213,494,216,467,179"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="227,106,206,134,185,172,178,192,175,212,177,232,187,249,200,260,220,269,274,285,337,296,394,303,393,309,336,302,273,290,218,274,197,264,182,252,172,233,170,212,173,191,180,170,201,131,223,103"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="300,101,550,149,549,154,299,107"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="229,106,211,138,207,157,210,177,221,197,236,214,232,218,216,200,205,178,202,157,206,136,224,103"/>
+<area shape="poly" id="edge16_Node000009_Node000005" title=" " alt="" coords="272,101,412,145,410,150,271,107"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="220,152,307,177"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="242,103,256,138,251,140,237,105"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="30,152,94,177"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="208,106,104,149,102,144,206,102"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="630,105,615,141,610,139,625,103"/>
+<area shape="poly" id="edge18_Node000012_Node000006" title=" " alt="" coords="642,103,655,137,658,158,655,178,644,199,630,217,626,213,640,196,650,177,653,158,650,138,637,105"/>
+<area shape="rect" id="Node000013" href="$Target_8hpp.html" title="Target base class and concrete subclasses (Static, Moving, etc.)." alt="" coords="716,152,925,177"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="664,102,778,144,776,149,662,107"/>
+<area shape="poly" id="edge23_Node000013_Node000002" title=" " alt="" coords="799,180,702,228,651,253,565,282,488,302,487,297,563,277,649,248,699,223,796,175"/>
+<area shape="poly" id="edge22_Node000013_Node000006" title=" " alt="" coords="787,180,652,224,650,219,785,175"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="893,299,949,324"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="903,175,946,193,965,206,980,224,985,242,980,261,967,278,951,292,947,288,963,274,975,258,980,242,976,227,961,210,943,197,901,180"/>
+<area shape="rect" id="Node000015" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="713,225,966,251"/>
+<area shape="poly" id="edge24_Node000013_Node000015" title=" " alt="" coords="826,177,835,212,830,213,821,178"/>
+<area shape="poly" id="edge26_Node000015_Node000002" title=" " alt="" coords="776,253,488,304,487,299,775,248"/>
+<area shape="poly" id="edge25_Node000015_Node000014" title=" " alt="" coords="854,249,899,288,895,292,851,253"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="RuntimeLoop.cpp" name="RuntimeLoop.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="264,5,399,31"/>
+<area shape="rect" id="Node000002" href="$RuntimeLoop_8hpp.html" title="QTimer&#45;driven frame loop that ticks FrameClock and publishes FrameTickEvent." alt="" coords="5,79,169,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,33,141,77,139,72,291,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,79,294,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="321,33,281,71,277,67,318,29"/>
+<area shape="rect" id="Node000005" href="$CoreEvents_8hpp.html" title="Defines all event types transported through the EventBus." alt="" coords="368,152,524,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="343,29,430,140,426,143,339,33"/>
+<area shape="rect" id="Node000011" href="$EventBus_8hpp.html" title="Thread&#45;safe publish/subscribe event dispatch." alt="" coords="491,79,633,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="369,28,513,72,511,77,368,33"/>
+<area shape="rect" id="Node000015" href="$FrameClock_8hpp.html" title="Fixed&#45;timestep accumulator with variable frame delta." alt="" coords="133,152,292,177"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="333,31,326,66,319,87,308,106,283,130,255,148,252,143,280,126,304,102,314,85,321,65,328,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="39,152,109,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,105,81,139,76,138,83,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="179,225,246,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="409,180,260,225,258,220,408,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="270,225,337,251"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="424,180,340,221,338,217,422,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="361,225,419,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="439,179,410,216,405,213,435,176"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="536,225,660,251"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="472,175,562,217,560,222,469,180"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="444,225,512,251"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="454,177,470,212,465,214,449,179"/>
+<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="545,106,478,147,475,142,542,102"/>
+<area shape="poly" id="edge11_Node000011_Node000007" title=" " alt="" coords="491,103,422,120,388,135,357,154,332,182,315,214,310,211,327,179,354,150,386,130,421,115,490,97"/>
+<area shape="poly" id="edge15_Node000011_Node000009" title=" " alt="" coords="568,104,594,211,589,213,562,105"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="600,152,687,177"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="577,102,622,141,618,145,573,106"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="711,152,789,177"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="593,102,707,144,706,149,591,107"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="813,152,877,177"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="609,101,800,149,798,154,608,107"/>
+<area shape="poly" id="edge18_Node000015_Node000006" title=" " alt="" coords="215,178,215,212,210,212,210,178"/>
+<area shape="poly" id="edge19_Node000015_Node000007" title=" " alt="" coords="229,175,279,214,276,219,226,179"/>
+</map>

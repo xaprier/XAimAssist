@@ -1,0 +1,18 @@
+<map id="HitTestService.hpp" name="HitTestService.hpp">
+<area shape="rect" id="Node000001" title="Abstract ray&#45;cast hit detection interface." alt="" coords="23,5,166,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,33,64,53,48,80,41,110,39,139,34,138,35,109,43,78,60,50,79,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="57,79,132,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,31,97,65,92,65,92,31"/>
+<area shape="rect" id="Node000004" href="$CoreEvents_8hpp.html" title="Defines all event types transported through the EventBus." alt="" coords="157,79,313,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,28,201,70,199,75,116,33"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="204,107,84,150,83,145,202,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="105,152,172,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,106,167,146,164,141,218,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="196,152,255,177"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="236,105,231,139,226,138,230,104"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="279,152,403,177"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="253,102,314,142,311,147,250,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="427,152,495,177"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="272,101,415,146,413,151,270,107"/>
+</map>

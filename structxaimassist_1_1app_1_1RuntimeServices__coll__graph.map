@@ -1,0 +1,45 @@
+<map id="xaimassist::app::RuntimeServices" name="xaimassist::app::RuntimeServices">
+<area shape="rect" id="Node000001" title="Aggregates shared pointers to every core runtime service." alt="" coords="869,299,1057,339"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="445,5,650,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,23,710,30,758,41,805,59,847,85,872,108,894,135,927,195,949,253,961,298,955,299,944,255,922,197,890,138,868,112,844,89,802,64,757,46,709,35,663,28"/>
+<area shape="rect" id="Node000003" href="$classxaimassist_1_1core_1_1EventBus.html" title="Publish/subscribe hub for CoreEvent variants." alt="" coords="137,13,336,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,23,444,23,444,28,350,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="445,69,650,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="664,95,710,104,757,116,804,134,847,158,884,190,915,228,939,266,955,297,951,300,935,269,911,231,881,194,844,162,801,139,755,121,708,109,663,100"/>
+<area shape="rect" id="Node000005" href="$classxaimassist_1_1core_1_1FrameClock.html" title="Measures wall&#45;clock deltas and produces fixed&#45;step tick counts." alt="" coords="129,77,344,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="358,87,444,87,444,92,358,92"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="445,133,650,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="664,167,755,188,802,204,847,223,902,259,944,296,941,300,898,263,844,228,800,209,754,193,663,172"/>
+<area shape="rect" id="Node000007" href="$classxaimassist_1_1core_1_1Logger.html" title="Dispatches categorised log messages to a configurable sink." alt="" coords="146,141,327,166"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="341,151,444,151,444,156,341,156"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="445,197,650,237"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="664,233,754,251,846,273,913,296,911,301,845,279,752,256,663,238"/>
+<area shape="rect" id="Node000009" href="$classxaimassist_1_1engine_1_1Engine.html" title="High&#45;level rendering facade for sphere spawning, camera control and per&#45;frame render passes." alt="" coords="164,197,309,237"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="323,215,445,215,445,220,323,220"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="445,261,650,301"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="664,289,869,308,869,313,664,294"/>
+<area shape="rect" id="Node000011" href="$classxaimassist_1_1input_1_1InputManager.html" title="Qt event&#45;filter that captures pointer motion and mouse clicks, transforms them via SensitivityModel,..." alt="" coords="165,261,308,301"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="322,279,444,279,444,284,322,284"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="5,269,80,294"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="94,279,165,279,165,284,94,284"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="415,325,680,365"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="693,337,845,328,869,326,869,331,846,333,694,342"/>
+<area shape="rect" id="Node000014" href="$classxaimassist_1_1persistence_1_1PersistenceDatabase.html" title="Opens the SQLite database, ensures schema tables exist, and runs migration steps when the schema vers..." alt="" coords="149,325,325,365"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="339,343,414,343,414,348,339,348"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="434,389,661,429"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="674,391,758,376,845,357,911,336,912,341,846,363,759,382,675,396"/>
+<area shape="rect" id="Node000016" href="$classxaimassist_1_1persistence_1_1ProfileManager.html" title="Manages user profiles (create, list, activate) via SQL." alt="" coords="149,389,325,429"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="339,407,434,407,434,412,339,412"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="435,453,660,493"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="673,457,759,438,803,424,844,407,898,373,940,337,944,341,901,377,847,412,804,429,760,443,674,462"/>
+<area shape="rect" id="Node000018" href="$classxaimassist_1_1persistence_1_1SessionHistory.html" title="Listens for session events, persists summaries, and provides queries for recent/best sessions and per..." alt="" coords="149,453,325,493"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="338,471,434,471,434,476,338,476"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="428,517,667,557"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="680,526,764,506,805,490,844,470,880,440,910,404,950,337,955,340,915,407,884,444,847,474,808,495,766,511,681,531"/>
+<area shape="rect" id="Node000020" href="$classxaimassist_1_1persistence_1_1SettingsManager.html" title="Reads/writes serialised AppSettings from/to the SQLite database, optionally importing data from a leg..." alt="" coords="149,517,325,557"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="339,535,428,535,428,540,339,540"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="445,581,650,621"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="664,600,710,594,757,583,802,566,844,542,868,520,889,494,922,437,943,381,955,338,960,339,948,383,927,439,893,497,872,524,847,546,805,571,758,588,711,599,664,605"/>
+<area shape="rect" id="Node000022" href="$classxaimassist_1_1stats_1_1StatTracker.html" title="Subscribes to shot/target/session events and maintains per&#45;session accumulators for score,..." alt="" coords="166,581,307,621"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="321,599,445,599,445,604,321,604"/>
+</map>

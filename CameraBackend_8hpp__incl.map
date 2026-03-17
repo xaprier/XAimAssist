@@ -1,0 +1,7 @@
+<map id="CameraBackend.hpp" name="CameraBackend.hpp">
+<area shape="rect" id="Node000001" title="FPS camera abstraction backed by VTK." alt="" coords="57,5,213,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,144,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,33,95,70,91,66,123,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="168,79,224,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,29,179,66,175,70,143,33"/>
+</map>

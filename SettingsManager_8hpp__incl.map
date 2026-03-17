@@ -1,0 +1,12 @@
+<map id="SettingsManager.hpp" name="SettingsManager.hpp">
+<area shape="rect" id="Node000001" title="Load/save AppSettings from the profile database with legacy INI import support." alt="" coords="30,5,189,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,33,62,71,58,67,96,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,152,152,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,31,123,138,118,139,108,31"/>
+<area shape="rect" id="Node000004" href="$AppSettings_8hpp.html" title="Aggregate settings POD hierarchy for the entire application." alt="" coords="147,79,354,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,28,217,70,214,75,131,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="231,106,157,147,155,143,229,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="189,152,313,177"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="253,104,253,138,248,138,248,104"/>
+</map>

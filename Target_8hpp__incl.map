@@ -1,0 +1,13 @@
+<map id="Target.hpp" name="Target.hpp">
+<area shape="rect" id="Node000001" title="Target base class and concrete subclasses (Static, Moving, etc.)." alt="" coords="102,5,193,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="41,152,97,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,28,53,46,31,60,13,80,8,96,14,112,26,128,42,142,39,146,23,132,9,115,3,96,8,77,27,56,51,41,101,23"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="22,79,89,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,33,83,72,80,68,131,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="288,152,354,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,22,301,41,349,57,368,66,381,77,387,95,381,114,368,131,352,145,348,141,364,127,376,111,381,95,376,80,365,71,347,62,299,46,193,27"/>
+<area shape="rect" id="Node000005" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="113,79,366,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="164,29,216,68,212,72,161,33"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="213,106,110,149,108,144,211,102"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="255,102,299,141,296,145,251,106"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="RenderBridge.hpp" name="RenderBridge.hpp">
+<area shape="rect" id="Node000001" title="Abstract interface between the world layer and a render backend." alt="" coords="197,5,336,31"/>
+<area shape="rect" id="Node000002" href="$EngineRenderBridge_8hpp.html" title="Adapts Engine sphere operations to the IRenderSceneBackend interface." alt="" coords="77,79,259,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,41,186,81,183,76,238,36"/>
+<area shape="rect" id="Node000005" href="$WorldRenderSync_8hpp.html" title="Synchronises dirty world entities with the render backend." alt="" coords="283,79,447,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="295,36,351,76,348,81,292,41"/>
+<area shape="rect" id="Node000003" href="$Application_8cpp.html" title=" " alt="" coords="211,152,333,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,110,256,150,253,154,195,114"/>
+<area shape="rect" id="Node000004" href="$EngineRenderBridge_8cpp.html" title=" " alt="" coords="5,152,187,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="148,116,110,154,106,150,144,112"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="341,114,289,154,286,150,338,110"/>
+<area shape="rect" id="Node000006" href="$WorldRenderSync_8cpp.html" title=" " alt="" coords="357,152,520,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="389,112,429,150,425,154,385,116"/>
+</map>

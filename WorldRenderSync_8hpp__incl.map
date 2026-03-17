@@ -1,0 +1,22 @@
+<map id="WorldRenderSync.hpp" name="WorldRenderSync.hpp">
+<area shape="rect" id="Node000001" title="Synchronises dirty world entities with the render backend." alt="" coords="140,5,304,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,129,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,33,159,53,123,81,98,110,81,141,76,138,94,107,119,77,156,48,194,28"/>
+<area shape="rect" id="Node000003" href="$RenderBridge_8hpp.html" title="Abstract interface between the world layer and a render backend." alt="" coords="133,79,311,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,31,225,65,219,65,219,31"/>
+<area shape="rect" id="Node000007" href="$World_8hpp.html" title="Lightweight entity&#45;component store for the game world." alt="" coords="336,79,463,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="251,28,359,71,357,76,250,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="350,152,417,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="249,102,346,144,343,149,247,106"/>
+<area shape="rect" id="Node000005" href="$Components_8hpp.html" title="Lightweight data components attached to world entities." alt="" coords="153,152,325,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="227,104,236,138,231,140,222,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="211,225,267,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="242,178,242,212,237,212,237,178"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="347,107,135,152,134,146,345,101"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="399,105,391,139,386,138,394,104"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="375,106,279,149,277,144,373,102"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="529,152,643,177"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="430,102,544,145,542,149,428,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="441,152,504,177"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="413,102,453,140,449,144,410,106"/>
+</map>

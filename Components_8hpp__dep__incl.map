@@ -1,0 +1,29 @@
+<map id="Components.hpp" name="Components.hpp">
+<area shape="rect" id="Node000001" title="Lightweight data components attached to world entities." alt="" coords="303,5,435,31"/>
+<area shape="rect" id="Node000002" href="$RenderBridge_8hpp.html" title="Abstract interface between the world layer and a render backend." alt="" coords="225,79,363,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="349,42,308,80,304,77,345,38"/>
+<area shape="rect" id="Node000008" href="$World_8hpp.html" title="Lightweight entity&#45;component store for the game world." alt="" coords="479,79,565,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="407,34,498,76,496,81,404,39"/>
+<area shape="rect" id="Node000003" href="$EngineRenderBridge_8hpp.html" title="Adapts Engine sphere operations to the IRenderSceneBackend interface." alt="" coords="5,152,188,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,111,130,154,128,149,249,106"/>
+<area shape="rect" id="Node000006" href="$WorldRenderSync_8hpp.html" title="Synchronises dirty world entities with the render backend." alt="" coords="212,152,376,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="297,118,297,152,291,152,291,118"/>
+<area shape="rect" id="Node000004" href="$Application_8cpp.html" title=" " alt="" coords="511,225,634,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,177,512,225,511,230,186,182"/>
+<area shape="rect" id="Node000005" href="$EngineRenderBridge_8cpp.html" title=" " alt="" coords="6,225,187,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="99,191,99,225,94,225,94,191"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="352,178,528,223,527,228,351,183"/>
+<area shape="rect" id="Node000007" href="$WorldRenderSync_8cpp.html" title=" " alt="" coords="213,225,375,251"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="297,191,297,225,291,225,291,191"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="579,92,613,97,649,107,682,125,708,150,715,164,713,178,706,189,694,199,662,216,625,228,623,223,660,211,691,195,702,186,708,176,709,165,704,154,678,129,647,112,612,102,579,97"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="473,111,332,154,330,149,471,106"/>
+<area shape="rect" id="Node000009" href="$GameplayWorldBridge_8hpp.html" title="Adapts ISceneCommandSink to the World entity&#45;component store." alt="" coords="769,152,965,177"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="579,102,812,149,811,155,578,107"/>
+<area shape="rect" id="Node000011" href="$World_8cpp.html" title=" " alt="" coords="400,152,487,177"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="501,115,458,154,454,150,497,111"/>
+<area shape="rect" id="Node000012" href="$WorldRaycastHitTest_8cpp.html" title=" " alt="" coords="511,152,693,177"/>
+<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="547,111,591,150,587,154,543,115"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="808,183,621,228,620,223,806,178"/>
+<area shape="rect" id="Node000010" href="$GameplayWorldBridge_8cpp.html" title=" " alt="" coords="770,225,965,251"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="870,191,870,225,865,225,865,191"/>
+</map>

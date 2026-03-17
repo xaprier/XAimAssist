@@ -1,0 +1,19 @@
+<map id="xaimassist::persistence::GameplayPreferences" name="xaimassist::persistence::GameplayPreferences">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1357,64,1533,104"/>
+<area shape="rect" id="Node000002" href="$structxaimassist_1_1persistence_1_1TargetPreferences.html" title=" " alt="" coords="995,5,1171,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1186,39,1334,63,1357,67,1357,72,1333,68,1185,44"/>
+<area shape="rect" id="Node000003" href="$structxaimassist_1_1persistence_1_1ColorRgb.html" title="Normalised RGB colour with components in [0, 1]." alt="" coords="673,5,849,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="863,23,995,23,995,28,863,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,133,280,158"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,125,352,96,399,86,446,81,1085,81,1357,81,1357,87,1085,87,446,87,400,91,354,101,277,130"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="963,122,1204,177"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="294,143,962,146,962,151,294,148"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="363,183,532,223"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="272,162,305,176,363,190,362,195,303,181,270,167"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,125,144,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="157,143,193,143,193,148,157,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1217,134,1333,115,1383,102,1384,107,1334,120,1218,139"/>
+<area shape="rect" id="Node000007" href="$structxaimassist_1_1persistence_1_1ModePreferences.html" title="Per&#45;mode overrides stored in the profile." alt="" coords="673,183,849,223"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="863,187,938,176,962,172,963,177,939,181,864,193"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="546,200,673,200,673,205,546,205"/>
+</map>

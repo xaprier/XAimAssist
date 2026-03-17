@@ -1,0 +1,19 @@
+<map id="GameMode.hpp" name="GameMode.hpp">
+<area shape="rect" id="Node000001" title="Base class and metadata types for all training game modes." alt="" coords="169,5,295,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="288,152,355,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,26,106,33,47,48,25,58,12,70,9,85,18,102,34,115,60,126,128,143,206,153,274,159,274,164,205,159,127,148,58,131,32,120,14,106,4,85,7,68,22,54,45,43,105,28,169,20"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,79,87,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,33,99,76,97,71,203,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,79,235,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,33,193,70,189,67,220,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="259,79,322,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="244,29,274,67,270,70,239,33"/>
+<area shape="rect" id="Node000006" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="347,79,600,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="271,28,421,72,420,77,270,33"/>
+<area shape="rect" id="Node000008" href="$SettingsProvider_8hpp.html" title="Runtime gameplay settings interface." alt="" coords="625,79,850,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="295,25,643,74,642,79,294,31"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="450,106,359,149,357,144,448,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="577,152,633,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="496,102,573,143,570,148,493,106"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="717,106,640,148,637,143,715,102"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Logger.hpp" name="Logger.hpp">
+<area shape="rect" id="Node000001" title="Lightweight categorised logging with optional debug&#45;flag gating." alt="" coords="93,5,187,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,68,73,65,68,122,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,79,183,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,31,143,65,137,65,137,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="207,79,305,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,28,227,69,224,74,157,33"/>
+</map>

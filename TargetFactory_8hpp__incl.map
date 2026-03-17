@@ -1,0 +1,18 @@
+<map id="TargetFactory.hpp" name="TargetFactory.hpp">
+<area shape="rect" id="Node000001" title="Creates concrete Target subclasses from a TargetDefinition." alt="" coords="42,5,177,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,33,79,53,61,80,50,110,44,139,39,138,45,108,56,77,75,50,95,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="71,79,148,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,31,112,65,107,65,107,31"/>
+<area shape="rect" id="Node000004" href="$Target_8hpp.html" title="Target base class and concrete subclasses (Static, Moving, etc.)." alt="" coords="173,79,382,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,28,238,71,236,76,135,33"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="240,107,86,152,85,147,238,101"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="187,225,243,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="213,107,173,124,155,137,141,153,137,170,145,187,161,203,181,216,178,221,157,207,140,190,132,171,136,151,151,133,170,119,211,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="305,225,372,251"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="344,102,385,119,403,133,418,151,423,171,414,190,397,207,377,221,374,216,394,203,410,187,418,170,414,153,400,137,382,124,341,107"/>
+<area shape="rect" id="Node000007" href="$SceneCommandSink_8hpp.html" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="151,152,404,177"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="280,104,280,138,275,138,275,104"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="269,179,236,217,232,213,265,176"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="289,176,322,213,318,217,285,179"/>
+</map>

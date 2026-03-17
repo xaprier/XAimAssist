@@ -1,0 +1,58 @@
+<map id="SettingsProvider.hpp" name="SettingsProvider.hpp">
+<area shape="rect" id="Node000001" title="Runtime gameplay settings interface." alt="" coords="816,5,972,31"/>
+<area shape="rect" id="Node000002" href="$AppGameplaySettingsProvider_8hpp.html" title="Bridges SettingsManager to IGameplaySettingsProvider." alt="" coords="165,79,413,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="802,33,386,81,386,76,802,27"/>
+<area shape="rect" id="Node000005" href="$BuiltInModes_8cpp.html" title=" " alt="" coords="724,225,859,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="866,41,812,87,787,118,767,153,764,172,768,191,785,224,780,226,763,193,759,172,762,151,782,115,808,84,863,37"/>
+<area shape="rect" id="Node000006" href="$GameMode_8hpp.html" title="Base class and metadata types for all training game modes." alt="" coords="987,79,1113,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="933,34,1026,76,1023,81,930,39"/>
+<area shape="rect" id="Node000011" href="$ModeOrchestrator_8cpp.html" title=" " alt="" coords="1934,299,2099,324"/>
+<area shape="poly" id="edge33_Node000001_Node000011" title=" " alt="" coords="986,18,1239,29,1398,42,1564,60,1723,86,1866,121,1927,143,1980,167,2023,194,2055,224,2061,244,2056,265,2044,285,2031,300,2026,297,2040,281,2051,263,2056,244,2050,227,2020,198,1978,171,1925,148,1864,126,1722,92,1563,65,1398,47,1239,35,985,23"/>
+<area shape="rect" id="Node000003" href="$AppGameplaySettingsProvider_8cpp.html" title=" " alt="" coords="5,152,252,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,112,156,154,154,149,250,107"/>
+<area shape="rect" id="Node000004" href="$Application_8cpp.html" title=" " alt="" coords="1382,299,1505,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,117,284,148,286,184,295,220,304,235,316,248,331,255,362,261,466,272,777,289,1124,300,1382,306,1382,312,1124,306,777,294,465,277,362,266,329,260,312,253,300,238,290,222,281,185,279,148,282,117"/>
+<area shape="rect" id="Node000007" href="$GameMode_8cpp.html" title=" " alt="" coords="988,152,1112,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1053,118,1053,152,1047,152,1047,118"/>
+<area shape="rect" id="Node000008" href="$GameModeRegistry_8hpp.html" title="Factory registry for available game modes." alt="" coords="1476,152,1653,177"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1127,101,1482,149,1482,155,1126,106"/>
+<area shape="rect" id="Node000010" href="$ModeOrchestrator_8hpp.html" title="Session lifecycle manager for game modes." alt="" coords="1873,225,2040,251"/>
+<area shape="poly" id="edge20_Node000006_Node000010" title=" " alt="" coords="1127,93,1368,109,1517,126,1667,149,1740,166,1812,186,1926,223,1924,228,1811,191,1739,171,1665,155,1517,131,1368,115,1126,98"/>
+<area shape="rect" id="Node000014" href="$GridShotMode_8hpp.html" title="Grid&#45;based flick training mode." alt="" coords="1136,152,1279,177"/>
+<area shape="poly" id="edge17_Node000006_Node000014" title=" " alt="" coords="1089,107,1183,149,1181,154,1087,112"/>
+<area shape="rect" id="Node000016" href="$NextShotMode_8hpp.html" title="Target&#45;chaining flick mode with a preview." alt="" coords="1303,152,1450,177"/>
+<area shape="poly" id="edge21_Node000006_Node000016" title=" " alt="" coords="1116,104,1324,149,1323,154,1115,110"/>
+<area shape="rect" id="Node000018" href="$StaticSphereMode_8hpp.html" title="Single static&#45;target flick training." alt="" coords="326,152,494,177"/>
+<area shape="poly" id="edge24_Node000006_Node000018" title=" " alt="" coords="974,103,506,155,495,156,494,151,506,149,973,98"/>
+<area shape="rect" id="Node000020" href="$StrafingTargetsMode_8hpp.html" title="Two&#45;phase mode: click static target, then track its moving variant." alt="" coords="519,152,701,177"/>
+<area shape="poly" id="edge27_Node000006_Node000020" title=" " alt="" coords="974,108,681,155,680,149,973,102"/>
+<area shape="rect" id="Node000022" href="$TrackingTargetsMode_8hpp.html" title="Continuous tracking practice against a single bouncing target." alt="" coords="777,152,963,177"/>
+<area shape="poly" id="edge30_Node000006_Node000022" title=" " alt="" coords="1010,111,900,154,898,149,1008,106"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="1525,186,1497,204,1472,227,1461,245,1454,264,1447,299,1442,298,1449,263,1457,243,1468,224,1493,199,1522,181"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="1463,180,1462,180,1167,202,1037,212,872,228,859,229,859,224,871,223,1037,206,1166,197,1462,175,1462,175"/>
+<area shape="rect" id="Node000009" href="$GameModeRegistry_8cpp.html" title=" " alt="" coords="1673,225,1849,251"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1610,179,1730,223,1728,228,1608,184"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="1641,177,1894,223,1893,228,1640,182"/>
+<area shape="rect" id="Node000012" href="$SettingsConverter_8hpp.html" title="Converts persistence layer settings to domain model types." alt="" coords="1481,225,1648,251"/>
+<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="1567,191,1567,225,1562,225,1562,191"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="1860,255,1517,301,1505,303,1505,298,1516,296,1859,249"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1977,260,2009,297,2005,300,1973,263"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="1534,260,1465,301,1462,296,1532,255"/>
+<area shape="rect" id="Node000013" href="$SettingsConverter_8cpp.html" title=" " alt="" coords="1529,299,1694,324"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="1582,261,1606,297,1602,300,1578,264"/>
+<area shape="poly" id="edge18_Node000014_Node000005" title=" " alt="" coords="1128,182,859,228,858,223,1127,177"/>
+<area shape="rect" id="Node000015" href="$GridShotMode_8cpp.html" title=" " alt="" coords="1094,225,1235,251"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="1196,191,1174,227,1169,224,1191,188"/>
+<area shape="poly" id="edge22_Node000016_Node000005" title=" " alt="" coords="1289,180,872,228,859,230,859,224,871,223,1289,175"/>
+<area shape="rect" id="Node000017" href="$NextShotMode_8cpp.html" title=" " alt="" coords="1260,225,1405,251"/>
+<area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="1364,191,1342,227,1338,224,1360,188"/>
+<area shape="poly" id="edge25_Node000018_Node000005" title=" " alt="" coords="485,177,730,223,729,228,484,182"/>
+<area shape="rect" id="Node000019" href="$StaticSphereMode_8cpp.html" title=" " alt="" coords="327,225,493,251"/>
+<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="413,191,413,225,407,225,407,191"/>
+<area shape="poly" id="edge28_Node000020_Node000005" title=" " alt="" coords="653,180,763,223,761,228,651,185"/>
+<area shape="rect" id="Node000021" href="$StrafingTargetsMode_8cpp.html" title=" " alt="" coords="517,225,700,251"/>
+<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="612,191,612,225,606,225,607,191"/>
+<area shape="poly" id="edge31_Node000022_Node000005" title=" " alt="" coords="849,189,806,227,802,223,845,185"/>
+<area shape="rect" id="Node000023" href="$TrackingTargetsMode_8cpp.html" title=" " alt="" coords="883,225,1070,251"/>
+<area shape="poly" id="edge32_Node000022_Node000023" title=" " alt="" coords="900,183,961,223,958,227,897,187"/>
+</map>

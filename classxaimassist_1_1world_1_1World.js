@@ -1,0 +1,28 @@
+var classxaimassist_1_1world_1_1World =
+[
+    [ "Clear", "classxaimassist_1_1world_1_1World.html#a8cdfde7e4d7617ad811cdc55b68caa7e", null ],
+    [ "ClearRenderDirty", "classxaimassist_1_1world_1_1World.html#acc1d16d503426a3a5b8ca0a37ac00870", null ],
+    [ "Collider", "classxaimassist_1_1world_1_1World.html#a55ac0d10985efd8a96ad51aa548dd439", null ],
+    [ "CreateEntity", "classxaimassist_1_1world_1_1World.html#abba61cb183717a2fc4bae9a6fbb77c30", null ],
+    [ "DestroyEntity", "classxaimassist_1_1world_1_1World.html#aa5cb7d7bd59444e98e898f9d6b6ec74d", null ],
+    [ "Entities", "classxaimassist_1_1world_1_1World.html#a38f170dfba2ca0e9d7d98759bee5b33e", null ],
+    [ "EntitiesWithRenderable", "classxaimassist_1_1world_1_1World.html#af63df2e6f4fc2cd8f43e433923b1e8b8", null ],
+    [ "EntityCount", "classxaimassist_1_1world_1_1World.html#a10b6d53ab8a46f71dc1787031d1159c2", null ],
+    [ "HasCollider", "classxaimassist_1_1world_1_1World.html#a28de171459a9399e3b215f0bbaff4098", null ],
+    [ "HasRender", "classxaimassist_1_1world_1_1World.html#a3d012a7361d9438c5aa6ab4311973e31", null ],
+    [ "HasTransform", "classxaimassist_1_1world_1_1World.html#a62d207cb77031f15e6b4b437c06b857e", null ],
+    [ "IsAlive", "classxaimassist_1_1world_1_1World.html#aec4a2f1d7d0ffa5c4ed5f86bc3f82785", null ],
+    [ "IsRenderDirty", "classxaimassist_1_1world_1_1World.html#a05c99670639fb8be60609070f88e7159", null ],
+    [ "MarkRenderDirty", "classxaimassist_1_1world_1_1World.html#abbcd3f971d71742f2444e4385a80b2d2", null ],
+    [ "RemoveCollider", "classxaimassist_1_1world_1_1World.html#a1d7674b17b36d043ea36c4dd2a479107", null ],
+    [ "RemoveRender", "classxaimassist_1_1world_1_1World.html#a2bb5a197dd652c6548abfd82a3d5f94b", null ],
+    [ "RemoveTransform", "classxaimassist_1_1world_1_1World.html#a364278f49408b85da037dc709562d932", null ],
+    [ "Render", "classxaimassist_1_1world_1_1World.html#af6a7237da5320e01565111917f367fa6", null ],
+    [ "RenderDirtyCount", "classxaimassist_1_1world_1_1World.html#abb46936f3bea7c535ef091df7e27027e", null ],
+    [ "RenderDirtyEntities", "classxaimassist_1_1world_1_1World.html#a3956e581c8f1de86e8440c630d335d7c", null ],
+    [ "RenderTopologyRevision", "classxaimassist_1_1world_1_1World.html#a24990a6a6807ace81db7c4d2939488a0", null ],
+    [ "Transform", "classxaimassist_1_1world_1_1World.html#afc5fca37f6ecd2e61a9fe8fd98be36dd", null ],
+    [ "UpsertCollider", "classxaimassist_1_1world_1_1World.html#ad748b15b1018c7122969ec05fec686a5", null ],
+    [ "UpsertRender", "classxaimassist_1_1world_1_1World.html#a26f588ec893e06779ce76a95783fff40", null ],
+    [ "UpsertTransform", "classxaimassist_1_1world_1_1World.html#a16c3c5d1aa0646251b1d2bd4d47bed66", null ]
+];

@@ -1,0 +1,14 @@
+<map id="EngineRenderBridge.hpp" name="EngineRenderBridge.hpp">
+<area shape="rect" id="Node000001" title="Adapts Engine sphere operations to the IRenderSceneBackend interface." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="106,225,162,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,33,47,52,34,65,24,80,21,91,25,103,41,137,63,167,110,215,107,218,59,171,37,139,19,105,16,91,20,78,30,62,43,48,71,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="35,79,159,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,31,99,65,94,65,94,31"/>
+<area shape="rect" id="Node000004" href="$RenderBridge_8hpp.html" title="Abstract interface between the world layer and a render backend." alt="" coords="183,79,362,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,28,232,71,230,76,124,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="95,152,162,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="251,106,166,148,163,143,248,102"/>
+<area shape="rect" id="Node000006" href="$Components_8hpp.html" title="Lightweight data components attached to world entities." alt="" coords="187,152,359,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="275,104,275,138,270,138,270,104"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="252,180,170,221,168,217,249,175"/>
+</map>

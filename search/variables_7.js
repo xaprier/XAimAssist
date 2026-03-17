@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['hits_0',['hits',['../structxaimassist_1_1core_1_1events_1_1RealtimeStatsEvent.html#a98d5d362ba73b819bd8ac013fdb56aca',1,'xaimassist::core::events::RealtimeStatsEvent::hits'],['../structxaimassist_1_1core_1_1events_1_1SessionSummaryEvent.html#a3673ad42090a90b243eba7fa4a55f749',1,'xaimassist::core::events::SessionSummaryEvent::hits'],['../structxaimassist_1_1stats_1_1SessionStatsSnapshot.html#ae766e9c7bc964826850e0f82c7518273',1,'xaimassist::stats::SessionStatsSnapshot::hits'],['../structxaimassist_1_1persistence_1_1SessionRecord.html#af8a690b81d6a893961dc8963fef5545b',1,'xaimassist::persistence::SessionRecord::hits'],['../structxaimassist_1_1persistence_1_1ModePerformanceSummary.html#a817b9f8d1e5cc82fd52772ed1673b1fe',1,'xaimassist::persistence::ModePerformanceSummary::hits']]],
+  ['horizontallength_1',['horizontalLength',['../structxaimassist_1_1persistence_1_1CrosshairPreferences.html#aedc74e6065d6f3ffeb442d4ad725c627',1,'xaimassist::persistence::CrosshairPreferences']]]
+];

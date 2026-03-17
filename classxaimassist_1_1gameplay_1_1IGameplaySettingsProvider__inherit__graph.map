@@ -1,0 +1,5 @@
+<map id="xaimassist::gameplay::IGameplaySettingsProvider" name="xaimassist::gameplay::IGameplaySettingsProvider">
+<area shape="rect" id="Node000001" title="Provides live gameplay preferences (target colour, radius, etc.)." alt="" coords="14,5,222,45"/>
+<area shape="rect" id="Node000002" href="$classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html" title="Reads live target colour/radius from the persisted settings." alt="" coords="5,93,231,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,59,121,93,115,93,115,59"/>
+</map>

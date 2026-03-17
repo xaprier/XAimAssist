@@ -1,0 +1,7 @@
+<map id="AppGameplaySettingsProvider.hpp" name="AppGameplaySettingsProvider.hpp">
+<area shape="rect" id="Node000001" title="Bridges SettingsManager to IGameplaySettingsProvider." alt="" coords="5,5,253,31"/>
+<area shape="rect" id="Node000002" href="$SettingsProvider_8hpp.html" title="Runtime gameplay settings interface." alt="" coords="17,79,242,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,31,132,65,127,65,127,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,152,157,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,104,132,138,127,138,127,104"/>
+</map>

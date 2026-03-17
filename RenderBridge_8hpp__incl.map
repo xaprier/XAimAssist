@@ -1,0 +1,9 @@
+<map id="RenderBridge.hpp" name="RenderBridge.hpp">
+<area shape="rect" id="Node000001" title="Abstract interface between the world layer and a render backend." alt="" coords="41,5,180,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,33,62,71,58,67,97,29"/>
+<area shape="rect" id="Node000003" href="$Components_8hpp.html" title="Lightweight data components attached to world entities." alt="" coords="97,79,269,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,29,163,67,159,71,121,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="155,152,211,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,104,185,138,180,138,180,104"/>
+</map>

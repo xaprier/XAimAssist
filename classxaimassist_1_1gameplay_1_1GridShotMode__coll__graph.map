@@ -1,0 +1,5 @@
+<map id="xaimassist::gameplay::GridShotMode" name="xaimassist::gameplay::GridShotMode">
+<area shape="rect" id="Node000001" title="Spawns targets on a configurable NxM grid; hitting one despawns it and spawns a replacement at a rand..." alt="" coords="5,93,172,133"/>
+<area shape="rect" id="Node000002" href="$classxaimassist_1_1gameplay_1_1GameMode.html" title="Abstract base for training modes." alt="" coords="5,5,172,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,59,91,93,86,93,86,59"/>
+</map>

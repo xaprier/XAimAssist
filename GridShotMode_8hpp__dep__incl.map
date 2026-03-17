@@ -1,0 +1,7 @@
+<map id="GridShotMode.hpp" name="GridShotMode.hpp">
+<area shape="rect" id="Node000001" title="Grid&#45;based flick training mode." alt="" coords="83,5,225,31"/>
+<area shape="rect" id="Node000002" href="$BuiltInModes_8cpp.html" title=" " alt="" coords="5,79,140,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,42,88,80,84,76,129,38"/>
+<area shape="rect" id="Node000003" href="$GridShotMode_8cpp.html" title=" " alt="" coords="165,79,306,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,38,224,76,220,80,176,42"/>
+</map>

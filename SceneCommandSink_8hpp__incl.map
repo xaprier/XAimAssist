@@ -1,0 +1,7 @@
+<map id="SceneCommandSink.hpp" name="SceneCommandSink.hpp">
+<area shape="rect" id="Node000001" title="Interface for gameplay&#45;issued scene mutations." alt="" coords="5,5,189,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,32,71,68,66,66,88,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="107,79,173,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,30,128,66,124,68,102,32"/>
+</map>
