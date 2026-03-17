@@ -100,7 +100,9 @@ Item {
                                 ]
                                 textRole: "label"
                                 currentIndex: root.viewModel.themeMode === "light" ? 1 : 0
-                                onActivated: root.viewModel.themeMode = model[index].value
+                                onActivated: function(comboIndex) {
+                                    root.viewModel.themeMode = model[comboIndex].value
+                                }
                             }
                         }
 
@@ -120,7 +122,9 @@ Item {
                                 ]
                                 textRole: "label"
                                 currentIndex: root.viewModel.languageCode === "tr" ? 1 : 0
-                                onActivated: root.viewModel.languageCode = model[index].value
+                                onActivated: function(comboIndex) {
+                                    root.viewModel.languageCode = model[comboIndex].value
+                                }
                             }
                         }
                     }
@@ -731,7 +735,9 @@ Item {
                                     textRole: "label"
                                     enabled: root.viewModel.fpsCounterEnabled
                                     currentIndex: root.fpsPositionIndex(root.viewModel.fpsCounterPosition)
-                                    onActivated: root.viewModel.fpsCounterPosition = root.fpsPositionValue(index)
+                                    onActivated: function(comboIndex) {
+                                        root.viewModel.fpsCounterPosition = root.fpsPositionValue(comboIndex)
+                                    }
                             }
                         }
                     }
@@ -788,6 +794,7 @@ Item {
                     }
                 }
             }
+
         }
     }
 }

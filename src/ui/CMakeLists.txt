@@ -6,7 +6,17 @@ add_library(xaimassist_ui
 
 target_include_directories(xaimassist_ui
 	PUBLIC
-		${CMAKE_CURRENT_SOURCE_DIR}/include
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>
+)
+
+# Configure version header
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/include/ui")
+
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ui/Version.hpp.in
+    ${CMAKE_CURRENT_BINARY_DIR}/include/ui/Version.hpp
+    @ONLY
 )
 
 target_link_libraries(xaimassist_ui

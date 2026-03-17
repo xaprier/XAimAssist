@@ -38,9 +38,8 @@ TargetSystem::~TargetSystem() {
     _UnsubscribeFromEvents();
 }
 
-TargetSystem::TargetId
-TargetSystem::SpawnTarget(std::uint64_t SessionId,
-                          const TargetDefinition& Definition) {
+TargetSystem::TargetId TargetSystem::SpawnTarget(std::uint64_t SessionId,
+                                                 const TargetDefinition& Definition) {
     if (SessionId == 0) {
         return 0;
     }

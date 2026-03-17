@@ -218,5 +218,54 @@ Item {
                 font.bold: settingsTab.highlighted
             }
         }
+
+        Button {
+            id: aboutTab
+            Layout.fillWidth: true
+            text: root.i18n.tabAbout
+            highlighted: root.currentScreen === "about"
+            hoverEnabled: true
+            scale: aboutTab.hovered ? 1.01 : 1.0
+            onClicked: root.screenSelected("about")
+
+            Behavior on scale {
+                NumberAnimation {
+                    duration: 120
+                    easing.type: Easing.OutCubic
+                }
+            }
+
+            background: Rectangle {
+                radius: 10
+                color: aboutTab.highlighted
+                    ? root.theme.accentSoft
+                    : (aboutTab.down || aboutTab.hovered ? root.theme.card : root.theme.surface)
+                border.color: aboutTab.highlighted
+                    ? root.theme.accent
+                    : (aboutTab.hovered ? root.theme.accentSoft : root.theme.border)
+
+                Behavior on color {
+                    ColorAnimation {
+                        duration: 140
+                        easing.type: Easing.OutCubic
+                    }
+                }
+
+                Behavior on border.color {
+                    ColorAnimation {
+                        duration: 140
+                        easing.type: Easing.OutCubic
+                    }
+                }
+            }
+
+            contentItem: Label {
+                text: aboutTab.text
+                color: aboutTab.highlighted ? root.theme.accentText : root.theme.textPrimary
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.bold: aboutTab.highlighted
+            }
+        }
     }
 }

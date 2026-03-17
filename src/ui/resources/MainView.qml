@@ -23,6 +23,7 @@ Item {
         if (screen === "training") return 2
         if (screen === "stats") return 3
         if (screen === "settings") return 4
+        if (screen === "about") return 5
         return 0
     }
 
@@ -150,6 +151,14 @@ Item {
                         theme: root.theme
                         i18n: root.i18n
                         viewModel: root.uiModel
+                    }
+                }
+
+                Item {
+                    About {
+                        anchors.fill: parent
+                        theme: root.theme
+                        i18n: root.i18n
                     }
                 }
             }

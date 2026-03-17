@@ -15,14 +15,14 @@
   </a>
 </p>
 
-A professional open-source 3D FPS aim training application built with modern C++ architecture, Qt6, and VTK rendering.
+An open-source 3D FPS aim training application built with modern C++ architecture, Qt6, and VTK rendering.
 
 <p align="center">
     <a href="https://xaprier.github.io/XAimAssist/">
         View API Documentation
     </a>
     |
-    <a href="https://github.com/xaprier/XAimAssist/BUILD.md">
+    <a href="https://github.com/xaprier/XAimAssist/blob/main/BUILD.md">
         Build Instructions
     </a>
 </p>

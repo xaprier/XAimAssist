@@ -10,13 +10,16 @@
 #include <cmath>
 #include <utility>
 
+#include "ui/Version.hpp"
+
 namespace {
-constexpr std::array<const char*, 5> SCREEN_IDS = {
+constexpr std::array<const char*, 6> SCREEN_IDS = {
     "menu",
     "modes",
     "training",
     "stats",
     "settings",
+    "about",
 };
 
 bool isSupportedScreen(const QString& screen) {
@@ -2100,6 +2103,7 @@ void UiViewModel::_RebuildI18n() {
             {"tabTraining", QStringLiteral("Antrenman")},
             {"tabStats", QStringLiteral("İstatistik")},
             {"tabSettings", QStringLiteral("Ayarlar")},
+            {"tabAbout", QStringLiteral("Hakkında")},
 
             {"menuTitle", QStringLiteral("Hoş geldin")},
             {"menuSubtitle",
@@ -2256,6 +2260,44 @@ void UiViewModel::_RebuildI18n() {
              QStringLiteral(
                  "Değişiklikler arayüz, hedefler ve arka plana canlı uygulanır.")},
 
+            {"aboutTitle", QStringLiteral("XAimAssist Hakkında")},
+            {"aboutVersion", QStringLiteral("Sürüm")},
+            {"aboutVersionUnknown", QStringLiteral("Bilinmiyor")},
+            {"aboutSummaryTitle", QStringLiteral("Uygulama")},
+            {"aboutSummaryBody",
+             QStringLiteral(
+                 "XAimAssist, FPS nişan becerilerini geliştirmek için "
+                 "tasarlanmış açık kaynaklı bir 3D antrenman uygulamasıdır. "
+                 "Modüler C++ mimarisi, gerçek zamanlı metrikler ve "
+                 "özelleştirilebilir antrenman akışı sunar.")},
+            {"aboutHighlightsTitle", QStringLiteral("Öne Çıkanlar")},
+            {"aboutFeatureModes",
+             QStringLiteral("Çoklu antrenman modları: Static Sphere, GridShot, "
+                            "Next Shot, Tracking, Strafing.")},
+            {"aboutFeatureMetrics",
+             QStringLiteral("Canlı performans metrikleri: skor, isabet, ıska, "
+                            "doğruluk, tepki süresi ve atış/saniye.")},
+            {"aboutFeatureStats",
+             QStringLiteral("Oturum geçmişi ve mod bazlı karşılaştırmalı "
+                            "istatistik analizi.")},
+            {"aboutFeatureInput",
+             QStringLiteral("Fiziksel hassasiyet modeli (cm/360 + DPI), raw "
+                            "input ve eksen çarpanları.")},
+            {"aboutFeatureTheme",
+             QStringLiteral("Hedef rengiyle uyumlu dinamik açık/koyu tema "
+                            "sistemi.")},
+            {"aboutBuiltWithTitle", QStringLiteral("Kullanılan Teknolojiler")},
+            {"aboutBuiltWithValue",
+             QStringLiteral("Qt 6 • QML • C++17 • VTK • CMake")},
+            {"aboutDeveloperTitle", QStringLiteral("Geliştirici")},
+            {"aboutDeveloperBody",
+             QStringLiteral(
+                 "XAimAssist, xaprier tarafından geliştirilen açık kaynaklı "
+                 "bir projedir.")},
+            {"aboutGithub", QStringLiteral("GitHub Projesi")},
+            {"aboutGithubUrl",
+             QString::fromUtf8(version::APP_GITHUB_URL)},
+
             {"unitSec", QStringLiteral("sn")},
             {"unitMs", QStringLiteral("ms")},
             {"unitPercent", QStringLiteral("%")},
@@ -2273,6 +2315,7 @@ void UiViewModel::_RebuildI18n() {
         {"tabTraining", QStringLiteral("Training")},
         {"tabStats", QStringLiteral("Statistics")},
         {"tabSettings", QStringLiteral("Settings")},
+        {"tabAbout", QStringLiteral("About")},
 
         {"menuTitle", QStringLiteral("Welcome")},
         {"menuSubtitle",
@@ -2429,6 +2472,41 @@ void UiViewModel::_RebuildI18n() {
         {"settingsInstantApply",
          QStringLiteral(
              "Changes update UI, targets, and background in real time.")},
+
+        {"aboutTitle", QStringLiteral("About XAimAssist")},
+        {"aboutVersion", QStringLiteral("Version")},
+        {"aboutVersionUnknown", QStringLiteral("Unknown")},
+        {"aboutSummaryTitle", QStringLiteral("Application")},
+        {"aboutSummaryBody",
+         QStringLiteral(
+             "XAimAssist is an open-source 3D FPS aim training application "
+             "focused on improving aiming consistency through modular C++ "
+             "architecture, real-time metrics, and configurable training "
+             "flows.")},
+        {"aboutHighlightsTitle", QStringLiteral("Highlights")},
+        {"aboutFeatureModes",
+         QStringLiteral("Multiple built-in modes: Static Sphere, GridShot, "
+                        "Next Shot, Tracking, Strafing.")},
+        {"aboutFeatureMetrics",
+         QStringLiteral("Live performance metrics: score, hits, misses, "
+                        "accuracy, reaction time, and shots per second.")},
+        {"aboutFeatureStats",
+         QStringLiteral("Session history with per-mode comparative statistics.")},
+        {"aboutFeatureInput",
+         QStringLiteral("Physical sensitivity model (cm/360 + DPI), raw input, "
+                        "and axis multipliers.")},
+        {"aboutFeatureTheme",
+         QStringLiteral(
+             "Dynamic light/dark theme system harmonized with target color.")},
+        {"aboutBuiltWithTitle", QStringLiteral("Built With")},
+        {"aboutBuiltWithValue", QStringLiteral("Qt 6 • QML • C++17 • VTK • CMake")},
+        {"aboutDeveloperTitle", QStringLiteral("Developer")},
+        {"aboutDeveloperBody",
+         QStringLiteral(
+             "XAimAssist is an open-source project developed by xaprier.")},
+        {"aboutGithub", QStringLiteral("Open on GitHub")},
+        {"aboutGithubUrl",
+         QString::fromUtf8(version::APP_GITHUB_URL)},
 
         {"unitSec", QStringLiteral("sec")},
         {"unitMs", QStringLiteral("ms")},

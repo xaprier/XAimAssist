@@ -1,5 +1,25 @@
 set(XAIMASSIST_APP_TARGET xaimassist_app)
 
+set(XAIMASSIST_WINDOWS_ICON_RESOURCE)
+
+if(WIN32)
+    set(XAIMASSIST_WINDOWS_ICON_RESOURCE
+        ${CMAKE_CURRENT_BINARY_DIR}/xaimassist_icon.rc
+    )
+
+    configure_file(
+        ${PROJECT_SOURCE_DIR}/assets/icon.rc
+        ${XAIMASSIST_WINDOWS_ICON_RESOURCE}
+        COPYONLY
+    )
+
+    configure_file(
+        ${PROJECT_SOURCE_DIR}/assets/XAimAssist.ico
+        ${CMAKE_CURRENT_BINARY_DIR}/XAimAssist.ico
+        COPYONLY
+    )
+endif()
+
 add_executable(${XAIMASSIST_APP_TARGET}
     src/Application.cpp
     src/AppGameplaySettingsProvider.cpp
@@ -12,6 +32,18 @@ add_executable(${XAIMASSIST_APP_TARGET}
     src/SettingsConverter.cpp
     src/WorldRaycastHitTest.cpp
 )
+
+
+if(WIN32)
+    target_sources(${XAIMASSIST_APP_TARGET}
+        PRIVATE
+            ${XAIMASSIST_WINDOWS_ICON_RESOURCE}
+    )
+    set_target_properties(${XAIMASSIST_APP_TARGET}
+        PROPERTIES
+            WIN32_EXECUTABLE ON
+    )
+endif()
 
 target_include_directories(${XAIMASSIST_APP_TARGET}
     PRIVATE
@@ -47,41 +79,31 @@ if(UNIX AND NOT APPLE)
     )
 endif()
 
-if(WIN32 AND XAIMASSIST_ENABLE_DEPLOYMENT)
+install(
+    TARGETS ${XAIMASSIST_APP_TARGET}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+if(UNIX AND NOT APPLE)
     install(
-        TARGETS ${XAIMASSIST_APP_TARGET}
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        BUNDLE DESTINATION .
-        RUNTIME_DEPENDENCY_SET xaimassist_app_runtime_dependencies
+        FILES
+            ${PROJECT_SOURCE_DIR}/assets/XAimAssist.desktop
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
     )
 
     install(
-        RUNTIME_DEPENDENCY_SET xaimassist_app_runtime_dependencies
-        PRE_EXCLUDE_REGEXES
-            "api-ms-win-.*"
-            "ext-ms-.*"
-            ".*[\\\\/](Qt6|libQt6).*"
-        POST_EXCLUDE_REGEXES
-            ".*[\\\\/]system32[\\\\/].*\\.dll"
-            ".*[\\\\/]Windows[\\\\/].*\\.dll"
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_BINDIR}
-    )
-else()
-    install(
-        TARGETS ${XAIMASSIST_APP_TARGET}
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        BUNDLE DESTINATION .
+        FILES
+            ${PROJECT_SOURCE_DIR}/assets/XAimAssist.png
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/pixmaps
     )
 endif()
 
-if(XAIMASSIST_ENABLE_DEPLOYMENT AND COMMAND qt_generate_deploy_app_script)
-    qt_generate_deploy_app_script(
-        TARGET ${XAIMASSIST_APP_TARGET}
-        OUTPUT_SCRIPT XAIMASSIST_QT_DEPLOY_SCRIPT
-        NO_UNSUPPORTED_PLATFORM_ERROR
+if(WIN32)
+    install(
+        FILES
+            ${PROJECT_SOURCE_DIR}/assets/XAimAssist.ico
+        DESTINATION ${CMAKE_INSTALL_BINDIR}
     )
-    install(SCRIPT ${XAIMASSIST_QT_DEPLOY_SCRIPT})
 endif()
 
 vtk_module_autoinit(

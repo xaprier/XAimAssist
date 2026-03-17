@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=XAimAssist
+Comment=An open-source 3D FPS aim training application built with modern C++ architecture, Qt6, and VTK rendering.
+Exec=XAimAssist
+Icon=XAimAssist
+Categories=Utility;
+Keywords=aim;assist;fps;aimlabs;

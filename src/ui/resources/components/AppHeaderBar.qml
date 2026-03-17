@@ -27,6 +27,24 @@ Item {
         RowLayout {
             anchors.fill: parent
             anchors.margins: 14
+            spacing: 12
+            
+            Image {
+                id: appLogo
+                Layout.alignment: Qt.AlignVCenter
+                Layout.preferredHeight: parent.height - 4
+                Layout.maximumHeight: parent.height - 4
+                Layout.preferredWidth: Layout.preferredHeight
+                Layout.maximumWidth: Layout.maximumHeight
+
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/xaimassist/ui/XAimAssist.png"
+                sourceSize.width: 256
+                sourceSize.height: 256
+                smooth: true
+                mipmap: true
+                clip: true
+            }
 
             ColumnLayout {
                 spacing: 2

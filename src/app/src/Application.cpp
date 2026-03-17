@@ -2,6 +2,7 @@
 #include "app/Application.hpp"
 
 #include <QApplication>
+#include <QIcon>
 #include <QMainWindow>
 #include <QQmlContext>
 #include <QQmlError>
@@ -9,6 +10,7 @@
 #include <QQuickWidget>
 #include <QResource>
 #include <QStackedLayout>
+#include <QQuickWindow>
 #include <QSurfaceFormat>
 #include <QTimer>
 #include <algorithm>
@@ -47,6 +49,7 @@
 #include "persistence/SessionHistory.hpp"
 #include "persistence/SettingsManager.hpp"
 #include "ui/UiViewModel.hpp"
+#include "ui/Version.hpp"
 #include "world/World.hpp"
 #include "world/WorldRenderSync.hpp"
 
@@ -76,8 +79,32 @@ int Application::Run(int argc, char* argv[]) {
 
     QSurfaceFormat::setDefaultFormat(engine::Engine::RecommendedSurfaceFormat());
     QQuickStyle::setStyle(QStringLiteral("Material"));
+    QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
 
     QApplication qtApplication(argc, argv);
+    const QString applicationName =
+        QString::fromUtf8(ui::version::APP_NAME);
+    const QString applicationVersion =
+        QString::fromUtf8(ui::version::APP_VERSION);
+    const QString applicationOrganization =
+        QString::fromUtf8(ui::version::APP_ORGANIZATION);
+
+    if (!applicationName.isEmpty()) {
+        qtApplication.setApplicationName(applicationName);
+    }
+
+    if (!applicationVersion.isEmpty()) {
+        qtApplication.setApplicationVersion(applicationVersion);
+    }
+
+    if (!applicationOrganization.isEmpty()) {
+        qtApplication.setOrganizationName(applicationOrganization);
+    }
+
+    const QIcon applicationIcon(QStringLiteral(":/xaimassist/ui/XAimAssist.png"));
+    if (!applicationIcon.isNull()) {
+        qtApplication.setWindowIcon(applicationIcon);
+    }
 
     CompositionRoot compositionRoot;
     RuntimeServices services = compositionRoot.CreateRuntimeServices();
@@ -128,7 +155,12 @@ int Application::Run(int argc, char* argv[]) {
     uiViewModel.ReturnToMainMenu();
 
     QMainWindow window;
-    window.setWindowTitle(QStringLiteral("XAimAssist - Phase 11"));
+    QString windowTitle = applicationName.isEmpty() ? QStringLiteral("XAimAssist") : applicationName;
+
+    window.setWindowTitle(windowTitle);
+    if (!applicationIcon.isNull()) {
+        window.setWindowIcon(applicationIcon);
+    }
     window.resize(1480, 860);
 
     auto* viewportWidget = services.engine->CreateViewport(&window);

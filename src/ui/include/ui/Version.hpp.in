@@ -1,0 +1,14 @@
+#ifndef UI_VERSION_HPP
+#define UI_VERSION_HPP
+
+namespace xaimassist::ui::version {
+inline constexpr const char* APP_NAME = "@PROJECT_NAME@";
+inline constexpr const char* APP_VERSION = "@PROJECT_VERSION@";
+inline constexpr const char* APP_VERSION_MAJOR = "@PROJECT_VERSION_MAJOR@";
+inline constexpr const char* APP_VERSION_MINOR = "@PROJECT_VERSION_MINOR@";
+inline constexpr const char* APP_VERSION_PATCH = "@PROJECT_VERSION_PATCH@";
+inline constexpr const char* APP_ORGANIZATION = "@PROJECT_ORGANIZATION@";
+inline constexpr const char* APP_GITHUB_URL = "@PROJECT_HOMEPAGE_URL@";
+}  // namespace xaimassist::ui::version
+
+#endif  // UI_VERSION_HPP

@@ -1,0 +1,331 @@
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+name: Create Tag/Release and Build Deployment
+
+permissions:
+    contents: write
+    pull-requests: write
+
+env:
+    QT_VERSION: 6.10.1
+    NAME: XAimAssist
+    BUILD_TYPE: Release
+    VTK_VERSION_MAJOR: 9
+    VTK_VERSION_MINOR: 5
+    VTK_VERSION_PATCH: 2
+
+jobs:
+    release:
+        runs-on: ubuntu-22.04
+        outputs:
+            release_created: ${{ steps.create_release.outputs.release_created }}
+            upload_url: ${{ steps.create_release.outputs.upload_url }}
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Create Release
+              id: create_release
+              uses: xaprier/actions-semver@latest
+              with:
+                  draft: false
+                  prerelease: false
+                  include-letter-v: true
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+    build-linux:
+        needs: [release]
+        runs-on: ubuntu-22.04
+        strategy:
+            matrix:
+                arch: [x86_64]
+        if: needs.release.outputs.release_created == 'true'
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  submodules: true
+
+            - name: Install dependencies for build
+              run: |
+                  sudo add-apt-repository universe
+                  sudo apt-get update
+                  sudo apt-get install -y cmake libfuse2 wget file
+
+            - name: Set up GCC Version 13 for C++20
+              run: |
+                  sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+                  sudo apt-get update
+                  sudo apt-get install -y g++-13
+                  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100
+                  sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 100
+
+            - name: Download pre-built VTK shared library
+              uses: suisei-cn/actions-download-file@v1.0.1
+              with:
+                  url: https://github.com/xaprier/vtk-builds-qt/releases/download/VTK-${{env.VTK_VERSION_MAJOR}}.${{env.VTK_VERSION_MINOR}}.${{env.VTK_VERSION_PATCH}}-shared/vtk-Linux-x86_64.tar.gz
+                  target: ${{github.workspace}}/
+
+            # Install VTK-Compatible version of Qt
+            - name: Install Qt
+              uses: jurplel/install-qt-action@v4
+              with:
+                  version: ${{ env.QT_VERSION }}
+                  arch: "linux_gcc_64"
+                  dir: "${{ github.workspace }}/qt/"
+                  modules: "qtmultimedia qtcharts"
+                  install-deps: "true"
+                  set-env: "true"
+
+            - name: Create folders
+              run: |
+                  mkdir -p ${{github.workspace}}/vtk
+
+            - name: Extract VTK tgz
+              run: |
+                  tar -xvzf vtk-Linux-x86_64.tar.gz -C vtk/
+
+            - name: Configure Project
+              run: |
+                  cmake . -B build \
+                      -DCMAKE_BUILD_TYPE=Release \
+                      -DCMAKE_INSTALL_PREFIX="${{ github.workspace }}/AppDir/usr" \
+                      -DCMAKE_PREFIX_PATH="${QT_ROOT_DIR}" \
+                      -DVTK_DIR=${{github.workspace}}/vtk/lib/cmake/vtk-${{env.VTK_VERSION_MAJOR}}.${{env.VTK_VERSION_MINOR}}/
+
+            - name: Build Project
+              run: |
+                  cmake --build build -j$(nproc)
+                  cmake --install build --config Release
+
+            - name: Install LinuxDeployQt
+              run: |
+                  wget -c -nv https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage -O linuxdeployqt.AppImage
+                  chmod +x linuxdeployqt.AppImage
+
+            - name: Build AppImage
+              run: |
+                  export PATH=$QT_ROOT_DIR/bin:$PATH
+                  export LD_LIBRARY_PATH=${{ github.workspace }}/qt/lib:$LD_LIBRARY_PATH
+                  export LD_LIBRARY_PATH=${{ github.workspace }}/vtk/lib:$LD_LIBRARY_PATH
+                  echo $LD_LIBRARY_PATH
+                  ./linuxdeployqt.AppImage AppDir/usr/share/applications/${{ env.NAME }}.desktop -qmldir=./src/ui/resources -appimage -exclude-libs=libqsqlmimer,libqsqloci
+              env:
+                  QMAKE: /usr/lib/qt6/bin/qmake6
+
+            - name: Remove linuxdeployqt and rename AppImage
+              run: |
+                  rm linuxdeployqt.AppImage
+                  APPIMAGE_FILE=$(ls | grep '\.AppImage$')
+                  mv $APPIMAGE_FILE ${{ env.NAME }}-${{ matrix.arch }}.AppImage
+
+            - name: Upload Release Asset
+              id: upload-release-asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ needs.release.outputs.upload_url }}
+                  asset_path: ./${{ env.NAME }}-${{ matrix.arch }}.AppImage
+                  asset_name: ${{ env.NAME }}-${{ matrix.arch }}.AppImage
+                  asset_content_type: application/octet-stream
+
+    build-windows:
+        needs: [release]
+        runs-on: windows-2022
+        if: needs.release.outputs.release_created == 'true'
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  submodules: recursive
+
+            # Configure MSVC
+            - name: Configure MSVC
+              uses: ilammy/msvc-dev-cmd@v1
+              with:
+                  arch: x86_64
+
+            # Install VTK-Compatible version of Qt
+            - name: Install Qt
+              uses: jurplel/install-qt-action@v4
+              with:
+                  version: ${{ env.QT_VERSION }}
+                  arch: "win64_msvc2022_64"
+                  dir: "${{ github.workspace }}/qt/"
+                  modules: "qtmultimedia qtcharts"
+                  install-deps: "true"
+                  set-env: "true"
+
+            # Setup env
+            - name: Setup env
+              run: |
+                  qmake --version
+                  cmake --version
+
+            - name: Download pre-built VTK shared library
+              uses: suisei-cn/actions-download-file@v1.0.1
+              with:
+                  url: https://github.com/xaprier/vtk-builds-qt/releases/download/VTK-${{env.VTK_VERSION_MAJOR}}.${{env.VTK_VERSION_MINOR}}.${{env.VTK_VERSION_PATCH}}-shared/vtk-Windows-x86_64.tar.gz
+                  target: ${{github.workspace}}/
+
+            - name: Create folders
+              run: |
+                  mkdir -p ${{github.workspace}}/vtk
+
+            - name: Extract VTK tgz
+              run: |
+                  tar -xvzf vtk-Windows-x86_64.tar.gz -C ${{github.workspace}}/vtk
+
+            - name: Configure Project
+              run: |
+                  cmake . -B build -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${{ github.workspace }}/AppDir/usr" -DCMAKE_PREFIX_PATH="${QT_ROOT_DIR}" -DUSE_VTK=ON -DVTK_DIR=${{github.workspace}}/vtk/lib/cmake/vtk-${{env.VTK_VERSION_MAJOR}}.${{env.VTK_VERSION_MINOR}}/
+
+            - name: Build Project
+              run: |
+                  cmake --build build
+                  cmake --install build --config Release
+
+            - name: Run windeployqt
+              shell: pwsh
+              run: |
+                  $exe = "${{ github.workspace }}\AppDir\usr\bin\XAimAssist.exe"
+                  windeployqt6.exe $exe --qmldir "${{ github.workspace }}\src\ui\resources"
+
+            - name: Copy Required VTK Libraries to Binary Path
+              shell: pwsh
+              run: |
+                $dst = "${{ github.workspace }}\AppDir\usr\bin"
+                New-Item -ItemType Directory -Force -Path $dst | Out-Null
+
+                $candidateDirs = @(
+                    "${{ github.workspace }}\vtk\bin",
+                    "${{ github.workspace }}\vtk\lib"
+                )
+
+                $vtkDlls = @(
+                    "vtkGUISupportQt-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll",
+                    "vtkRenderingOpenGL2-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll",
+                    "vtkRenderingCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll",
+                    "vtkFiltersSources-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonExecutionModel-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtksys-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkInteractionWidgets-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkInteractionStyle-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersExtraction-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonDataModel-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonSystem-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtktoken-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonMisc-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersGeneral-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonComputationalGeometry-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonColor-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersGeometry-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonTransforms-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkRenderingHyperTreeGrid-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOImage-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkRenderingUI-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkglad-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkRenderingFreeType-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkImagingCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkCommonMath-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkdoubleconversion-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkloguru-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkRenderingContext2D-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkpugixml-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersStatistics-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersHyperTree-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkParallelDIY-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkParallelCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkfmt-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersHybrid-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersModeling-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersTexture-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkDICOMParser-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkmetaio-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkpng-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtktiff-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkImagingGeneral-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkImagingHybrid-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkRenderingAnnotation-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersVerdict-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersReduction-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkkissfft-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkzlib-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkjpeg-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkfreetype-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkImagingSources-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkImagingColor-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOLegacy-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOCore-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkverdict-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOXML-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOXMLParser-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtklz4-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkIOCellGrid-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtklzma-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkexpat-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                    "vtkFiltersCellGrid-${{ env.VTK_VERSION_MAJOR }}.${{ env.VTK_VERSION_MINOR }}.dll"
+                )
+
+                foreach ($dll in $vtkDlls) {
+                    $found = $null
+
+                    foreach ($dir in $candidateDirs) {
+                        $candidate = Join-Path $dir $dll
+                        if (Test-Path $candidate) {
+                            $found = $candidate
+                            break
+                        }
+                    }
+
+                    if (-not $found) {
+                        # last-resort: recursive search under vtk
+                        $hit = Get-ChildItem -Path "${{ github.workspace }}\vtk" -Recurse -File -Filter $dll -ErrorAction SilentlyContinue | Select-Object -First 1
+                        if ($hit) { $found = $hit.FullName }
+                    }
+
+                    if (-not $found) {
+                        Write-Host "Available VTK DLLs (for debug):"
+                        Get-ChildItem -Path "${{ github.workspace }}\vtk" -Recurse -File -Filter "vtk*.dll" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+                        throw "Required VTK DLL not found: $dll"
+                    }
+
+                    Copy-Item -Path $found -Destination $dst -Force
+                    Write-Host "Copied: $found -> $dst"
+                }
+
+                Write-Host "Final vtk dlls in output:"
+                Get-ChildItem -Path $dst -Filter "vtk*.dll" | Select-Object -ExpandProperty Name
+
+            - name: Update ISS script(powershell script)
+              shell: pwsh
+              run: |
+                  pwd
+                  .\update_iss_script.ps1
+                  pwd
+                  ls
+
+            - name: Run ISS to create installer
+              shell: pwsh
+              run: |
+                  $innoSetupPath = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+                  $outputDir = "${{ github.workspace }}"
+                  & $innoSetupPath /O"$outputDir" ${{ github.workspace }}\installer_script_updated.iss
+
+            - name: Upload Release Asset
+              id: upload-release-asset
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ needs.release.outputs.upload_url }}
+                  asset_path: ${{ github.workspace }}\${{ env.NAME }}-x64-installer.exe
+                  asset_name: ${{ env.NAME }}-x64-installer.exe
+                  asset_content_type: application/x-msdownload

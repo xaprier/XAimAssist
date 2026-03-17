@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/xaimassist/ui">
         <file>MainView.qml</file>
+        <file>XAimAssist.png</file>
         <file>components/AppHeaderBar.qml</file>
         <file>components/NavigationTabs.qml</file>
         <file>components/ModeSelectionPanel.qml</file>
@@ -11,6 +12,7 @@
         <file>components/MenuOverviewPanel.qml</file>
         <file>components/ColorEditor.qml</file>
         <file>components/SettingsPanel.qml</file>
+        <file>components/About.qml</file>
         <file>components/PauseTrainingCard.qml</file>
         <file>components/TrainingHudBar.qml</file>
         <file>components/FpsCounterOverlay.qml</file>

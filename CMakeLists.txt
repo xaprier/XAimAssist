@@ -1,6 +1,14 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.21)
 
-project(XAimAssist VERSION 0.1.0 LANGUAGES C CXX)
+project(
+    XAimAssist
+    VERSION 1.0.0
+    LANGUAGES C CXX
+    DESCRIPTION "An open-source 3D FPS aim training application built with modern C++ architecture, Qt6, and VTK rendering."
+    HOMEPAGE_URL "https://github.com/xaprier/XAimAssist"
+)
+
+set(PROJECT_ORGANIZATION "xaprier")
 
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs)
@@ -22,9 +30,17 @@ endif()
 option(XAIMASSIST_BUILD_TESTS "Build tests" OFF)
 option(XAIMASSIST_ENABLE_DEPLOYMENT "Enable deployment install hooks" ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Widgets Sql Qml Quick QuickWidgets QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS
+    Core
+    Gui
+    Widgets
+    Sql
+    Qml
+    Quick
+    QuickWidgets
+    QuickControls2)
 
-find_package(VTK 9.2 REQUIRED COMPONENTS
+find_package(VTK 9 REQUIRED COMPONENTS
     CommonColor
     CommonCore
     FiltersSources
