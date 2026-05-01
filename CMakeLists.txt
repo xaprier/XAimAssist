@@ -33,6 +33,15 @@ endif()
 option(XAIMASSIST_BUILD_TESTS "Build tests" OFF)
 option(XAIMASSIST_ENABLE_DEPLOYMENT "Enable deployment install hooks" ON)
 
+# On Linux, prefer the system Qt6 so it matches the ABI of system VTK.
+# The Qt Installer puts an older version earlier in CMAKE_PREFIX_PATH which
+# causes link-time symbol mismatches (qt_version_tag@Qt_6.N) when VTK was
+# compiled against the system Qt.
+if(UNIX AND NOT APPLE AND NOT DEFINED Qt6_DIR AND EXISTS "/usr/lib/cmake/Qt6")
+    set(Qt6_DIR "/usr/lib/cmake/Qt6" CACHE PATH "Qt6 CMake dir (system)")
+    message(STATUS "XAimAssist: using system Qt6 at ${Qt6_DIR}")
+endif()
+
 find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui

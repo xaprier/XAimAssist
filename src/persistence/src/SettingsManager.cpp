@@ -203,7 +203,9 @@ bool SettingsManager::_LoadFromDatabase(std::int64_t profileId) {
         "crosshair_border_thickness, "
         "crosshair_horizontal_length, crosshair_vertical_length, "
         "crosshair_gap, fps_enabled, fps_position, selected_mode_id, "
-        "mode_overrides_json "
+        "mode_overrides_json, "
+        "window_start_fullscreen, keybind_toggle_fullscreen, "
+        "keybind_toggle_fps_counter, keybind_toggle_crosshair "
         "FROM profile_settings "
         "WHERE profile_id = :profileId "
         "LIMIT 1;");
@@ -268,6 +270,18 @@ bool SettingsManager::_LoadFromDatabase(std::int64_t profileId) {
     m_settings.gameplay.modeOverrides =
         parseModeOverridesJson(query.value(29).toString());
 
+    m_settings.window.startFullscreen = query.value(30).toInt() != 0;
+
+    const auto loadKey = [&](int col, std::string& target) {
+        const std::string v = query.value(col).toString().trimmed().toStdString();
+        if (!v.empty()) {
+            target = v;
+        }
+    };
+    loadKey(31, m_settings.keybindings.toggleFullscreen);
+    loadKey(32, m_settings.keybindings.toggleFpsCounter);
+    loadKey(33, m_settings.keybindings.toggleCrosshair);
+
     return true;
 }
 
@@ -291,7 +305,9 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         "crosshair_border_thickness, "
         "crosshair_horizontal_length, crosshair_vertical_length, "
         "crosshair_gap, fps_enabled, fps_position, selected_mode_id, "
-        "mode_overrides_json, updated_at"
+        "mode_overrides_json, "
+        "window_start_fullscreen, keybind_toggle_fullscreen, "
+        "keybind_toggle_fps_counter, keybind_toggle_crosshair, updated_at"
         ") VALUES ("
         ":profileId, :RawInputEnabled, :CmPer360, :Dpi, :SensitivityScale, "
         ":YawMultiplier, :PitchMultiplier, :scopedMultiplier, "
@@ -305,6 +321,8 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         ":CrosshairHorizontalLength, :CrosshairVerticalLength, "
         ":CrosshairGap, :fpsEnabled, :fpsPosition, :SelectedModeId, "
         ":ModeOverridesJson, "
+        ":windowStartFullscreen, :keybindToggleFullscreen, "
+        ":keybindToggleFpsCounter, :keybindToggleCrosshair, "
         "datetime('now')"
         ")"
         "ON CONFLICT(profile_id) DO UPDATE SET "
@@ -341,6 +359,10 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         "fps_position = excluded.fps_position,"
         "selected_mode_id = excluded.selected_mode_id,"
         "mode_overrides_json = excluded.mode_overrides_json,"
+        "window_start_fullscreen = excluded.window_start_fullscreen,"
+        "keybind_toggle_fullscreen = excluded.keybind_toggle_fullscreen,"
+        "keybind_toggle_fps_counter = excluded.keybind_toggle_fps_counter,"
+        "keybind_toggle_crosshair = excluded.keybind_toggle_crosshair,"
         "updated_at = datetime('now');");
 
     query.bindValue(":profileId", static_cast<qlonglong>(profileId));
@@ -389,6 +411,14 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
                     QString::fromStdString(m_settings.gameplay.selectedModeId));
     query.bindValue(":ModeOverridesJson", serializeModeOverridesJson(
                                               m_settings.gameplay.modeOverrides));
+    query.bindValue(":windowStartFullscreen",
+                    m_settings.window.startFullscreen ? 1 : 0);
+    query.bindValue(":keybindToggleFullscreen",
+                    QString::fromStdString(m_settings.keybindings.toggleFullscreen));
+    query.bindValue(":keybindToggleFpsCounter",
+                    QString::fromStdString(m_settings.keybindings.toggleFpsCounter));
+    query.bindValue(":keybindToggleCrosshair",
+                    QString::fromStdString(m_settings.keybindings.toggleCrosshair));
 
     return query.exec();
 }

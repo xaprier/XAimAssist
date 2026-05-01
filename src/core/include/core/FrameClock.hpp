@@ -38,9 +38,9 @@ class FrameClock {
     void Reset();
 
     /// Sample wall clock, compute delta & fixed steps.
-    TickResult Tick();
+    [[nodiscard]] TickResult Tick();
 
-    double FixedStepSeconds() const noexcept;
+    [[nodiscard]] double FixedStepSeconds() const noexcept;
 
   private:
     using Clock = std::chrono::steady_clock;

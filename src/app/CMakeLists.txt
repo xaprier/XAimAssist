@@ -21,6 +21,7 @@ if(WIN32)
 endif()
 
 add_executable(${XAIMASSIST_APP_TARGET}
+    include/app/TrainingFlowController.hpp
     src/Application.cpp
     src/AppGameplaySettingsProvider.cpp
     src/CompositionRoot.cpp
@@ -30,6 +31,7 @@ add_executable(${XAIMASSIST_APP_TARGET}
     src/main.cpp
     src/RuntimeLoop.cpp
     src/SettingsConverter.cpp
+    src/TrainingFlowController.cpp
     src/WorldRaycastHitTest.cpp
 )
 

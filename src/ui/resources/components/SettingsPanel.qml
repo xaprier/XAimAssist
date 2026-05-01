@@ -795,6 +795,144 @@ Item {
                 }
             }
 
+            Rectangle {
+                Layout.fillWidth: true
+                radius: 14
+                color: root.theme.surface
+                border.color: root.theme.border
+                implicitHeight: windowSettingsColumn.implicitHeight + 28
+
+                ColumnLayout {
+                    id: windowSettingsColumn
+                    anchors.fill: parent
+                    anchors.margins: 14
+                    spacing: 8
+
+                    Label {
+                        text: root.i18n.settingsWindow
+                        color: root.theme.textPrimary
+                        font.bold: true
+                    }
+
+                    RowLayout {
+                        ColumnLayout {
+                            Layout.fillWidth: true
+
+                            Label {
+                                text: root.i18n.settingsWindowFullscreen
+                                color: root.theme.textSecondary
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                            }
+
+                            Label {
+                                text: root.i18n.settingsWindowFullscreenHint
+                                color: root.theme.textDisabled || root.theme.textSecondary
+                                font.pixelSize: 11
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                            }
+
+                            Switch {
+                                checked: root.viewModel.startFullscreen
+                                onToggled: root.viewModel.startFullscreen = checked
+                            }
+                        }
+                    }
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                radius: 14
+                color: root.theme.surface
+                border.color: root.theme.border
+                implicitHeight: keybindingsColumn.implicitHeight + 28
+
+                ColumnLayout {
+                    id: keybindingsColumn
+                    anchors.fill: parent
+                    anchors.margins: 14
+                    spacing: 8
+
+                    Label {
+                        text: root.i18n.settingsKeybindings
+                        color: root.theme.textPrimary
+                        font.bold: true
+                    }
+
+                    GridLayout {
+                        Layout.fillWidth: true
+                        columns: root.wideLayout ? 3 : 1
+                        columnSpacing: 12
+                        rowSpacing: 8
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            Label {
+                                text: root.i18n.settingsKeybindToggleFullscreen
+                                color: root.theme.textSecondary
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                            }
+                            ComboBox {
+                                Layout.fillWidth: true
+                                model: ["F11", "F", "Alt+Return", "Ctrl+F"]
+                                currentIndex: {
+                                    const idx = model.indexOf(root.viewModel.keybindToggleFullscreen)
+                                    return idx >= 0 ? idx : 0
+                                }
+                                onActivated: function(idx) {
+                                    root.viewModel.keybindToggleFullscreen = model[idx]
+                                }
+                            }
+                        }
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            Label {
+                                text: root.i18n.settingsKeybindToggleFpsCounter
+                                color: root.theme.textSecondary
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                            }
+                            ComboBox {
+                                Layout.fillWidth: true
+                                model: ["F3", "F4", "F5", "F6"]
+                                currentIndex: {
+                                    const idx = model.indexOf(root.viewModel.keybindToggleFpsCounter)
+                                    return idx >= 0 ? idx : 0
+                                }
+                                onActivated: function(idx) {
+                                    root.viewModel.keybindToggleFpsCounter = model[idx]
+                                }
+                            }
+                        }
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            Label {
+                                text: root.i18n.settingsKeybindToggleCrosshair
+                                color: root.theme.textSecondary
+                                Layout.fillWidth: true
+                                wrapMode: Text.WordWrap
+                            }
+                            ComboBox {
+                                Layout.fillWidth: true
+                                model: ["F2", "F1", "F4", "C"]
+                                currentIndex: {
+                                    const idx = model.indexOf(root.viewModel.keybindToggleCrosshair)
+                                    return idx >= 0 ? idx : 0
+                                }
+                                onActivated: function(idx) {
+                                    root.viewModel.keybindToggleCrosshair = model[idx]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

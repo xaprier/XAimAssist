@@ -1,7 +1,7 @@
 /// @file StatTracker.cpp
 #include "stats/StatTracker.hpp"
 
-#include <assert.h>
+#include <cassert>
 
 #include <algorithm>
 #include <cmath>
