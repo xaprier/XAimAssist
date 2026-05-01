@@ -1249,6 +1249,94 @@ void UiViewModel::SetKeybindToggleCrosshair(const QString& key) {
     _SetKeybindField(m_settings.keybindings.toggleCrosshair, key);
 }
 
+bool UiViewModel::GetSoundEnabled() const {
+    return m_settings.sound.enabled;
+}
+
+void UiViewModel::SetSoundEnabled(bool enabled) {
+    if (m_settings.sound.enabled == enabled) return;
+    m_settings.sound.enabled = enabled;
+    emit settingsChanged();
+    _EmitSettingsApplied();
+}
+
+double UiViewModel::GetSoundVolume() const {
+    return static_cast<double>(m_settings.sound.volume);
+}
+
+void UiViewModel::SetSoundVolume(double value) {
+    const auto clamped = static_cast<float>(std::clamp(value, 0.0, 1.0));
+    if (_NearlyEqual(static_cast<double>(m_settings.sound.volume),
+                     static_cast<double>(clamped))) {
+        return;
+    }
+    m_settings.sound.volume = clamped;
+    emit settingsChanged();
+    _EmitSettingsApplied();
+}
+
+static QString hitVariantToString(persistence::HitSoundVariant v) {
+    switch (v) {
+        case persistence::HitSoundVariant::Click:   return QStringLiteral("click");
+        case persistence::HitSoundVariant::Gunshot: return QStringLiteral("gunshot");
+        case persistence::HitSoundVariant::Pop:     return QStringLiteral("pop");
+        case persistence::HitSoundVariant::Swish:
+        default:                                    return QStringLiteral("swish");
+    }
+}
+
+static persistence::HitSoundVariant hitVariantFromString(const QString& s) {
+    if (s == QStringLiteral("click"))   return persistence::HitSoundVariant::Click;
+    if (s == QStringLiteral("gunshot")) return persistence::HitSoundVariant::Gunshot;
+    if (s == QStringLiteral("pop"))     return persistence::HitSoundVariant::Pop;
+    return persistence::HitSoundVariant::Swish;
+}
+
+static QString missVariantToString(persistence::MissSoundVariant v) {
+    switch (v) {
+        case persistence::MissSoundVariant::Empty:   return QStringLiteral("empty");
+        case persistence::MissSoundVariant::Beep:    return QStringLiteral("beep");
+        case persistence::MissSoundVariant::Tap:     return QStringLiteral("tap");
+        case persistence::MissSoundVariant::MissPop: return QStringLiteral("miss_pop");
+        case persistence::MissSoundVariant::Oops:    return QStringLiteral("oops");
+        case persistence::MissSoundVariant::Ricochet:
+        default:                                     return QStringLiteral("ricochet");
+    }
+}
+
+static persistence::MissSoundVariant missVariantFromString(const QString& s) {
+    if (s == QStringLiteral("empty"))    return persistence::MissSoundVariant::Empty;
+    if (s == QStringLiteral("beep"))     return persistence::MissSoundVariant::Beep;
+    if (s == QStringLiteral("tap"))      return persistence::MissSoundVariant::Tap;
+    if (s == QStringLiteral("miss_pop")) return persistence::MissSoundVariant::MissPop;
+    if (s == QStringLiteral("oops"))     return persistence::MissSoundVariant::Oops;
+    return persistence::MissSoundVariant::Ricochet;
+}
+
+QString UiViewModel::GetSoundHitVariant() const {
+    return hitVariantToString(m_settings.sound.hitSound);
+}
+
+void UiViewModel::SetSoundHitVariant(const QString& variant) {
+    const auto parsed = hitVariantFromString(variant);
+    if (m_settings.sound.hitSound == parsed) return;
+    m_settings.sound.hitSound = parsed;
+    emit settingsChanged();
+    _EmitSettingsApplied();
+}
+
+QString UiViewModel::GetSoundMissVariant() const {
+    return missVariantToString(m_settings.sound.missSound);
+}
+
+void UiViewModel::SetSoundMissVariant(const QString& variant) {
+    const auto parsed = missVariantFromString(variant);
+    if (m_settings.sound.missSound == parsed) return;
+    m_settings.sound.missSound = parsed;
+    emit settingsChanged();
+    _EmitSettingsApplied();
+}
+
 void UiViewModel::ToggleFpsCounterRuntime() {
     m_settings.ui.fpsCounter.enabled = !m_settings.ui.fpsCounter.enabled;
     emit settingsChanged();

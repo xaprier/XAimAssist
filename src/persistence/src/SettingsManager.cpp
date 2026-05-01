@@ -205,7 +205,8 @@ bool SettingsManager::_LoadFromDatabase(std::int64_t profileId) {
         "crosshair_gap, fps_enabled, fps_position, selected_mode_id, "
         "mode_overrides_json, "
         "window_start_fullscreen, keybind_toggle_fullscreen, "
-        "keybind_toggle_fps_counter, keybind_toggle_crosshair "
+        "keybind_toggle_fps_counter, keybind_toggle_crosshair, "
+        "sound_enabled, sound_volume, sound_hit_variant, sound_miss_variant "
         "FROM profile_settings "
         "WHERE profile_id = :profileId "
         "LIMIT 1;");
@@ -282,6 +283,14 @@ bool SettingsManager::_LoadFromDatabase(std::int64_t profileId) {
     loadKey(32, m_settings.keybindings.toggleFpsCounter);
     loadKey(33, m_settings.keybindings.toggleCrosshair);
 
+    m_settings.sound.enabled = query.value(34).toInt() != 0;
+    m_settings.sound.volume =
+        static_cast<float>(std::clamp(query.value(35).toDouble(), 0.0, 1.0));
+    m_settings.sound.hitSound =
+        _ParseHitSoundVariant(query.value(36).toString().toStdString());
+    m_settings.sound.missSound =
+        _ParseMissSoundVariant(query.value(37).toString().toStdString());
+
     return true;
 }
 
@@ -307,7 +316,9 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         "crosshair_gap, fps_enabled, fps_position, selected_mode_id, "
         "mode_overrides_json, "
         "window_start_fullscreen, keybind_toggle_fullscreen, "
-        "keybind_toggle_fps_counter, keybind_toggle_crosshair, updated_at"
+        "keybind_toggle_fps_counter, keybind_toggle_crosshair, "
+        "sound_enabled, sound_volume, sound_hit_variant, sound_miss_variant, "
+        "updated_at"
         ") VALUES ("
         ":profileId, :RawInputEnabled, :CmPer360, :Dpi, :SensitivityScale, "
         ":YawMultiplier, :PitchMultiplier, :scopedMultiplier, "
@@ -323,6 +334,7 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         ":ModeOverridesJson, "
         ":windowStartFullscreen, :keybindToggleFullscreen, "
         ":keybindToggleFpsCounter, :keybindToggleCrosshair, "
+        ":soundEnabled, :soundVolume, :soundHitVariant, :soundMissVariant, "
         "datetime('now')"
         ")"
         "ON CONFLICT(profile_id) DO UPDATE SET "
@@ -363,6 +375,10 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
         "keybind_toggle_fullscreen = excluded.keybind_toggle_fullscreen,"
         "keybind_toggle_fps_counter = excluded.keybind_toggle_fps_counter,"
         "keybind_toggle_crosshair = excluded.keybind_toggle_crosshair,"
+        "sound_enabled = excluded.sound_enabled,"
+        "sound_volume = excluded.sound_volume,"
+        "sound_hit_variant = excluded.sound_hit_variant,"
+        "sound_miss_variant = excluded.sound_miss_variant,"
         "updated_at = datetime('now');");
 
     query.bindValue(":profileId", static_cast<qlonglong>(profileId));
@@ -419,6 +435,12 @@ bool SettingsManager::_SaveToDatabase(std::int64_t profileId) const {
                     QString::fromStdString(m_settings.keybindings.toggleFpsCounter));
     query.bindValue(":keybindToggleCrosshair",
                     QString::fromStdString(m_settings.keybindings.toggleCrosshair));
+    query.bindValue(":soundEnabled", m_settings.sound.enabled ? 1 : 0);
+    query.bindValue(":soundVolume", static_cast<double>(m_settings.sound.volume));
+    query.bindValue(":soundHitVariant",
+                    QString::fromStdString(_ToStorageValue(m_settings.sound.hitSound)));
+    query.bindValue(":soundMissVariant",
+                    QString::fromStdString(_ToStorageValue(m_settings.sound.missSound)));
 
     return query.exec();
 }
@@ -624,6 +646,46 @@ std::string SettingsManager::_ToStorageValue(UiOverlayAnchor anchor) {
         case UiOverlayAnchor::TopRight:
         default:
             return "top_right";
+    }
+}
+
+HitSoundVariant
+SettingsManager::_ParseHitSoundVariant(const std::string& value) noexcept {
+    if (value == "click")   return HitSoundVariant::Click;
+    if (value == "gunshot") return HitSoundVariant::Gunshot;
+    if (value == "pop")     return HitSoundVariant::Pop;
+    return HitSoundVariant::Swish;
+}
+
+MissSoundVariant
+SettingsManager::_ParseMissSoundVariant(const std::string& value) noexcept {
+    if (value == "empty")    return MissSoundVariant::Empty;
+    if (value == "beep")     return MissSoundVariant::Beep;
+    if (value == "tap")      return MissSoundVariant::Tap;
+    if (value == "miss_pop") return MissSoundVariant::MissPop;
+    if (value == "oops")     return MissSoundVariant::Oops;
+    return MissSoundVariant::Ricochet;
+}
+
+std::string SettingsManager::_ToStorageValue(HitSoundVariant variant) {
+    switch (variant) {
+        case HitSoundVariant::Click:   return "click";
+        case HitSoundVariant::Gunshot: return "gunshot";
+        case HitSoundVariant::Pop:     return "pop";
+        case HitSoundVariant::Swish:
+        default:                       return "swish";
+    }
+}
+
+std::string SettingsManager::_ToStorageValue(MissSoundVariant variant) {
+    switch (variant) {
+        case MissSoundVariant::Empty:    return "empty";
+        case MissSoundVariant::Beep:     return "beep";
+        case MissSoundVariant::Tap:      return "tap";
+        case MissSoundVariant::MissPop:  return "miss_pop";
+        case MissSoundVariant::Oops:     return "oops";
+        case MissSoundVariant::Ricochet:
+        default:                         return "ricochet";
     }
 }
 }  // namespace xaimassist::persistence

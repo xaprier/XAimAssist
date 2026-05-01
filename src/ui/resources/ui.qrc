@@ -18,5 +18,15 @@
         <file>components/FpsCounterOverlay.qml</file>
         <file>components/TrainingCrosshairOverlay.qml</file>
         <file>components/TrainingStateOverlays.qml</file>
+        <file>sounds/hit_swish.wav</file>
+        <file>sounds/hit_click.wav</file>
+        <file>sounds/hit_gunshot.wav</file>
+        <file>sounds/hit_pop.wav</file>
+        <file>sounds/miss_ricochet.wav</file>
+        <file>sounds/miss_empty.wav</file>
+        <file>sounds/miss_beep.wav</file>
+        <file>sounds/miss_tap.wav</file>
+        <file>sounds/miss_pop.wav</file>
+        <file>sounds/miss_oops.wav</file>
     </qresource>
 </RCC>

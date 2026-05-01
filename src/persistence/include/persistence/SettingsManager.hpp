@@ -53,9 +53,13 @@ class SettingsManager {
     static UiThemeMode _ParseThemeMode(const std::string& value) noexcept;
     static UiLanguage _ParseLanguage(const std::string& value) noexcept;
     static UiOverlayAnchor _ParseOverlayAnchor(const std::string& value) noexcept;
+    static HitSoundVariant _ParseHitSoundVariant(const std::string& value) noexcept;
+    static MissSoundVariant _ParseMissSoundVariant(const std::string& value) noexcept;
     static std::string _ToStorageValue(UiThemeMode ThemeMode);
     static std::string _ToStorageValue(UiLanguage language);
     static std::string _ToStorageValue(UiOverlayAnchor anchor);
+    static std::string _ToStorageValue(HitSoundVariant variant);
+    static std::string _ToStorageValue(MissSoundVariant variant);
 
     static double _ClampMin(double value, double minimum) noexcept;
     static double _Clamp01(double value) noexcept;

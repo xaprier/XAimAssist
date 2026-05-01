@@ -34,6 +34,7 @@ class StatTracker;
 }
 
 namespace xaimassist::app {
+class SoundSystem;
 
 /// Aggregates shared pointers to every core runtime service.
 struct RuntimeServices {
@@ -47,6 +48,7 @@ struct RuntimeServices {
     std::shared_ptr<persistence::SessionHistory> sessionHistory;
     std::shared_ptr<persistence::SettingsManager> settingsManager;
     std::shared_ptr<stats::StatTracker> statTracker;
+    std::shared_ptr<SoundSystem> soundSystem;
 };
 
 /**

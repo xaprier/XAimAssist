@@ -12,7 +12,7 @@
 #include "core/Logger.hpp"
 
 namespace {
-constexpr int CURRENT_SCHEMA_VERSION = 9;
+constexpr int CURRENT_SCHEMA_VERSION = 10;
 
 std::atomic<std::uint64_t> g_connectionCounter{1};
 
@@ -460,6 +460,43 @@ bool PersistenceDatabase::_EnsureSchema() {
         }
 
         version = 9;
+    }
+
+    if (version < 10) {
+        _LogInfo("Applying schema migration to version 10");
+        if (!_TableHasColumn("profile_settings", "sound_enabled") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN sound_enabled INTEGER "
+                               "NOT NULL DEFAULT 1;")) {
+            return false;
+        }
+
+        if (!_TableHasColumn("profile_settings", "sound_volume") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN sound_volume REAL "
+                               "NOT NULL DEFAULT 0.8;")) {
+            return false;
+        }
+
+        if (!_TableHasColumn("profile_settings", "sound_hit_variant") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN sound_hit_variant TEXT "
+                               "NOT NULL DEFAULT 'default';")) {
+            return false;
+        }
+
+        if (!_TableHasColumn("profile_settings", "sound_miss_variant") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN sound_miss_variant TEXT "
+                               "NOT NULL DEFAULT 'default';")) {
+            return false;
+        }
+
+        if (!_SetSchemaVersion(10)) {
+            return false;
+        }
+
+        version = 10;
     }
 
     if (version < CURRENT_SCHEMA_VERSION) {
