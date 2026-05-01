@@ -16,8 +16,12 @@ InputManager::InputManager(core::Logger& logger, QObject* parent) : QObject(pare
 InputManager::~InputManager() { DetachViewport(); }
 
 void InputManager::AttachViewport(QWidget* viewportWidget) {
-    if (m_viewportWidget == viewportWidget) {
+    if (viewportWidget == nullptr) {
         m_logger.Warning("input", "Attempted to attach null viewport");
+        return;
+    }
+
+    if (m_viewportWidget == viewportWidget) {
         return;
     }
 

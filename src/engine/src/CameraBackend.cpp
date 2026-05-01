@@ -11,9 +11,11 @@
 #include "core/Logger.hpp"
 
 namespace {
-constexpr double PI = 3.14159265358979323846;
+constexpr double kPi = 3.14159265358979323846;
 
-double toRadians(double degrees) { return degrees * PI / 180.0; }
+constexpr double toRadians(double degrees) noexcept {
+    return degrees * kPi / 180.0;
+}
 }  // namespace
 
 namespace xaimassist::engine {
@@ -75,7 +77,6 @@ void CameraBackend::_SyncToRenderer() const {
         return;
     }
 
-    // what if m_renderer is not a valid pointer
     try {
         auto* camera = m_renderer->GetActiveCamera();
         if (camera == nullptr) {

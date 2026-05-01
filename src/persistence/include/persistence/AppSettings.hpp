@@ -87,11 +87,23 @@ struct UiPreferences {
     FpsCounterPreferences fpsCounter;
 };
 
+struct WindowPreferences {
+    bool startFullscreen{true};
+};
+
+struct KeyBindingsPreferences {
+    std::string toggleFullscreen{"F11"};
+    std::string toggleFpsCounter{"F3"};
+    std::string toggleCrosshair{"F2"};
+};
+
 /// Root aggregate of all persisted application settings.
 struct AppSettings {
     InputPreferences input;
     GameplayPreferences gameplay;
     UiPreferences ui;
+    WindowPreferences window;
+    KeyBindingsPreferences keybindings;
 };
 }  // namespace xaimassist::persistence
 

@@ -147,6 +147,18 @@ class UiViewModel final : public QObject {
     Q_PROPERTY(QString languageCode READ GetLanguageCode WRITE SetLanguageCode
                    NOTIFY settingsChanged)
 
+    Q_PROPERTY(bool startFullscreen READ GetStartFullscreen WRITE
+                   SetStartFullscreen NOTIFY settingsChanged)
+    Q_PROPERTY(QString keybindToggleFullscreen READ GetKeybindToggleFullscreen
+                   WRITE SetKeybindToggleFullscreen NOTIFY settingsChanged)
+    Q_PROPERTY(QString keybindToggleFpsCounter READ GetKeybindToggleFpsCounter
+                   WRITE SetKeybindToggleFpsCounter NOTIFY settingsChanged)
+    Q_PROPERTY(QString keybindToggleCrosshair READ GetKeybindToggleCrosshair
+                   WRITE SetKeybindToggleCrosshair NOTIFY settingsChanged)
+
+    Q_PROPERTY(bool crosshairKeyToggleEnabled READ GetCrosshairKeyToggleEnabled
+                   NOTIFY trainingOverlayChanged)
+
   public:
     /// Descriptor mirroring GameModeSettingMetadata for UI consumption.
     struct ModeSettingDescriptor {
@@ -449,6 +461,22 @@ class UiViewModel final : public QObject {
     QString GetLanguageCode() const;
     void SetLanguageCode(const QString& code);
 
+    bool GetStartFullscreen() const;
+    void SetStartFullscreen(bool value);
+
+    QString GetKeybindToggleFullscreen() const;
+    void SetKeybindToggleFullscreen(const QString& key);
+
+    QString GetKeybindToggleFpsCounter() const;
+    void SetKeybindToggleFpsCounter(const QString& key);
+
+    QString GetKeybindToggleCrosshair() const;
+    void SetKeybindToggleCrosshair(const QString& key);
+
+    bool GetCrosshairKeyToggleEnabled() const;
+    void ToggleCrosshairKeyOverride();
+    void ToggleFpsCounterRuntime();
+
     /// Start the currently selected mode with configured overrides.
     Q_INVOKABLE void RequestStartSelectedMode();
 
@@ -546,6 +574,7 @@ class UiViewModel final : public QObject {
     void _RebuildI18n();
     void _RebuildModesVariant();
     void _EmitSettingsApplied();
+    void _SetKeybindField(std::string& target, const QString& key);
 
     QVariantMap _ToSessionVariant(const persistence::SessionRecord& record) const;
     static QString _FormatIsoDateTime(const std::string& iso);
@@ -581,6 +610,7 @@ class UiViewModel final : public QObject {
     int m_countdownValue{0};
     bool m_pauseMenuVisible{false};
     bool m_crosshairVisible{false};
+    bool m_crosshairKeyToggle{true};
     double m_currentFps{0.0};
     double m_fpsAccumulatorSeconds{0.0};
     int m_fpsAccumulatorFrames{0};
