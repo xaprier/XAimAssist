@@ -15,6 +15,19 @@ bool RenderContext::Initialize(QVTKOpenGLNativeWidget& viewportWidget) {
     m_renderWindow = vtkSmartPointer<vtkGenericOpenGLRenderWindow>::New();
     m_renderer = vtkSmartPointer<vtkRenderer>::New();
 
+    // Disable VSync: for a competitive aim trainer, latency matters more than
+    // tear-free presentation. swap_interval=0 lets the GPU render as fast as
+    // possible and is the standard setting in competitive FPS applications.
+    m_renderWindow->SetSwapControl(0);
+
+    // Double-buffering is mandatory; triple-buffering adds latency on some
+    // drivers so we explicitly request exactly two back buffers.
+    m_renderWindow->DoubleBufferOn();
+
+    // Multi-sampling is handled via QSurfaceFormat (set globally in
+    // Application::Run). Disabling it at the VTK level avoids double-MSAA.
+    m_renderWindow->SetMultiSamples(0);
+
     m_renderWindow->AddRenderer(m_renderer);
     m_viewportWidget->setRenderWindow(m_renderWindow);
 
