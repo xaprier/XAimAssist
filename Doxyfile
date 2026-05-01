@@ -1,6 +1,6 @@
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = "XAimAssist"
-PROJECT_NUMBER         = "1.0.8"
+PROJECT_NUMBER         = "1.1.0"
 PROJECT_BRIEF          = "Open-source 3D FPS aim training framework"
 PROJECT_LOGO           = assets/XAimAssist_DocSize.png
 OUTPUT_DIRECTORY       = docs/

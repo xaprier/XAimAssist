@@ -156,6 +156,15 @@ class UiViewModel final : public QObject {
     Q_PROPERTY(QString keybindToggleCrosshair READ GetKeybindToggleCrosshair
                    WRITE SetKeybindToggleCrosshair NOTIFY settingsChanged)
 
+    Q_PROPERTY(bool soundEnabled READ GetSoundEnabled WRITE SetSoundEnabled
+                   NOTIFY settingsChanged)
+    Q_PROPERTY(double soundVolume READ GetSoundVolume WRITE SetSoundVolume
+                   NOTIFY settingsChanged)
+    Q_PROPERTY(QString soundHitVariant READ GetSoundHitVariant WRITE
+                   SetSoundHitVariant NOTIFY settingsChanged)
+    Q_PROPERTY(QString soundMissVariant READ GetSoundMissVariant WRITE
+                   SetSoundMissVariant NOTIFY settingsChanged)
+
     Q_PROPERTY(bool crosshairKeyToggleEnabled READ GetCrosshairKeyToggleEnabled
                    NOTIFY trainingOverlayChanged)
 
@@ -463,6 +472,18 @@ class UiViewModel final : public QObject {
 
     bool GetStartFullscreen() const;
     void SetStartFullscreen(bool value);
+
+    bool GetSoundEnabled() const;
+    void SetSoundEnabled(bool enabled);
+
+    double GetSoundVolume() const;
+    void SetSoundVolume(double value);
+
+    QString GetSoundHitVariant() const;
+    void SetSoundHitVariant(const QString& variant);
+
+    QString GetSoundMissVariant() const;
+    void SetSoundMissVariant(const QString& variant);
 
     QString GetKeybindToggleFullscreen() const;
     void SetKeybindToggleFullscreen(const QString& key);

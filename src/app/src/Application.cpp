@@ -25,6 +25,7 @@
 #include "app/GameplayWorldBridge.hpp"
 #include "app/RuntimeLoop.hpp"
 #include "app/SettingsConverter.hpp"
+#include "app/SoundSystem.hpp"
 #include "app/TrainingFlowController.hpp"
 #include "app/WorldRaycastHitTest.hpp"
 #include "core/CoreEvents.hpp"
@@ -221,6 +222,10 @@ int Application::Run(int argc, char* argv[]) {
                  settings.gameplay.target.color.blue});
 
             services.engine->SetBackgroundColor(viewportBackground);
+
+            if (services.soundSystem) {
+                services.soundSystem->ApplySettings(settings.sound);
+            }
         };
 
     applyRuntimeSettings(runtimeSettings,
