@@ -1,12 +1,13 @@
 /// @file EventBus.cpp
 #include "core/EventBus.hpp"
 
-#include "core/CoreEvents.hpp"
 #include <algorithm>
 #include <memory>
 #include <mutex>
 #include <utility>
 #include <vector>
+
+#include "core/CoreEvents.hpp"
 
 namespace xaimassist::core {
 EventBus::SubscriptionId EventBus::Subscribe(EventHandler handler) {

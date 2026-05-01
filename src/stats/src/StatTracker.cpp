@@ -1,9 +1,8 @@
 /// @file StatTracker.cpp
 #include "stats/StatTracker.hpp"
 
-#include <cassert>
-
 #include <algorithm>
+#include <cassert>
 #include <cmath>
 #include <utility>
 

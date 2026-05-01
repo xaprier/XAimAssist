@@ -290,9 +290,9 @@ void TrainingFlowController::_StartActiveMode() {
     }
 
     if (!m_deps.modeOrchestrator.StartMode(m_pendingModeId,
-                                            m_pendingModeDurationSeconds,
-                                            m_pendingModeDistanceUnits,
-                                            m_pendingModeSettings)) {
+                                           m_pendingModeDurationSeconds,
+                                           m_pendingModeDistanceUnits,
+                                           m_pendingModeSettings)) {
         m_deps.logger.Error("app", "Failed to start selected game mode");
         _ReturnToMenuState();
         return;
@@ -336,7 +336,7 @@ void TrainingFlowController::_StopRuntimeLoop() {
 
 void TrainingFlowController::_SetOverlayMousePassthrough(bool passthrough) {
     m_deps.uiOverlay->setAttribute(Qt::WA_TransparentForMouseEvents,
-                                    passthrough);
+                                   passthrough);
 
     if (!passthrough) {
         m_deps.uiOverlay->raise();
@@ -362,7 +362,7 @@ void TrainingFlowController::_RefreshSessionHistory(
     std::optional<persistence::SessionRecord> bestSession;
     if (!modeId.empty()) {
         bestSession = m_deps.sessionHistory->GetBestSessionForMode(profileId,
-                                                                    modeId);
+                                                                   modeId);
     }
 
     m_deps.uiViewModel.SetSessionHistory(recentSessions, bestSession);
@@ -385,11 +385,11 @@ void TrainingFlowController::_ResetPipelineTimings() {
 }
 
 void TrainingFlowController::_CollectPipelineSample(std::uint64_t sessionId,
-                                                     std::uint32_t fixedSteps,
-                                                     double framePipelineMs,
-                                                     double uiFrameTickMs,
-                                                     double modeUpdateMs,
-                                                     double worldSyncMs) {
+                                                    std::uint32_t fixedSteps,
+                                                    double framePipelineMs,
+                                                    double uiFrameTickMs,
+                                                    double modeUpdateMs,
+                                                    double worldSyncMs) {
     if (!m_pipelineTimings.active ||
         m_pipelineTimings.sessionId != sessionId) {
         return;
@@ -484,7 +484,7 @@ void TrainingFlowController::_LogPipelineReport(
            << ", worstWorldSyncMs=" << m_pipelineTimings.worldSyncWorstMs;
 
     m_deps.logger.LogIf("DEBUG_PERF", core::LogLevel::Info, "perf",
-                         report.str());
+                        report.str());
     _ResetPipelineTimings();
 }
 
@@ -571,7 +571,7 @@ void TrainingFlowController::_OnSessionSummary(
             persistence::SessionHistory::ValidateSessionSummary(summary);
         if (!validation.valid) {
             m_deps.uiViewModel.SetLatestResultInvalid(summary.sessionId,
-                                                       validation.reasonCode);
+                                                      validation.reasonCode);
             return;
         }
 
@@ -587,7 +587,7 @@ void TrainingFlowController::_OnSessionSummary(
 
         const auto modePerformance =
             m_deps.sessionHistory->GetModePerformanceSummary(profileId,
-                                                               summary.modeId);
+                                                             summary.modeId);
         if (!modePerformance.has_value()) {
             return;
         }
@@ -604,10 +604,10 @@ void TrainingFlowController::_OnSessionSummary(
                 double weight) {
                 const double best =
                     PerformanceClassifier::BestValueForDirection(aggregate,
-                                                                  direction);
+                                                                 direction);
                 const double worst =
                     PerformanceClassifier::WorstValueForDirection(aggregate,
-                                                                   direction);
+                                                                  direction);
                 const std::string tier =
                     PerformanceClassifier::ClassifyMetricTier(
                         modePerformance->sessionCount, value,
@@ -618,7 +618,7 @@ void TrainingFlowController::_OnSessionSummary(
                         metricId, tier, value, aggregate.average, best, worst});
                 evaluatedComparisons.push_back(
                     PerformanceClassifier::EvaluatedMetricComparison{tier,
-                                                                      weight});
+                                                                     weight});
             };
 
         appendMetric("score", static_cast<double>(summary.score),

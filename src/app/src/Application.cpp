@@ -9,9 +9,9 @@
 #include <QQmlError>
 #include <QQuickStyle>
 #include <QQuickWidget>
+#include <QQuickWindow>
 #include <QShortcut>
 #include <QStackedLayout>
-#include <QQuickWindow>
 #include <QSurfaceFormat>
 #include <array>
 #include <cstdlib>
