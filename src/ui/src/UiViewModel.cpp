@@ -1250,7 +1250,7 @@ void UiViewModel::SetKeybindToggleCrosshair(const QString& key) {
 }
 
 void UiViewModel::ToggleFpsCounterRuntime() {
-    m_settings.ui.fpsCounterEnabled = !m_settings.ui.fpsCounterEnabled;
+    m_settings.ui.fpsCounter.enabled = !m_settings.ui.fpsCounter.enabled;
     emit settingsChanged();
 }
 

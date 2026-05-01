@@ -294,7 +294,6 @@ int Application::Run(int argc, char* argv[]) {
     services.inputManager->SetCaptureEnabled(false);
 
     worldRenderSync.Sync();
-    runtimeLoop.Start();
 
     uiOverlay->setAttribute(Qt::WA_TransparentForMouseEvents, false);
     uiOverlay->raise();

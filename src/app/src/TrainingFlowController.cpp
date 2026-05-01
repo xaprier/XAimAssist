@@ -202,6 +202,8 @@ void TrainingFlowController::Initialize() {
                 _OnSessionSummary(*e);
             }
         });
+
+    _EnsureRuntimeLoopRunning();
 }
 
 void TrainingFlowController::Stop() {
