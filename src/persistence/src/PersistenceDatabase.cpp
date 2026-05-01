@@ -12,7 +12,7 @@
 #include "core/Logger.hpp"
 
 namespace {
-constexpr int CURRENT_SCHEMA_VERSION = 7;
+constexpr int CURRENT_SCHEMA_VERSION = 9;
 
 std::atomic<std::uint64_t> g_connectionCounter{1};
 
@@ -414,6 +414,52 @@ bool PersistenceDatabase::_EnsureSchema() {
         }
 
         version = 7;
+    }
+
+    if (version < 8) {
+        _LogInfo("Applying schema migration to version 8");
+        if (!_TableHasColumn("profile_settings", "window_start_fullscreen") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN window_start_fullscreen INTEGER "
+                               "NOT NULL DEFAULT 1;")) {
+            return false;
+        }
+
+        if (!_TableHasColumn("profile_settings", "keybind_toggle_fullscreen") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN keybind_toggle_fullscreen TEXT "
+                               "NOT NULL DEFAULT 'F11';")) {
+            return false;
+        }
+
+        if (!_SetSchemaVersion(8)) {
+            return false;
+        }
+
+        version = 8;
+    }
+
+    if (version < 9) {
+        _LogInfo("Applying schema migration to version 9");
+        if (!_TableHasColumn("profile_settings", "keybind_toggle_fps_counter") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN keybind_toggle_fps_counter TEXT "
+                               "NOT NULL DEFAULT 'F3';")) {
+            return false;
+        }
+
+        if (!_TableHasColumn("profile_settings", "keybind_toggle_crosshair") &&
+            !_ExecuteStatement("ALTER TABLE profile_settings "
+                               "ADD COLUMN keybind_toggle_crosshair TEXT "
+                               "NOT NULL DEFAULT 'F2';")) {
+            return false;
+        }
+
+        if (!_SetSchemaVersion(9)) {
+            return false;
+        }
+
+        version = 9;
     }
 
     if (version < CURRENT_SCHEMA_VERSION) {

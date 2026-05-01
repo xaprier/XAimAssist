@@ -1,7 +1,9 @@
 add_library(xaimassist_ui
-	include/ui/UiViewModel.hpp
-	src/UiViewModel.cpp
-	resources/ui.qrc
+    include/ui/UiViewModel.hpp
+    include/ui/I18nProvider.hpp
+    src/UiViewModel.cpp
+    src/I18nProvider.cpp
+    resources/ui.qrc
 )
 
 target_include_directories(xaimassist_ui

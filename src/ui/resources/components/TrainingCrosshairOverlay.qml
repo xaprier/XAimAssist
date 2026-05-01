@@ -7,7 +7,7 @@ Item {
     required property var uiModel
 
     anchors.centerIn: parent
-    visible: uiModel.crosshairVisible
+    visible: uiModel.crosshairVisible && uiModel.crosshairKeyToggleEnabled
         width: uiModel.crosshairLinesEnabled
            ? Math.max(96,
                     2 * (uiModel.crosshairHorizontalLength +
