@@ -122,6 +122,7 @@ Item {
                                 ]
                                 textRole: "label"
                                 currentIndex: root.viewModel.languageCode === "tr" ? 1 : 0
+                                onModelChanged: currentIndex = root.viewModel.languageCode === "tr" ? 1 : 0
                                 onActivated: function(comboIndex) {
                                     root.viewModel.languageCode = model[comboIndex].value
                                 }

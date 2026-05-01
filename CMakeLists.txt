@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.21)
 
 project(
     XAimAssist
-    VERSION 1.0.0
+    VERSION 1.0.8
     LANGUAGES C CXX
     DESCRIPTION "An open-source 3D FPS aim training application built with modern C++ architecture, Qt6, and VTK rendering."
     HOMEPAGE_URL "https://github.com/xaprier/XAimAssist"

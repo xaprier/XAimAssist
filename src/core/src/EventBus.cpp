@@ -1,8 +1,13 @@
 /// @file EventBus.cpp
 #include "core/EventBus.hpp"
 
+#include <algorithm>
+#include <memory>
+#include <mutex>
 #include <utility>
 #include <vector>
+
+#include "core/CoreEvents.hpp"
 
 namespace xaimassist::core {
 EventBus::SubscriptionId EventBus::Subscribe(EventHandler handler) {
@@ -12,8 +17,8 @@ EventBus::SubscriptionId EventBus::Subscribe(EventHandler handler) {
 
     std::lock_guard<std::mutex> lock(m_mutex);
     const SubscriptionId subscriptionId = m_nextSubscriptionId++;
-    m_handlers.emplace(subscriptionId,
-                       std::make_shared<EventHandler>(std::move(handler)));
+    m_handlers.emplace_back(subscriptionId,
+                            std::make_shared<EventHandler>(std::move(handler)));
     return subscriptionId;
 }
 
@@ -23,26 +28,30 @@ void EventBus::Unsubscribe(SubscriptionId subscriptionId) {
     }
 
     std::lock_guard<std::mutex> lock(m_mutex);
-    m_handlers.erase(subscriptionId);
+    const auto it = std::find_if(m_handlers.begin(), m_handlers.end(),
+                                 [subscriptionId](const auto& entry) {
+                                     return entry.first == subscriptionId;
+                                 });
+    if (it != m_handlers.end()) {
+        m_handlers.erase(it);
+    }
 }
 
 void EventBus::Publish(const events::CoreEvent& event) const {
-    std::vector<std::shared_ptr<EventHandler>> handlers;
+    std::vector<std::shared_ptr<EventHandler>> snapshot;
 
     {
         std::lock_guard<std::mutex> lock(m_mutex);
-        handlers.reserve(m_handlers.size());
+        snapshot.reserve(m_handlers.size());
         for (const auto& [_, handler] : m_handlers) {
-            handlers.push_back(handler);
+            snapshot.push_back(handler);
         }
     }
 
-    for (const auto& handler : handlers) {
-        if (!handler || !(*handler)) {
-            continue;
+    for (const auto& handler : snapshot) {
+        if (handler && *handler) {
+            (*handler)(event);
         }
-
-        (*handler)(event);
     }
 }
 }  // namespace xaimassist::core
