@@ -31,7 +31,8 @@
 #include <functional>
 #include <memory>
 #include <mutex>
-#include <unordered_map>
+#include <utility>
+#include <vector>
 
 #include "core/CoreEvents.hpp"
 
@@ -60,7 +61,7 @@ class EventBus {
 
   private:
     mutable std::mutex m_mutex;
-    std::unordered_map<SubscriptionId, std::shared_ptr<EventHandler>> m_handlers;
+    std::vector<std::pair<SubscriptionId, std::shared_ptr<EventHandler>>> m_handlers;
     SubscriptionId m_nextSubscriptionId{1};
 };
 }  // namespace xaimassist::core
