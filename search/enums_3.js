@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metricdirection_0',['MetricDirection',['../namespacexaimassist_1_1app_1_1PerformanceClassifier.html#aae6fbfea69c82d6d26166b2602ae5121',1,'xaimassist::app::PerformanceClassifier']]]
+  ['loglevel_0',['LogLevel',['../namespacexaimassist_1_1core.html#ac1db639bf08d4a8b85d67567467a76b9',1,'xaimassist::core']]]
 ];

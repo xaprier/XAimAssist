@@ -13,10 +13,12 @@ var searchData=
   ['settingsmanager_2ecpp_10',['SettingsManager.cpp',['../SettingsManager_8cpp.html',1,'']]],
   ['settingsmanager_2ehpp_11',['SettingsManager.hpp',['../SettingsManager_8hpp.html',1,'']]],
   ['settingsprovider_2ehpp_12',['SettingsProvider.hpp',['../SettingsProvider_8hpp.html',1,'']]],
-  ['staticspheremode_2ecpp_13',['StaticSphereMode.cpp',['../StaticSphereMode_8cpp.html',1,'']]],
-  ['staticspheremode_2ehpp_14',['StaticSphereMode.hpp',['../StaticSphereMode_8hpp.html',1,'']]],
-  ['stattracker_2ecpp_15',['StatTracker.cpp',['../StatTracker_8cpp.html',1,'']]],
-  ['stattracker_2ehpp_16',['StatTracker.hpp',['../StatTracker_8hpp.html',1,'']]],
-  ['strafingtargetsmode_2ecpp_17',['StrafingTargetsMode.cpp',['../StrafingTargetsMode_8cpp.html',1,'']]],
-  ['strafingtargetsmode_2ehpp_18',['StrafingTargetsMode.hpp',['../StrafingTargetsMode_8hpp.html',1,'']]]
+  ['soundsystem_2ecpp_13',['SoundSystem.cpp',['../SoundSystem_8cpp.html',1,'']]],
+  ['soundsystem_2ehpp_14',['SoundSystem.hpp',['../SoundSystem_8hpp.html',1,'']]],
+  ['staticspheremode_2ecpp_15',['StaticSphereMode.cpp',['../StaticSphereMode_8cpp.html',1,'']]],
+  ['staticspheremode_2ehpp_16',['StaticSphereMode.hpp',['../StaticSphereMode_8hpp.html',1,'']]],
+  ['stattracker_2ecpp_17',['StatTracker.cpp',['../StatTracker_8cpp.html',1,'']]],
+  ['stattracker_2ehpp_18',['StatTracker.hpp',['../StatTracker_8hpp.html',1,'']]],
+  ['strafingtargetsmode_2ecpp_19',['StrafingTargetsMode.cpp',['../StrafingTargetsMode_8cpp.html',1,'']]],
+  ['strafingtargetsmode_2ehpp_20',['StrafingTargetsMode.hpp',['../StrafingTargetsMode_8hpp.html',1,'']]]
 ];

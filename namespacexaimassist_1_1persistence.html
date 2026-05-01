@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="XAimAssist_DocSize.png"/></td>
   <td id="projectalign">
-   <div id="projectname">XAimAssist<span id="projectnumber">&#160;1.0.8</span>
+   <div id="projectname">XAimAssist<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Open-source 3D FPS aim training framework</div>
   </td>
@@ -150,6 +150,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxaimassist_1_1persistence_1_1SettingsManager.html">SettingsManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads/writes serialised <a class="el" href="structxaimassist_1_1persistence_1_1AppSettings.html" title="Root aggregate of all persisted application settings.">AppSettings</a> from/to the SQLite database, optionally importing data from a legacy QSettings INI file.  <a href="classxaimassist_1_1persistence_1_1SettingsManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxaimassist_1_1persistence_1_1SoundPreferences.html">SoundPreferences</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxaimassist_1_1persistence_1_1TargetPreferences.html">TargetPreferences</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxaimassist_1_1persistence_1_1UiPreferences.html">UiPreferences</a></td></tr>
@@ -173,8 +175,93 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75caa9146bfc669fddc88db2c4d89297d0e9a">BottomRight</a>
  }</td></tr>
 <tr class="separator:a9818e68109e907e3f8c04ef0d92f75ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ac6f09e54612277624384a7ece3cdb" id="r_a56ac6f09e54612277624384a7ece3cdb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdb">HitSoundVariant</a> { <a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdba27a84eaeba1c4495b698a670d327959d">Swish</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdba316853cc3718335f11c048e33b9be98a">Click</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdba2200d5875d9848b05a6dad14f4879211">Gunshot</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdba0ae61bd0474e04c9f1195d4baa0213a0">Pop</a>
+ }</td></tr>
+<tr class="memdesc:a56ac6f09e54612277624384a7ece3cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available hit sound variants (must match filenames under sounds/).  <a href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdb">More...</a><br /></td></tr>
+<tr class="separator:a56ac6f09e54612277624384a7ece3cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af25b4f798944c746b39a05a892eea1" id="r_a8af25b4f798944c746b39a05a892eea1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1">MissSoundVariant</a> { <br />
+&#160;&#160;<a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1ae38f161f104780d651e487674b3130ac">Ricochet</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1ace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1a4e5e247c20ab935eb6dcda8a4176176e">Beep</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1a73cf2f244bc0cb0d205b99c04fa13978">Tap</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1a89fe8d32b18a7de70b908fc6ead8cc7e">MissPop</a>
+, <a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1a76390d3429ba451f1e37daae6bc85b51">Oops</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a8af25b4f798944c746b39a05a892eea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available miss sound variants (must match filenames under sounds/).  <a href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1">More...</a><br /></td></tr>
+<tr class="separator:a8af25b4f798944c746b39a05a892eea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a56ac6f09e54612277624384a7ece3cdb" name="a56ac6f09e54612277624384a7ece3cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ac6f09e54612277624384a7ece3cdb">&#9670;&#160;</a></span>HitSoundVariant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacexaimassist_1_1persistence.html#a56ac6f09e54612277624384a7ece3cdb">xaimassist::persistence::HitSoundVariant</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Available hit sound variants (must match filenames under sounds/). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a56ac6f09e54612277624384a7ece3cdba27a84eaeba1c4495b698a670d327959d" name="a56ac6f09e54612277624384a7ece3cdba27a84eaeba1c4495b698a670d327959d"></a>Swish&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ac6f09e54612277624384a7ece3cdba316853cc3718335f11c048e33b9be98a" name="a56ac6f09e54612277624384a7ece3cdba316853cc3718335f11c048e33b9be98a"></a>Click&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ac6f09e54612277624384a7ece3cdba2200d5875d9848b05a6dad14f4879211" name="a56ac6f09e54612277624384a7ece3cdba2200d5875d9848b05a6dad14f4879211"></a>Gunshot&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ac6f09e54612277624384a7ece3cdba0ae61bd0474e04c9f1195d4baa0213a0" name="a56ac6f09e54612277624384a7ece3cdba0ae61bd0474e04c9f1195d4baa0213a0"></a>Pop&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="AppSettings_8hpp_source.html#l00101">101</a> of file <a class="el" href="AppSettings_8hpp_source.html">AppSettings.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8af25b4f798944c746b39a05a892eea1" name="a8af25b4f798944c746b39a05a892eea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af25b4f798944c746b39a05a892eea1">&#9670;&#160;</a></span>MissSoundVariant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1">xaimassist::persistence::MissSoundVariant</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Available miss sound variants (must match filenames under sounds/). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1ae38f161f104780d651e487674b3130ac" name="a8af25b4f798944c746b39a05a892eea1ae38f161f104780d651e487674b3130ac"></a>Ricochet&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1ace2c8aed9c2fa0cfbed56cbda4d8bf07" name="a8af25b4f798944c746b39a05a892eea1ace2c8aed9c2fa0cfbed56cbda4d8bf07"></a>Empty&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1a4e5e247c20ab935eb6dcda8a4176176e" name="a8af25b4f798944c746b39a05a892eea1a4e5e247c20ab935eb6dcda8a4176176e"></a>Beep&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1a73cf2f244bc0cb0d205b99c04fa13978" name="a8af25b4f798944c746b39a05a892eea1a73cf2f244bc0cb0d205b99c04fa13978"></a>Tap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1a89fe8d32b18a7de70b908fc6ead8cc7e" name="a8af25b4f798944c746b39a05a892eea1a89fe8d32b18a7de70b908fc6ead8cc7e"></a>MissPop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8af25b4f798944c746b39a05a892eea1a76390d3429ba451f1e37daae6bc85b51" name="a8af25b4f798944c746b39a05a892eea1a76390d3429ba451f1e37daae6bc85b51"></a>Oops&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="AppSettings_8hpp_source.html#l00107">107</a> of file <a class="el" href="AppSettings_8hpp_source.html">AppSettings.hpp</a>.</p>
+
+</div>
+</div>
 <a id="aa76c4f60ee06970ecfd54f8fe0bd0b93" name="aa76c4f60ee06970ecfd54f8fe0bd0b93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa76c4f60ee06970ecfd54f8fe0bd0b93">&#9670;&#160;</a></span>UiLanguage</h2>
 

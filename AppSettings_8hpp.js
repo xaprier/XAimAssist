@@ -11,7 +11,22 @@ var AppSettings_8hpp =
     [ "xaimassist::persistence::UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", "structxaimassist_1_1persistence_1_1UiPreferences" ],
     [ "xaimassist::persistence::WindowPreferences", "structxaimassist_1_1persistence_1_1WindowPreferences.html", "structxaimassist_1_1persistence_1_1WindowPreferences" ],
     [ "xaimassist::persistence::KeyBindingsPreferences", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences.html", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences" ],
+    [ "xaimassist::persistence::SoundPreferences", "structxaimassist_1_1persistence_1_1SoundPreferences.html", "structxaimassist_1_1persistence_1_1SoundPreferences" ],
     [ "xaimassist::persistence::AppSettings", "structxaimassist_1_1persistence_1_1AppSettings.html", "structxaimassist_1_1persistence_1_1AppSettings" ],
+    [ "HitSoundVariant", "AppSettings_8hpp.html#a56ac6f09e54612277624384a7ece3cdb", [
+      [ "Swish", "AppSettings_8hpp.html#a56ac6f09e54612277624384a7ece3cdba27a84eaeba1c4495b698a670d327959d", null ],
+      [ "Click", "AppSettings_8hpp.html#a56ac6f09e54612277624384a7ece3cdba316853cc3718335f11c048e33b9be98a", null ],
+      [ "Gunshot", "AppSettings_8hpp.html#a56ac6f09e54612277624384a7ece3cdba2200d5875d9848b05a6dad14f4879211", null ],
+      [ "Pop", "AppSettings_8hpp.html#a56ac6f09e54612277624384a7ece3cdba0ae61bd0474e04c9f1195d4baa0213a0", null ]
+    ] ],
+    [ "MissSoundVariant", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1", [
+      [ "Ricochet", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1ae38f161f104780d651e487674b3130ac", null ],
+      [ "Empty", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1ace2c8aed9c2fa0cfbed56cbda4d8bf07", null ],
+      [ "Beep", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1a4e5e247c20ab935eb6dcda8a4176176e", null ],
+      [ "Tap", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1a73cf2f244bc0cb0d205b99c04fa13978", null ],
+      [ "MissPop", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1a89fe8d32b18a7de70b908fc6ead8cc7e", null ],
+      [ "Oops", "AppSettings_8hpp.html#a8af25b4f798944c746b39a05a892eea1a76390d3429ba451f1e37daae6bc85b51", null ]
+    ] ],
     [ "UiLanguage", "AppSettings_8hpp.html#aa76c4f60ee06970ecfd54f8fe0bd0b93", [
       [ "English", "AppSettings_8hpp.html#aa76c4f60ee06970ecfd54f8fe0bd0b93a78463a384a5aa4fad5fa73e2f506ecfc", null ],
       [ "Turkish", "AppSettings_8hpp.html#aa76c4f60ee06970ecfd54f8fe0bd0b93ac1612bbdebfa45467e8ab814e08daff1", null ]

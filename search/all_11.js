@@ -43,12 +43,13 @@ var searchData=
   ['resetselectedmodesettingstodefaults_40',['ResetSelectedModeSettingsToDefaults',['../classxaimassist_1_1ui_1_1UiViewModel.html#a51ebea73f1c8f56d65758e965e04f01c',1,'xaimassist::ui::UiViewModel']]],
   ['responsibilities_41',['Module Responsibilities',['../index.html#autotoc_md12',1,'']]],
   ['returntomainmenu_42',['ReturnToMainMenu',['../classxaimassist_1_1ui_1_1UiViewModel.html#a4c0da89fe376464a4e3d5d569e0bf6ac',1,'xaimassist::ui::UiViewModel']]],
-  ['rotationeulerdegrees_43',['rotationEulerDegrees',['../structxaimassist_1_1world_1_1TransformComponent.html#abba2ff6022fc590b100d1e8d69190e90',1,'xaimassist::world::TransformComponent']]],
-  ['run_44',['Run',['../classxaimassist_1_1app_1_1Application.html#ab232a8cef86e61a07356d976a0ea56c4',1,'xaimassist::app::Application']]],
-  ['running_45',['Running',['../namespacexaimassist_1_1core_1_1events.html#a5c733eaf1c9ecde9dbd8b0340093515aa5bda814c4aedb126839228f1a3d92f09',1,'xaimassist::core::events']]],
-  ['runtimeloop_46',['runtimeloop',['../classxaimassist_1_1app_1_1RuntimeLoop.html',1,'xaimassist::app::RuntimeLoop'],['../classxaimassist_1_1app_1_1RuntimeLoop.html#afff3f87ad5b20fe396bbddefee3cb6bc',1,'xaimassist::app::RuntimeLoop::RuntimeLoop()'],['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#a8d79c4931e5373a72ad4a1a9880ee9e7',1,'xaimassist::app::TrainingFlowController::Deps::runtimeLoop']]],
-  ['runtimeloop_2ecpp_47',['RuntimeLoop.cpp',['../RuntimeLoop_8cpp.html',1,'']]],
-  ['runtimeloop_2ehpp_48',['RuntimeLoop.hpp',['../RuntimeLoop_8hpp.html',1,'']]],
-  ['runtimeservices_49',['RuntimeServices',['../structxaimassist_1_1app_1_1RuntimeServices.html',1,'xaimassist::app']]],
-  ['runtimesessionid_50',['runtimeSessionId',['../structxaimassist_1_1persistence_1_1SessionRecord.html#a28657490d061283324e3384dd75c6733',1,'xaimassist::persistence::SessionRecord']]]
+  ['ricochet_43',['Ricochet',['../namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1ae38f161f104780d651e487674b3130ac',1,'xaimassist::persistence']]],
+  ['rotationeulerdegrees_44',['rotationEulerDegrees',['../structxaimassist_1_1world_1_1TransformComponent.html#abba2ff6022fc590b100d1e8d69190e90',1,'xaimassist::world::TransformComponent']]],
+  ['run_45',['Run',['../classxaimassist_1_1app_1_1Application.html#ab232a8cef86e61a07356d976a0ea56c4',1,'xaimassist::app::Application']]],
+  ['running_46',['Running',['../namespacexaimassist_1_1core_1_1events.html#a5c733eaf1c9ecde9dbd8b0340093515aa5bda814c4aedb126839228f1a3d92f09',1,'xaimassist::core::events']]],
+  ['runtimeloop_47',['runtimeloop',['../classxaimassist_1_1app_1_1RuntimeLoop.html#afff3f87ad5b20fe396bbddefee3cb6bc',1,'xaimassist::app::RuntimeLoop::RuntimeLoop()'],['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#a8d79c4931e5373a72ad4a1a9880ee9e7',1,'xaimassist::app::TrainingFlowController::Deps::runtimeLoop'],['../classxaimassist_1_1app_1_1RuntimeLoop.html',1,'xaimassist::app::RuntimeLoop']]],
+  ['runtimeloop_2ecpp_48',['RuntimeLoop.cpp',['../RuntimeLoop_8cpp.html',1,'']]],
+  ['runtimeloop_2ehpp_49',['RuntimeLoop.hpp',['../RuntimeLoop_8hpp.html',1,'']]],
+  ['runtimeservices_50',['RuntimeServices',['../structxaimassist_1_1app_1_1RuntimeServices.html',1,'xaimassist::app']]],
+  ['runtimesessionid_51',['runtimeSessionId',['../structxaimassist_1_1persistence_1_1SessionRecord.html#a28657490d061283324e3384dd75c6733',1,'xaimassist::persistence::SessionRecord']]]
 ];

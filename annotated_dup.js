@@ -12,6 +12,7 @@ var annotated_dup =
         [ "GameplayWorldBridge", "classxaimassist_1_1app_1_1GameplayWorldBridge.html", "classxaimassist_1_1app_1_1GameplayWorldBridge" ],
         [ "RuntimeLoop", "classxaimassist_1_1app_1_1RuntimeLoop.html", "classxaimassist_1_1app_1_1RuntimeLoop" ],
         [ "RuntimeServices", "structxaimassist_1_1app_1_1RuntimeServices.html", "structxaimassist_1_1app_1_1RuntimeServices" ],
+        [ "SoundSystem", "classxaimassist_1_1app_1_1SoundSystem.html", "classxaimassist_1_1app_1_1SoundSystem" ],
         [ "TrainingFlowController", "classxaimassist_1_1app_1_1TrainingFlowController.html", "classxaimassist_1_1app_1_1TrainingFlowController" ],
         [ "WorldRaycastHitTest", "classxaimassist_1_1app_1_1WorldRaycastHitTest.html", "classxaimassist_1_1app_1_1WorldRaycastHitTest" ]
       ] ],
@@ -92,6 +93,7 @@ var annotated_dup =
         [ "SessionRecord", "structxaimassist_1_1persistence_1_1SessionRecord.html", "structxaimassist_1_1persistence_1_1SessionRecord" ],
         [ "SessionValidationResult", "structxaimassist_1_1persistence_1_1SessionValidationResult.html", "structxaimassist_1_1persistence_1_1SessionValidationResult" ],
         [ "SettingsManager", "classxaimassist_1_1persistence_1_1SettingsManager.html", "classxaimassist_1_1persistence_1_1SettingsManager" ],
+        [ "SoundPreferences", "structxaimassist_1_1persistence_1_1SoundPreferences.html", "structxaimassist_1_1persistence_1_1SoundPreferences" ],
         [ "TargetPreferences", "structxaimassist_1_1persistence_1_1TargetPreferences.html", "structxaimassist_1_1persistence_1_1TargetPreferences" ],
         [ "UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", "structxaimassist_1_1persistence_1_1UiPreferences" ],
         [ "WindowPreferences", "structxaimassist_1_1persistence_1_1WindowPreferences.html", "structxaimassist_1_1persistence_1_1WindowPreferences" ]

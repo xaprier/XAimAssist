@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['moving_0',['Moving',['../namespacexaimassist_1_1gameplay.html#a08d07f0411dfd0fa48c8f19f00dc045badefe967ad0373b2274fc298f19125ca7',1,'xaimassist::gameplay']]]
+  ['light_0',['Light',['../namespacexaimassist_1_1persistence.html#a99af571897eeb475c6cfdd75df77e8c7a9914a0ce04a7b7b6a8e39bec55064b82',1,'xaimassist::persistence']]],
+  ['lowerisbetter_1',['LowerIsBetter',['../namespacexaimassist_1_1app_1_1PerformanceClassifier.html#aae6fbfea69c82d6d26166b2602ae5121aa4373d76485ecf64e9d6b4c1ccd17575',1,'xaimassist::app::PerformanceClassifier']]]
 ];

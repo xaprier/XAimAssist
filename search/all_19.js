@@ -9,7 +9,8 @@ var searchData=
   ['_7eiscenecommandsink_6',['~ISceneCommandSink',['../classxaimassist_1_1gameplay_1_1ISceneCommandSink.html#a591352d460b97db661240da68418e717',1,'xaimassist::gameplay::ISceneCommandSink']]],
   ['_7epersistencedatabase_7',['~PersistenceDatabase',['../classxaimassist_1_1persistence_1_1PersistenceDatabase.html#a08761e9e6ff4a5d650f2f880672e9a4f',1,'xaimassist::persistence::PersistenceDatabase']]],
   ['_7esessionhistory_8',['~SessionHistory',['../classxaimassist_1_1persistence_1_1SessionHistory.html#a2e228eb9dc816c2222e0582ea26922c2',1,'xaimassist::persistence::SessionHistory']]],
-  ['_7estattracker_9',['~StatTracker',['../classxaimassist_1_1stats_1_1StatTracker.html#a4cf7b02f2d3c4ea2e200bcc35f772d05',1,'xaimassist::stats::StatTracker']]],
-  ['_7etarget_10',['~Target',['../classxaimassist_1_1gameplay_1_1Target.html#acd10d4219556b9b4deb17032ad989583',1,'xaimassist::gameplay::Target']]],
-  ['_7etargetsystem_11',['~TargetSystem',['../classxaimassist_1_1gameplay_1_1TargetSystem.html#a374a9f5fa6f2da942c990a9239b3e636',1,'xaimassist::gameplay::TargetSystem']]]
+  ['_7esoundsystem_9',['~SoundSystem',['../classxaimassist_1_1app_1_1SoundSystem.html#a2fa4df8b567028279b7fabb2ada5cd14',1,'xaimassist::app::SoundSystem']]],
+  ['_7estattracker_10',['~StatTracker',['../classxaimassist_1_1stats_1_1StatTracker.html#a4cf7b02f2d3c4ea2e200bcc35f772d05',1,'xaimassist::stats::StatTracker']]],
+  ['_7etarget_11',['~Target',['../classxaimassist_1_1gameplay_1_1Target.html#acd10d4219556b9b4deb17032ad989583',1,'xaimassist::gameplay::Target']]],
+  ['_7etargetsystem_12',['~TargetSystem',['../classxaimassist_1_1gameplay_1_1TargetSystem.html#a374a9f5fa6f2da942c990a9239b3e636',1,'xaimassist::gameplay::TargetSystem']]]
 ];

@@ -17,6 +17,7 @@ var namespacexaimassist_1_1app =
     [ "GameplayWorldBridge", "classxaimassist_1_1app_1_1GameplayWorldBridge.html", "classxaimassist_1_1app_1_1GameplayWorldBridge" ],
     [ "RuntimeLoop", "classxaimassist_1_1app_1_1RuntimeLoop.html", "classxaimassist_1_1app_1_1RuntimeLoop" ],
     [ "RuntimeServices", "structxaimassist_1_1app_1_1RuntimeServices.html", "structxaimassist_1_1app_1_1RuntimeServices" ],
+    [ "SoundSystem", "classxaimassist_1_1app_1_1SoundSystem.html", "classxaimassist_1_1app_1_1SoundSystem" ],
     [ "TrainingFlowController", "classxaimassist_1_1app_1_1TrainingFlowController.html", "classxaimassist_1_1app_1_1TrainingFlowController" ],
     [ "WorldRaycastHitTest", "classxaimassist_1_1app_1_1WorldRaycastHitTest.html", "classxaimassist_1_1app_1_1WorldRaycastHitTest" ]
 ];

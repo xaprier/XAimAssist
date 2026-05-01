@@ -9,5 +9,6 @@ var structxaimassist_1_1app_1_1RuntimeServices =
     [ "profileManager", "structxaimassist_1_1app_1_1RuntimeServices.html#a54b6c471d92b4e959b071da78583762a", null ],
     [ "sessionHistory", "structxaimassist_1_1app_1_1RuntimeServices.html#ac577efc99f6c4dc627a323814c810152", null ],
     [ "settingsManager", "structxaimassist_1_1app_1_1RuntimeServices.html#a325136f57a9221d5e0805c6ae5a8c767", null ],
+    [ "soundSystem", "structxaimassist_1_1app_1_1RuntimeServices.html#aa24f0e15634eafa0e4ceed1bbb3ed195", null ],
     [ "statTracker", "structxaimassist_1_1app_1_1RuntimeServices.html#adcdb98a8d57681123994e4a14d8154bd", null ]
 ];

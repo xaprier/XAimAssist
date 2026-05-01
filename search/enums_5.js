@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sessionstopreason_0',['SessionStopReason',['../namespacexaimassist_1_1core_1_1events.html#a67ff2ff7c1d76564077aeb694e859a5e',1,'xaimassist::core::events']]]
+  ['renderprimitivetype_0',['RenderPrimitiveType',['../namespacexaimassist_1_1world.html#ae76515e95b2f2736dcbf7222e11f274d',1,'xaimassist::world']]]
 ];

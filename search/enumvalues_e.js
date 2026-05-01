@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['tap_0',['Tap',['../namespacexaimassist_1_1persistence.html#a8af25b4f798944c746b39a05a892eea1a73cf2f244bc0cb0d205b99c04fa13978',1,'xaimassist::persistence']]],
+  ['topleft_1',['TopLeft',['../namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75caab32beb056fbfe36afbabc6c88c81ab36',1,'xaimassist::persistence']]],
+  ['topright_2',['TopRight',['../namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75caa1d85a557894c340c318493f33bfa8efb',1,'xaimassist::persistence']]],
+  ['turkish_3',['Turkish',['../namespacexaimassist_1_1persistence.html#aa76c4f60ee06970ecfd54f8fe0bd0b93ac1612bbdebfa45467e8ab814e08daff1',1,'xaimassist::persistence']]]
+];

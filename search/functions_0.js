@@ -10,7 +10,8 @@ var searchData=
   ['applylookdelta_7',['ApplyLookDelta',['../classxaimassist_1_1engine_1_1CameraBackend.html#a75f1c706110c1191bf93fe31179e9209',1,'xaimassist::engine::CameraBackend']]],
   ['applymodesettings_8',['applymodesettings',['../classxaimassist_1_1gameplay_1_1GameMode.html#af68681e6ecf68f7165bb3d2193754e8d',1,'xaimassist::gameplay::GameMode::ApplyModeSettings()'],['../classxaimassist_1_1gameplay_1_1GridShotMode.html#aa0e1963457222cebf559bd4b9223de05',1,'xaimassist::gameplay::GridShotMode::ApplyModeSettings()']]],
   ['applyposition_9',['ApplyPosition',['../classxaimassist_1_1gameplay_1_1Target.html#afdbcd94befaa2795791c351b8add198c',1,'xaimassist::gameplay::Target']]],
-  ['applyvisibility_10',['ApplyVisibility',['../classxaimassist_1_1gameplay_1_1Target.html#a9b280394ae50a9edddb71ea7c60d0c40',1,'xaimassist::gameplay::Target']]],
-  ['attachviewport_11',['AttachViewport',['../classxaimassist_1_1input_1_1InputManager.html#a551850751cbd0531988ccf4dbcaecc4e',1,'xaimassist::input::InputManager']]],
-  ['availablemodes_12',['AvailableModes',['../classxaimassist_1_1gameplay_1_1GameModeRegistry.html#a7cdca65cc5bb9f7ac40cb14d6778c93f',1,'xaimassist::gameplay::GameModeRegistry']]]
+  ['applysettings_10',['ApplySettings',['../classxaimassist_1_1app_1_1SoundSystem.html#a6fce35ace27453c5603515d9740797c0',1,'xaimassist::app::SoundSystem']]],
+  ['applyvisibility_11',['ApplyVisibility',['../classxaimassist_1_1gameplay_1_1Target.html#a9b280394ae50a9edddb71ea7c60d0c40',1,'xaimassist::gameplay::Target']]],
+  ['attachviewport_12',['AttachViewport',['../classxaimassist_1_1input_1_1InputManager.html#a551850751cbd0531988ccf4dbcaecc4e',1,'xaimassist::input::InputManager']]],
+  ['availablemodes_13',['AvailableModes',['../classxaimassist_1_1gameplay_1_1GameModeRegistry.html#a7cdca65cc5bb9f7ac40cb14d6778c93f',1,'xaimassist::gameplay::GameModeRegistry']]]
 ];

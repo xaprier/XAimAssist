@@ -6,7 +6,7 @@ var searchData=
   ['uioverlayanchor_3',['UiOverlayAnchor',['../namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75ca',1,'xaimassist::persistence']]],
   ['uipreferences_4',['UiPreferences',['../structxaimassist_1_1persistence_1_1UiPreferences.html',1,'xaimassist::persistence']]],
   ['uithememode_5',['UiThemeMode',['../namespacexaimassist_1_1persistence.html#a99af571897eeb475c6cfdd75df77e8c7',1,'xaimassist::persistence']]],
-  ['uiviewmodel_6',['uiviewmodel',['../classxaimassist_1_1ui_1_1UiViewModel.html',1,'xaimassist::ui::UiViewModel'],['../classxaimassist_1_1ui_1_1UiViewModel.html#ac1298d6db693dfffc86e288608995045',1,'xaimassist::ui::UiViewModel::UiViewModel()'],['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#af02f4e7087df14dcd615310733f49111',1,'xaimassist::app::TrainingFlowController::Deps::uiViewModel']]],
+  ['uiviewmodel_6',['uiviewmodel',['../classxaimassist_1_1ui_1_1UiViewModel.html',1,'xaimassist::ui::UiViewModel'],['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#af02f4e7087df14dcd615310733f49111',1,'xaimassist::app::TrainingFlowController::Deps::uiViewModel'],['../classxaimassist_1_1ui_1_1UiViewModel.html#ac1298d6db693dfffc86e288608995045',1,'xaimassist::ui::UiViewModel::UiViewModel()']]],
   ['uiviewmodel_2ecpp_7',['UiViewModel.cpp',['../UiViewModel_8cpp.html',1,'']]],
   ['uiviewmodel_2ehpp_8',['UiViewModel.hpp',['../UiViewModel_8hpp.html',1,'']]],
   ['unsubscribe_9',['Unsubscribe',['../classxaimassist_1_1core_1_1EventBus.html#a1ea1077df4bac304498d84283424512d',1,'xaimassist::core::EventBus']]],

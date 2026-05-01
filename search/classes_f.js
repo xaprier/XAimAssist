@@ -15,11 +15,13 @@ var searchData=
   ['shotfiredevent_12',['ShotFiredEvent',['../structxaimassist_1_1core_1_1events_1_1ShotFiredEvent.html',1,'xaimassist::core::events']]],
   ['shothitevent_13',['ShotHitEvent',['../structxaimassist_1_1core_1_1events_1_1ShotHitEvent.html',1,'xaimassist::core::events']]],
   ['shotmissevent_14',['ShotMissEvent',['../structxaimassist_1_1core_1_1events_1_1ShotMissEvent.html',1,'xaimassist::core::events']]],
-  ['spherespawnrequest_15',['SphereSpawnRequest',['../structxaimassist_1_1engine_1_1Engine_1_1SphereSpawnRequest.html',1,'xaimassist::engine::Engine']]],
-  ['spheretargetspawnrequest_16',['SphereTargetSpawnRequest',['../structxaimassist_1_1gameplay_1_1SphereTargetSpawnRequest.html',1,'xaimassist::gameplay']]],
-  ['staticspheremode_17',['StaticSphereMode',['../classxaimassist_1_1gameplay_1_1StaticSphereMode.html',1,'xaimassist::gameplay']]],
-  ['statictarget_18',['StaticTarget',['../classxaimassist_1_1gameplay_1_1StaticTarget.html',1,'xaimassist::gameplay']]],
-  ['stattracker_19',['StatTracker',['../classxaimassist_1_1stats_1_1StatTracker.html',1,'xaimassist::stats']]],
-  ['strafingtarget_20',['StrafingTarget',['../classxaimassist_1_1gameplay_1_1StrafingTarget.html',1,'xaimassist::gameplay']]],
-  ['strafingtargetsmode_21',['StrafingTargetsMode',['../classxaimassist_1_1gameplay_1_1StrafingTargetsMode.html',1,'xaimassist::gameplay']]]
+  ['soundpreferences_15',['SoundPreferences',['../structxaimassist_1_1persistence_1_1SoundPreferences.html',1,'xaimassist::persistence']]],
+  ['soundsystem_16',['SoundSystem',['../classxaimassist_1_1app_1_1SoundSystem.html',1,'xaimassist::app']]],
+  ['spherespawnrequest_17',['SphereSpawnRequest',['../structxaimassist_1_1engine_1_1Engine_1_1SphereSpawnRequest.html',1,'xaimassist::engine::Engine']]],
+  ['spheretargetspawnrequest_18',['SphereTargetSpawnRequest',['../structxaimassist_1_1gameplay_1_1SphereTargetSpawnRequest.html',1,'xaimassist::gameplay']]],
+  ['staticspheremode_19',['StaticSphereMode',['../classxaimassist_1_1gameplay_1_1StaticSphereMode.html',1,'xaimassist::gameplay']]],
+  ['statictarget_20',['StaticTarget',['../classxaimassist_1_1gameplay_1_1StaticTarget.html',1,'xaimassist::gameplay']]],
+  ['stattracker_21',['StatTracker',['../classxaimassist_1_1stats_1_1StatTracker.html',1,'xaimassist::stats']]],
+  ['strafingtarget_22',['StrafingTarget',['../classxaimassist_1_1gameplay_1_1StrafingTarget.html',1,'xaimassist::gameplay']]],
+  ['strafingtargetsmode_23',['StrafingTargetsMode',['../classxaimassist_1_1gameplay_1_1StrafingTargetsMode.html',1,'xaimassist::gameplay']]]
 ];

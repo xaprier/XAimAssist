@@ -83,6 +83,8 @@ var hierarchy =
     [ "xaimassist::core::events::ShotFiredEvent", "structxaimassist_1_1core_1_1events_1_1ShotFiredEvent.html", null ],
     [ "xaimassist::core::events::ShotHitEvent", "structxaimassist_1_1core_1_1events_1_1ShotHitEvent.html", null ],
     [ "xaimassist::core::events::ShotMissEvent", "structxaimassist_1_1core_1_1events_1_1ShotMissEvent.html", null ],
+    [ "xaimassist::persistence::SoundPreferences", "structxaimassist_1_1persistence_1_1SoundPreferences.html", null ],
+    [ "xaimassist::app::SoundSystem", "classxaimassist_1_1app_1_1SoundSystem.html", null ],
     [ "xaimassist::engine::Engine::SphereSpawnRequest", "structxaimassist_1_1engine_1_1Engine_1_1SphereSpawnRequest.html", null ],
     [ "xaimassist::gameplay::SphereTargetSpawnRequest", "structxaimassist_1_1gameplay_1_1SphereTargetSpawnRequest.html", null ],
     [ "xaimassist::stats::StatTracker", "classxaimassist_1_1stats_1_1StatTracker.html", null ],

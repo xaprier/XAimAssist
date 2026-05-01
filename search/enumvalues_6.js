@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_0',['Info',['../namespacexaimassist_1_1core.html#ac1db639bf08d4a8b85d67567467a76b9a4059b0251f66a18cb56f544728796875',1,'xaimassist::core']]]
+  ['higherisbetter_0',['HigherIsBetter',['../namespacexaimassist_1_1app_1_1PerformanceClassifier.html#aae6fbfea69c82d6d26166b2602ae5121ad6c665df726f8aa788f4bc8c5297c662',1,'xaimassist::app::PerformanceClassifier']]]
 ];
