@@ -22,7 +22,32 @@ Engine::Engine(core::EventBus& eventBus, core::Logger& logger)
 Engine::~Engine() { Shutdown(); }
 
 QSurfaceFormat Engine::RecommendedSurfaceFormat() {
-    return QVTKOpenGLNativeWidget::defaultFormat();
+    QSurfaceFormat fmt = QVTKOpenGLNativeWidget::defaultFormat();
+
+    // OpenGL 4.1 Core is the highest version available on macOS and is broadly
+    // supported on NVIDIA/AMD/Intel across all target platforms.
+    fmt.setVersion(4, 1);
+    fmt.setProfile(QSurfaceFormat::CoreProfile);
+
+    // swap_interval=0: immediate present — no vertical sync, no added latency.
+    // Competitive aim trainers always disable VSync for minimum input-to-pixel
+    // delay. Users who want VSync can enable it via the driver control panel.
+    fmt.setSwapInterval(0);
+
+    // SwapBehavior::DoubleBuffer: one back buffer only.
+    // TripleBuffer adds ~1 frame of latency on some GL implementations.
+    fmt.setSwapBehavior(QSurfaceFormat::DoubleBuffer);
+
+    // Depth/stencil: 24-bit depth is sufficient for the scene distances used
+    // in an aim trainer; 8-bit stencil reserved for future effects.
+    fmt.setDepthBufferSize(24);
+    fmt.setStencilBufferSize(8);
+
+    // No MSAA at the surface level — antialiasing (if desired) is better
+    // handled in a post-process pass that doesn't bloat the default framebuffer.
+    fmt.setSamples(0);
+
+    return fmt;
 }
 
 QWidget* Engine::CreateViewport(QWidget* parent) {
