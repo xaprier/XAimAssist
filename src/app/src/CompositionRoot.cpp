@@ -10,6 +10,7 @@
 #include "persistence/ProfileManager.hpp"
 #include "persistence/SessionHistory.hpp"
 #include "persistence/SettingsManager.hpp"
+#include "app/SoundSystem.hpp"
 #include "stats/StatTracker.hpp"
 
 namespace xaimassist::app {
@@ -47,6 +48,10 @@ RuntimeServices CompositionRoot::CreateRuntimeServices() const {
     services.sessionHistory = std::make_shared<persistence::SessionHistory>(
         *services.persistenceDatabase, *services.profileManager,
         *services.eventBus, *services.logger);
+
+    services.soundSystem = std::make_shared<SoundSystem>(*services.eventBus);
+    services.soundSystem->ApplySettings(
+        services.settingsManager->Settings().sound);
 
     return services;
 }

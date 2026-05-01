@@ -848,6 +848,140 @@ Item {
                 radius: 14
                 color: root.theme.surface
                 border.color: root.theme.border
+                implicitHeight: soundSettingsColumn.implicitHeight + 28
+
+                ColumnLayout {
+                    id: soundSettingsColumn
+                    anchors.fill: parent
+                    anchors.margins: 14
+                    spacing: 8
+
+                    Label {
+                        text: root.i18n.settingsSound
+                        color: root.theme.textPrimary
+                        font.bold: true
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+
+                        Label {
+                            text: root.i18n.settingsSoundEnabled
+                            color: root.theme.textSecondary
+                            Layout.fillWidth: true
+                            Layout.alignment: Qt.AlignVCenter
+                            wrapMode: Text.WordWrap
+                        }
+
+                        Switch {
+                            checked: root.viewModel.soundEnabled
+                            Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
+                            onToggled: root.viewModel.soundEnabled = checked
+                        }
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        enabled: root.viewModel.soundEnabled
+
+                        Label {
+                            text: root.i18n.settingsSoundVolume + ": " + Number(root.viewModel.soundVolume * 100).toFixed(0) + "%"
+                            color: root.theme.textSecondary
+                        }
+
+                        Slider {
+                            Layout.fillWidth: true
+                            from: 0.0
+                            to: 1.0
+                            stepSize: 0.01
+                            value: root.viewModel.soundVolume
+                            onValueChanged: {
+                                if (pressed && Math.abs(root.viewModel.soundVolume - value) > 0.005) {
+                                    root.viewModel.soundVolume = value
+                                }
+                            }
+                        }
+                    }
+
+                    GridLayout {
+                        Layout.fillWidth: true
+                        columns: root.wideLayout ? 2 : 1
+                        columnSpacing: 12
+                        rowSpacing: 8
+                        enabled: root.viewModel.soundEnabled
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+
+                            Label {
+                                text: root.i18n.settingsSoundHitVariant
+                                color: root.theme.textSecondary
+                            }
+
+                            ComboBox {
+                                Layout.fillWidth: true
+                                model: [
+                                    { label: root.i18n.settingsSoundHitSwish,   value: "swish" },
+                                    { label: root.i18n.settingsSoundHitClick,   value: "click" },
+                                    { label: root.i18n.settingsSoundHitGunshot, value: "gunshot" },
+                                    { label: root.i18n.settingsSoundHitPop,     value: "pop" }
+                                ]
+                                textRole: "label"
+                                currentIndex: {
+                                    const v = root.viewModel.soundHitVariant
+                                    if (v === "click")   return 1
+                                    if (v === "gunshot") return 2
+                                    if (v === "pop")     return 3
+                                    return 0
+                                }
+                                onActivated: function(idx) {
+                                    root.viewModel.soundHitVariant = model[idx].value
+                                }
+                            }
+                        }
+
+                        ColumnLayout {
+                            Layout.fillWidth: true
+
+                            Label {
+                                text: root.i18n.settingsSoundMissVariant
+                                color: root.theme.textSecondary
+                            }
+
+                            ComboBox {
+                                Layout.fillWidth: true
+                                model: [
+                                    { label: root.i18n.settingsSoundMissRicochet, value: "ricochet" },
+                                    { label: root.i18n.settingsSoundMissEmpty,    value: "empty" },
+                                    { label: root.i18n.settingsSoundMissBeep,     value: "beep" },
+                                    { label: root.i18n.settingsSoundMissTap,      value: "tap" },
+                                    { label: root.i18n.settingsSoundMissPop,      value: "miss_pop" },
+                                    { label: root.i18n.settingsSoundMissOops,     value: "oops" }
+                                ]
+                                textRole: "label"
+                                currentIndex: {
+                                    const v = root.viewModel.soundMissVariant
+                                    if (v === "empty")    return 1
+                                    if (v === "beep")     return 2
+                                    if (v === "tap")      return 3
+                                    if (v === "miss_pop") return 4
+                                    if (v === "oops")     return 5
+                                    return 0
+                                }
+                                onActivated: function(idx) {
+                                    root.viewModel.soundMissVariant = model[idx].value
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                radius: 14
+                color: root.theme.surface
+                border.color: root.theme.border
                 implicitHeight: keybindingsColumn.implicitHeight + 28
 
                 ColumnLayout {

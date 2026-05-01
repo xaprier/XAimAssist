@@ -22,6 +22,7 @@ endif()
 
 add_executable(${XAIMASSIST_APP_TARGET}
     include/app/TrainingFlowController.hpp
+    include/app/SoundSystem.hpp
     src/Application.cpp
     src/AppGameplaySettingsProvider.cpp
     src/CompositionRoot.cpp
@@ -31,6 +32,7 @@ add_executable(${XAIMASSIST_APP_TARGET}
     src/main.cpp
     src/RuntimeLoop.cpp
     src/SettingsConverter.cpp
+    src/SoundSystem.cpp
     src/TrainingFlowController.cpp
     src/WorldRaycastHitTest.cpp
 )
@@ -64,6 +66,7 @@ target_link_libraries(${XAIMASSIST_APP_TARGET}
         xaimassist_ui
         Qt6::Core
         Qt6::Gui
+        Qt6::Multimedia
         Qt6::Qml
         Qt6::QuickWidgets
         Qt6::Widgets

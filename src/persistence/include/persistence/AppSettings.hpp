@@ -97,6 +97,27 @@ struct KeyBindingsPreferences {
     std::string toggleCrosshair{"F2"};
 };
 
+/// Available hit sound variants (must match filenames under sounds/).
+enum class HitSoundVariant { Swish,
+                             Click,
+                             Gunshot,
+                             Pop };
+
+/// Available miss sound variants (must match filenames under sounds/).
+enum class MissSoundVariant { Ricochet,
+                              Empty,
+                              Beep,
+                              Tap,
+                              MissPop,
+                              Oops };
+
+struct SoundPreferences {
+    bool enabled{true};
+    float volume{0.8f};
+    HitSoundVariant hitSound{HitSoundVariant::Swish};
+    MissSoundVariant missSound{MissSoundVariant::Ricochet};
+};
+
 /// Root aggregate of all persisted application settings.
 struct AppSettings {
     InputPreferences input;
@@ -104,6 +125,7 @@ struct AppSettings {
     UiPreferences ui;
     WindowPreferences window;
     KeyBindingsPreferences keybindings;
+    SoundPreferences sound;
 };
 }  // namespace xaimassist::persistence
 
