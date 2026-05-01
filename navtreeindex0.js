@@ -245,9 +245,9 @@ var NAVTREEINDEX0 =
 "classes.html":[2,1],
 "classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html":[2,0,0,0,1],
 "classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html":[1,0,3,0,3],
-"classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#a2b9eba8ccb7e9cecb9106aede8eef413":[2,0,0,0,1,1],
 "classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#a2b9eba8ccb7e9cecb9106aede8eef413":[1,0,3,0,3,1],
-"classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#ad6015a37ae6bf476a2a955094db0eec2":[2,0,0,0,1,0],
+"classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#a2b9eba8ccb7e9cecb9106aede8eef413":[2,0,0,0,1,1],
 "classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#ad6015a37ae6bf476a2a955094db0eec2":[1,0,3,0,3,0],
-"classxaimassist_1_1app_1_1Application.html":[1,0,3,0,4]
+"classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html#ad6015a37ae6bf476a2a955094db0eec2":[2,0,0,0,1,0],
+"classxaimassist_1_1app_1_1Application.html":[2,0,0,0,2]
 };
