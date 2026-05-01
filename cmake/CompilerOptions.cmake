@@ -58,7 +58,6 @@ function(xaimassist_apply_compiler_options target)
             $<$<CONFIG:Release>:/Ob2>      # Aggressive inlining
             $<$<CONFIG:Release>:/Oi>       # Intrinsic functions
             $<$<CONFIG:Release>:/Ot>       # Favour fast code
-            $<$<CONFIG:Release>:/GS->      # Disable buffer security check (perf)
         )
 
         # Whole-program optimisation (LTO equivalent on MSVC)
@@ -150,13 +149,12 @@ function(xaimassist_apply_compiler_options target)
     endif()
 
     # -----------------------------------------------------------------------
-    # Platform-specific GPU / graphics driver linker hints (Linux)
-    # On Linux with NVIDIA proprietary drivers, linking against libGL.so
-    # directly rather than libOpenGL.so avoids the Mesa fallback path.
+    # Linux linker optimisation: drop shared-library references that nothing
+    # actually uses. Keeps the final binary's DT_NEEDED list minimal.
     # -----------------------------------------------------------------------
     if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
         target_link_options(${target} PRIVATE
-            $<$<CONFIG:Release>:-Wl,--as-needed>   # Strip unused shared libs
+            $<$<CONFIG:Release>:-Wl,--as-needed>
         )
     endif()
 

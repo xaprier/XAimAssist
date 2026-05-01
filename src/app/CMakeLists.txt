@@ -67,6 +67,8 @@ target_link_libraries(${XAIMASSIST_APP_TARGET}
         Qt6::Widgets
 )
 
+xaimassist_apply_compiler_options(${XAIMASSIST_APP_TARGET})
+
 set_target_properties(${XAIMASSIST_APP_TARGET}
     PROPERTIES
         OUTPUT_NAME XAimAssist

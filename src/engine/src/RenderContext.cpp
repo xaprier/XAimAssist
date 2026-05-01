@@ -20,12 +20,12 @@ bool RenderContext::Initialize(QVTKOpenGLNativeWidget& viewportWidget) {
     // possible and is the standard setting in competitive FPS applications.
     m_renderWindow->SetSwapControl(0);
 
-    // Double-buffering is mandatory; triple-buffering adds latency on some
-    // drivers so we explicitly request exactly two back buffers.
+    // Enable double buffering (front + one back buffer). Triple-buffering
+    // is not requested; driver-side triple-buffering is disabled via VSync=off.
     m_renderWindow->DoubleBufferOn();
 
-    // Multi-sampling is handled via QSurfaceFormat (set globally in
-    // Application::Run). Disabling it at the VTK level avoids double-MSAA.
+    // Disable VTK-level multisampling; QSurfaceFormat also sets samples=0.
+    // Both must be zero to avoid the driver silently enabling MSAA on one path.
     m_renderWindow->SetMultiSamples(0);
 
     m_renderWindow->AddRenderer(m_renderer);
