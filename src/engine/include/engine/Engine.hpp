@@ -13,6 +13,7 @@
 #include <array>
 #include <cstdint>
 
+#include "core/CoreEvents.hpp"
 #include "core/EventBus.hpp"
 #include "engine/CameraBackend.hpp"
 #include "engine/RenderContext.hpp"
@@ -60,21 +61,21 @@ class Engine {
     void Shutdown();
 
     /// Create a sphere actor from the given parameters and return its id.
-    SceneObjectId SpawnSphere(const SphereSpawnRequest& request);
+    [[nodiscard]] SceneObjectId SpawnSphere(const SphereSpawnRequest& request);
 
     /// Move an existing scene object to a new position.
-    bool SetObjectPosition(SceneObjectId objectId,
-                           const std::array<double, 3>& position);
+    [[nodiscard]] bool SetObjectPosition(SceneObjectId objectId,
+                                         const std::array<double, 3>& position);
 
     /// Change the diffuse colour of a scene object.
-    bool SetObjectColor(SceneObjectId objectId,
-                        const std::array<double, 3>& color);
+    [[nodiscard]] bool SetObjectColor(SceneObjectId objectId,
+                                      const std::array<double, 3>& color);
 
     /// Change the opacity of a scene object (0 = invisible, 1 = opaque).
-    bool SetObjectOpacity(SceneObjectId objectId, double opacity);
+    [[nodiscard]] bool SetObjectOpacity(SceneObjectId objectId, double opacity);
 
     /// Remove a scene object by id.
-    bool DespawnObject(SceneObjectId objectId);
+    [[nodiscard]] bool DespawnObject(SceneObjectId objectId);
 
     /// Remove all spawned objects from the scene.
     void ClearScene();

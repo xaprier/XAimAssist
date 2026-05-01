@@ -50,7 +50,7 @@ class EventBus {
     using EventHandler = std::function<void(const events::CoreEvent& event)>;
 
     /// Register a handler; returns a unique subscription id.
-    SubscriptionId Subscribe(EventHandler handler);
+    [[nodiscard]] SubscriptionId Subscribe(EventHandler handler);
 
     /// Remove a previously registered handler by its id.
     void Unsubscribe(SubscriptionId subscriptionId);
