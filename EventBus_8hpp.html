@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="XAimAssist_DocSize.png"/></td>
   <td id="projectalign">
-   <div id="projectname">XAimAssist<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">XAimAssist<span id="projectnumber">&#160;1.0.8</span>
    </div>
    <div id="projectbrief">Open-source 3D FPS aim training framework</div>
   </td>
@@ -104,34 +104,38 @@ $(document).ready(function(){initNavTree('EventBus_8hpp.html',''); initResizable
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="CoreEvents_8hpp_source.html">core/CoreEvents.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for EventBus.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="EventBus_8hpp__incl.png" border="0" usemap="#aEventBus_8hpp" alt=""/></div>
 <map name="aEventBus_8hpp" id="aEventBus_8hpp">
-<area shape="rect" title="Thread&#45;safe publish/subscribe event dispatch." alt="" coords="291,5,402,31"/>
-<area shape="rect" title=" " alt="" coords="5,152,72,177"/>
-<area shape="poly" title=" " alt="" coords="300,33,235,53,165,81,111,113,65,146,62,141,108,109,163,76,233,48,299,28"/>
-<area shape="rect" title=" " alt="" coords="377,79,463,104"/>
-<area shape="poly" title=" " alt="" coords="361,29,400,67,396,71,357,33"/>
-<area shape="rect" title=" " alt="" coords="488,79,565,104"/>
-<area shape="poly" title=" " alt="" coords="377,28,486,71,484,76,375,33"/>
-<area shape="rect" title=" " alt="" coords="589,79,653,104"/>
-<area shape="poly" title=" " alt="" coords="392,28,577,76,575,81,390,33"/>
-<area shape="rect" title=" " alt="" coords="97,152,221,177"/>
-<area shape="poly" title=" " alt="" coords="292,29,236,47,209,61,186,80,170,109,163,139,158,138,165,107,182,77,206,57,234,42,290,24"/>
-<area shape="rect" href="CoreEvents_8hpp.html" title="Defines all event types transported through the EventBus." alt="" coords="197,79,353,104"/>
-<area shape="poly" title=" " alt="" coords="337,33,298,71,294,67,333,29"/>
-<area shape="poly" title=" " alt="" coords="238,107,86,152,85,147,236,101"/>
-<area shape="poly" title=" " alt="" coords="257,106,191,147,188,142,255,102"/>
-<area shape="rect" title=" " alt="" coords="245,152,312,177"/>
-<area shape="poly" title=" " alt="" coords="278,104,280,138,275,139,273,104"/>
-<area shape="rect" title=" " alt="" coords="336,152,395,177"/>
-<area shape="poly" title=" " alt="" coords="291,102,341,141,338,145,288,106"/>
-<area shape="rect" title=" " alt="" coords="419,152,487,177"/>
-<area shape="poly" title=" " alt="" coords="304,102,413,144,411,149,302,107"/>
+<area shape="rect" title="Thread&#45;safe publish/subscribe event dispatch." alt="" coords="216,5,327,31"/>
+<area shape="rect" title=" " alt="" coords="161,152,228,177"/>
+<area shape="poly" title=" " alt="" coords="216,27,159,34,99,45,48,61,29,70,16,80,9,96,12,109,24,121,43,131,94,147,148,156,147,161,93,152,41,136,20,125,7,112,3,96,12,77,26,65,46,56,98,40,159,29,215,22"/>
+<area shape="rect" title=" " alt="" coords="27,79,114,104"/>
+<area shape="poly" title=" " alt="" coords="240,33,117,77,115,71,238,28"/>
+<area shape="rect" title=" " alt="" coords="138,79,216,104"/>
+<area shape="poly" title=" " alt="" coords="258,33,205,72,202,68,255,29"/>
+<area shape="rect" title=" " alt="" coords="240,79,304,104"/>
+<area shape="poly" title=" " alt="" coords="274,31,274,65,269,65,269,31"/>
+<area shape="rect" title=" " alt="" coords="328,79,388,104"/>
+<area shape="poly" title=" " alt="" coords="287,29,335,68,332,72,284,33"/>
+<area shape="rect" title=" " alt="" coords="412,79,475,104"/>
+<area shape="poly" title=" " alt="" coords="300,28,404,71,402,76,298,33"/>
+<area shape="rect" href="CoreEvents_8hpp.html" title="Defines all event types transported through the EventBus." alt="" coords="499,79,655,104"/>
+<area shape="poly" title=" " alt="" coords="321,28,515,73,514,78,320,33"/>
+<area shape="poly" title=" " alt="" coords="516,107,241,157,241,152,515,101"/>
+<area shape="rect" title=" " alt="" coords="398,152,465,177"/>
+<area shape="poly" title=" " alt="" coords="555,106,468,148,466,144,552,102"/>
+<area shape="rect" title=" " alt="" coords="489,152,548,177"/>
+<area shape="poly" title=" " alt="" coords="569,106,538,143,534,140,565,103"/>
+<area shape="rect" title=" " alt="" coords="572,152,696,177"/>
+<area shape="poly" title=" " alt="" coords="588,103,618,139,614,143,584,106"/>
+<area shape="rect" title=" " alt="" coords="720,152,788,177"/>
+<area shape="poly" title=" " alt="" coords="606,102,714,144,712,149,604,106"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">

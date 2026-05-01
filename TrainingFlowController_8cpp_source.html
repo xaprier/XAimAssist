@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="XAimAssist_DocSize.png"/></td>
   <td id="projectalign">
-   <div id="projectname">XAimAssist<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">XAimAssist<span id="projectnumber">&#160;1.0.8</span>
    </div>
    <div id="projectbrief">Open-source 3D FPS aim training framework</div>
   </td>
@@ -397,9 +397,9 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (!m_deps.modeOrchestrator.StartMode(m_pendingModeId,</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                                            m_pendingModeDurationSeconds,</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                                            m_pendingModeDistanceUnits,</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                                            m_pendingModeSettings)) {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                                           m_pendingModeDurationSeconds,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                                           m_pendingModeDistanceUnits,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                                           m_pendingModeSettings)) {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        m_deps.logger.Error(<span class="stringliteral">&quot;app&quot;</span>, <span class="stringliteral">&quot;Failed to start selected game mode&quot;</span>);</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        _ReturnToMenuState();</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">return</span>;</div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="keywordtype">void</span> TrainingFlowController::_SetOverlayMousePassthrough(<span class="keywordtype">bool</span> passthrough) {</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    m_deps.uiOverlay-&gt;setAttribute(Qt::WA_TransparentForMouseEvents,</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                    passthrough);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                   passthrough);</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordflow">if</span> (!passthrough) {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        m_deps.uiOverlay-&gt;raise();</div>
@@ -469,7 +469,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    std::optional&lt;persistence::SessionRecord&gt; bestSession;</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="keywordflow">if</span> (!modeId.empty()) {</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        bestSession = m_deps.sessionHistory-&gt;GetBestSessionForMode(profileId,</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                                                    modeId);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                                                   modeId);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    }</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    m_deps.uiViewModel.SetSessionHistory(recentSessions, bestSession);</div>
@@ -492,11 +492,11 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>}</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="keywordtype">void</span> TrainingFlowController::_CollectPipelineSample(std::uint64_t sessionId,</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                                                     std::uint32_t fixedSteps,</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                                                     <span class="keywordtype">double</span> framePipelineMs,</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                                                     <span class="keywordtype">double</span> uiFrameTickMs,</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                                                     <span class="keywordtype">double</span> modeUpdateMs,</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                                                     <span class="keywordtype">double</span> worldSyncMs) {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                                                    std::uint32_t fixedSteps,</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                                                    <span class="keywordtype">double</span> framePipelineMs,</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                                                    <span class="keywordtype">double</span> uiFrameTickMs,</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                                                    <span class="keywordtype">double</span> modeUpdateMs,</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                                                    <span class="keywordtype">double</span> worldSyncMs) {</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span> (!m_pipelineTimings.active ||</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        m_pipelineTimings.sessionId != sessionId) {</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">return</span>;</div>
@@ -591,7 +591,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>           &lt;&lt; <span class="stringliteral">&quot;, worstWorldSyncMs=&quot;</span> &lt;&lt; m_pipelineTimings.worldSyncWorstMs;</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span> </div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    m_deps.logger.LogIf(<span class="stringliteral">&quot;DEBUG_PERF&quot;</span>, <a class="code hl_enumvalue" href="namespacexaimassist_1_1core.html#ac1db639bf08d4a8b85d67567467a76b9a4059b0251f66a18cb56f544728796875">core::LogLevel::Info</a>, <span class="stringliteral">&quot;perf&quot;</span>,</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                         report.str());</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                        report.str());</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    _ResetPipelineTimings();</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>}</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
@@ -678,7 +678,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>            persistence::SessionHistory::ValidateSessionSummary(summary);</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>        if (!validation.valid) {</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>            m_deps.uiViewModel.SetLatestResultInvalid(summary.sessionId,</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                                                       validation.reasonCode);</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                                                      validation.reasonCode);</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>            return;</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        }</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
@@ -694,7 +694,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keyword">const</span> <span class="keyword">auto</span> modePerformance =</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>            m_deps.sessionHistory-&gt;GetModePerformanceSummary(profileId,</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                                                               summary.modeId);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                                                             summary.modeId);</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="keywordflow">if</span> (!modePerformance.has_value()) {</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        }</div>
@@ -711,10 +711,10 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                <span class="keywordtype">double</span> weight) {</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                <span class="keyword">const</span> <span class="keywordtype">double</span> best =</div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                    PerformanceClassifier::BestValueForDirection(aggregate,</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                                                                  direction);</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                                                                 direction);</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>                <span class="keyword">const</span> <span class="keywordtype">double</span> worst =</div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                    PerformanceClassifier::WorstValueForDirection(aggregate,</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                                                                   direction);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                                                                  direction);</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                <span class="keyword">const</span> std::string tier =</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>                    PerformanceClassifier::ClassifyMetricTier(</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>                        modePerformance-&gt;sessionCount, value,</div>
@@ -725,7 +725,7 @@ $(document).ready(function(){initNavTree('TrainingFlowController_8cpp_source.htm
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                        metricId, tier, value, aggregate.average, best, worst});</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>                evaluatedComparisons.push_back(</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>                    PerformanceClassifier::EvaluatedMetricComparison{tier,</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                                                                      weight});</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                                                                     weight});</div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>            };</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        appendMetric(<span class="stringliteral">&quot;score&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(summary.score),</div>
