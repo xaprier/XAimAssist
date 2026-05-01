@@ -10,5 +10,5 @@ var searchData=
   ['pressed_7',['pressed',['../structxaimassist_1_1input_1_1FireAction.html#acdf44c176a1d6fa7511acf4e6cfa41a2',1,'xaimassist::input::FireAction']]],
   ['primitivetype_8',['primitiveType',['../structxaimassist_1_1world_1_1RenderComponent.html#ae21b47ffc20870615ac4507fa9a24e71',1,'xaimassist::world::RenderComponent']]],
   ['profileid_9',['profileId',['../structxaimassist_1_1persistence_1_1SessionRecord.html#aa2858c0f835a96822ec6bba153de92b7',1,'xaimassist::persistence::SessionRecord']]],
-  ['profilemanager_10',['profileManager',['../structxaimassist_1_1app_1_1RuntimeServices.html#a54b6c471d92b4e959b071da78583762a',1,'xaimassist::app::RuntimeServices']]]
+  ['profilemanager_10',['profilemanager',['../structxaimassist_1_1app_1_1RuntimeServices.html#a54b6c471d92b4e959b071da78583762a',1,'xaimassist::app::RuntimeServices::profileManager'],['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#aeae6b951484540f7d36393e4800ff2fb',1,'xaimassist::app::TrainingFlowController::Deps::profileManager']]]
 ];

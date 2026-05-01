@@ -13,7 +13,7 @@ var searchData=
   ['borderthickness_10',['borderThickness',['../structxaimassist_1_1persistence_1_1CrosshairPreferences.html#ac0b427e368a5eadfb386456f58b62b69',1,'xaimassist::persistence::CrosshairPreferences']]],
   ['bottomleft_11',['BottomLeft',['../namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75caa98e5a1c44509157ebcaf46c515c78875',1,'xaimassist::persistence']]],
   ['bottomright_12',['BottomRight',['../namespacexaimassist_1_1persistence.html#a9818e68109e907e3f8c04ef0d92f75caa9146bfc669fddc88db2c4d89297d0e9a',1,'xaimassist::persistence']]],
-  ['build_13',['Build',['../index.html#autotoc_md16',1,'']]],
+  ['build_13',['build',['../index.html#autotoc_md16',1,'Build'],['../classxaimassist_1_1ui_1_1I18nProvider.html#a2d4202ce0070ce85386c92e2be884028',1,'xaimassist::ui::I18nProvider::Build()']]],
   ['building_20from_20source_14',['Building from Source',['../index.html#autotoc_md10',1,'']]],
   ['builtinmodes_2ecpp_15',['BuiltInModes.cpp',['../BuiltInModes_8cpp.html',1,'']]],
   ['builtinmodes_2ehpp_16',['BuiltInModes.hpp',['../BuiltInModes_8hpp.html',1,'']]]

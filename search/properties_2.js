@@ -12,10 +12,11 @@ var searchData=
   ['crosshaircolorred_9',['crosshairColorRed',['../classxaimassist_1_1ui_1_1UiViewModel.html#a278d7b9a1ba38f567c65e69fbf865aa5',1,'xaimassist::ui::UiViewModel']]],
   ['crosshairgap_10',['crosshairGap',['../classxaimassist_1_1ui_1_1UiViewModel.html#af8385e5b7100dbe9949b491164d9db3f',1,'xaimassist::ui::UiViewModel']]],
   ['crosshairhorizontallength_11',['crosshairHorizontalLength',['../classxaimassist_1_1ui_1_1UiViewModel.html#a65c1f424669ca9d8afd386114e3bd5bb',1,'xaimassist::ui::UiViewModel']]],
-  ['crosshairlinesenabled_12',['crosshairLinesEnabled',['../classxaimassist_1_1ui_1_1UiViewModel.html#a680667110b4dd2c9cf646c4fcf830c23',1,'xaimassist::ui::UiViewModel']]],
-  ['crosshairthickness_13',['crosshairThickness',['../classxaimassist_1_1ui_1_1UiViewModel.html#a3d6248e35c0a4655c25f1ea2786e5e66',1,'xaimassist::ui::UiViewModel']]],
-  ['crosshairverticallength_14',['crosshairVerticalLength',['../classxaimassist_1_1ui_1_1UiViewModel.html#ac89402330e98621d3172c2924ea63892',1,'xaimassist::ui::UiViewModel']]],
-  ['crosshairvisible_15',['crosshairVisible',['../classxaimassist_1_1ui_1_1UiViewModel.html#aca5b456744dc7d8715e0a4a0f9a8a4b2',1,'xaimassist::ui::UiViewModel']]],
-  ['currentfps_16',['currentFps',['../classxaimassist_1_1ui_1_1UiViewModel.html#afe392b13ba6fcf6ccb8775a386d5da4a',1,'xaimassist::ui::UiViewModel']]],
-  ['currentscreen_17',['currentScreen',['../classxaimassist_1_1ui_1_1UiViewModel.html#a553825146b7d6047d89c542001c618c8',1,'xaimassist::ui::UiViewModel']]]
+  ['crosshairkeytoggleenabled_12',['crosshairKeyToggleEnabled',['../classxaimassist_1_1ui_1_1UiViewModel.html#a038867067cb0bbb761ce7f6cde745a24',1,'xaimassist::ui::UiViewModel']]],
+  ['crosshairlinesenabled_13',['crosshairLinesEnabled',['../classxaimassist_1_1ui_1_1UiViewModel.html#a680667110b4dd2c9cf646c4fcf830c23',1,'xaimassist::ui::UiViewModel']]],
+  ['crosshairthickness_14',['crosshairThickness',['../classxaimassist_1_1ui_1_1UiViewModel.html#a3d6248e35c0a4655c25f1ea2786e5e66',1,'xaimassist::ui::UiViewModel']]],
+  ['crosshairverticallength_15',['crosshairVerticalLength',['../classxaimassist_1_1ui_1_1UiViewModel.html#ac89402330e98621d3172c2924ea63892',1,'xaimassist::ui::UiViewModel']]],
+  ['crosshairvisible_16',['crosshairVisible',['../classxaimassist_1_1ui_1_1UiViewModel.html#aca5b456744dc7d8715e0a4a0f9a8a4b2',1,'xaimassist::ui::UiViewModel']]],
+  ['currentfps_17',['currentFps',['../classxaimassist_1_1ui_1_1UiViewModel.html#afe392b13ba6fcf6ccb8775a386d5da4a',1,'xaimassist::ui::UiViewModel']]],
+  ['currentscreen_18',['currentScreen',['../classxaimassist_1_1ui_1_1UiViewModel.html#a553825146b7d6047d89c542001c618c8',1,'xaimassist::ui::UiViewModel']]]
 ];

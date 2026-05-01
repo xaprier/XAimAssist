@@ -6,5 +6,6 @@ var searchData=
   ['reasoncode_3',['reasonCode',['../structxaimassist_1_1persistence_1_1SessionValidationResult.html#a82a83482b625c25035a2f101e4ec84c7',1,'xaimassist::persistence::SessionValidationResult']]],
   ['red_4',['red',['../structxaimassist_1_1persistence_1_1ColorRgb.html#a2e06e055e4f1c1b006f793573aff6b7b',1,'xaimassist::persistence::ColorRgb']]],
   ['rotationeulerdegrees_5',['rotationEulerDegrees',['../structxaimassist_1_1world_1_1TransformComponent.html#abba2ff6022fc590b100d1e8d69190e90',1,'xaimassist::world::TransformComponent']]],
-  ['runtimesessionid_6',['runtimeSessionId',['../structxaimassist_1_1persistence_1_1SessionRecord.html#a28657490d061283324e3384dd75c6733',1,'xaimassist::persistence::SessionRecord']]]
+  ['runtimeloop_6',['runtimeLoop',['../structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html#a8d79c4931e5373a72ad4a1a9880ee9e7',1,'xaimassist::app::TrainingFlowController::Deps']]],
+  ['runtimesessionid_7',['runtimeSessionId',['../structxaimassist_1_1persistence_1_1SessionRecord.html#a28657490d061283324e3384dd75c6733',1,'xaimassist::persistence::SessionRecord']]]
 ];

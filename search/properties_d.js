@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yawmultiplier_0',['yawMultiplier',['../classxaimassist_1_1ui_1_1UiViewModel.html#a2db18aa11a6f0914f9e18562a54dea06',1,'xaimassist::ui::UiViewModel']]]
+  ['waitingforsceneclick_0',['waitingForSceneClick',['../classxaimassist_1_1ui_1_1UiViewModel.html#a4e6e1ac8f82aba8808b6f23e4dfb99c4',1,'xaimassist::ui::UiViewModel']]]
 ];

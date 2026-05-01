@@ -1,13 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classxaimassist_1_1gameplay_1_1GameMode.html" title="Abstract base for training modes." alt="" coords="5,133,172,173"/>
-<area shape="rect" id="Node000001" href="$classxaimassist_1_1gameplay_1_1GridShotMode.html" title="Spawns targets on a configurable NxM grid; hitting one despawns it and spawns a replacement at a rand..." alt="" coords="220,5,387,45"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="122,123,167,88,219,55,243,43,246,48,221,60,170,93,125,127"/>
-<area shape="rect" id="Node000002" href="$classxaimassist_1_1gameplay_1_1NextShotMode.html" title="Shows one active target plus a semi&#45;transparent preview of the next; hitting the active promotes the ..." alt="" coords="220,69,387,109"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="169,127,235,107,237,112,171,132"/>
-<area shape="rect" id="Node000003" href="$classxaimassist_1_1gameplay_1_1StaticSphereMode.html" title="Spawns one stationary target; hitting it spawns a new one at a random offset from the camera centre." alt="" coords="220,133,387,173"/>
-<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="186,151,220,151,220,156,186,156"/>
-<area shape="rect" id="Node000004" href="$classxaimassist_1_1gameplay_1_1StrafingTargetsMode.html" title="First spawns a static activation target, then converts it to a strafing target the player must track ..." alt="" coords="220,197,387,237"/>
-<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="171,175,237,195,235,200,169,180"/>
-<area shape="rect" id="Node000005" href="$classxaimassist_1_1gameplay_1_1TrackingTargetsMode.html" title="Spawns a moving target that bounces off virtual bounds; periodic auto&#45;hit checks reward continuous ai..." alt="" coords="220,261,387,301"/>
-<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="125,180,170,214,221,247,246,259,243,264,219,252,167,218,122,184"/>
+<area shape="rect" id="Node000000" href="$classxaimassist_1_1engine_1_1Scene.html" title="Tracks spawned VTK actors and static environment geometry." alt="" coords="5,5,151,45"/>
 </map>

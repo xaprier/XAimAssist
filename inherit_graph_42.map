@@ -1,3 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classxaimassist_1_1gameplay_1_1TargetSystem.html" title="Owns spawned targets, ticks their behaviour, and resolves shot&#45;fired events into hit/miss outcomes vi..." alt="" coords="5,5,172,45"/>
+<area shape="rect" id="Node000000" href="$classxaimassist_1_1gameplay_1_1TargetFactory.html" title="Instantiates the correct Target subtype (Static, Moving, etc.) based on TargetDefinition::type." alt="" coords="5,5,172,45"/>
 </map>

@@ -9,6 +9,7 @@ var hierarchy =
     [ "xaimassist::persistence::ColorRgb", "structxaimassist_1_1persistence_1_1ColorRgb.html", null ],
     [ "xaimassist::app::CompositionRoot", "classxaimassist_1_1app_1_1CompositionRoot.html", null ],
     [ "xaimassist::persistence::CrosshairPreferences", "structxaimassist_1_1persistence_1_1CrosshairPreferences.html", null ],
+    [ "xaimassist::app::TrainingFlowController::Deps", "structxaimassist_1_1app_1_1TrainingFlowController_1_1Deps.html", null ],
     [ "xaimassist::engine::Engine", "classxaimassist_1_1engine_1_1Engine.html", null ],
     [ "xaimassist::app::PerformanceClassifier::EvaluatedMetricComparison", "structxaimassist_1_1app_1_1PerformanceClassifier_1_1EvaluatedMetricComparison.html", null ],
     [ "xaimassist::core::EventBus", "classxaimassist_1_1core_1_1EventBus.html", null ],
@@ -29,6 +30,7 @@ var hierarchy =
     [ "xaimassist::persistence::GameplayPreferences", "structxaimassist_1_1persistence_1_1GameplayPreferences.html", null ],
     [ "xaimassist::gameplay::GameplayRuntimeSettings", "structxaimassist_1_1gameplay_1_1GameplayRuntimeSettings.html", null ],
     [ "xaimassist::gameplay::HitTestResult", "structxaimassist_1_1gameplay_1_1HitTestResult.html", null ],
+    [ "xaimassist::ui::I18nProvider", "classxaimassist_1_1ui_1_1I18nProvider.html", null ],
     [ "xaimassist::gameplay::IGameplaySettingsProvider", "classxaimassist_1_1gameplay_1_1IGameplaySettingsProvider.html", [
       [ "xaimassist::app::AppGameplaySettingsProvider", "classxaimassist_1_1app_1_1AppGameplaySettingsProvider.html", null ]
     ] ],
@@ -42,6 +44,7 @@ var hierarchy =
     [ "xaimassist::gameplay::ISceneCommandSink", "classxaimassist_1_1gameplay_1_1ISceneCommandSink.html", [
       [ "xaimassist::app::GameplayWorldBridge", "classxaimassist_1_1app_1_1GameplayWorldBridge.html", null ]
     ] ],
+    [ "xaimassist::persistence::KeyBindingsPreferences", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences.html", null ],
     [ "xaimassist::core::Logger", "classxaimassist_1_1core_1_1Logger.html", null ],
     [ "xaimassist::input::LookAction", "structxaimassist_1_1input_1_1LookAction.html", null ],
     [ "xaimassist::ui::UiViewModel::ModeDescriptor", "structxaimassist_1_1ui_1_1UiViewModel_1_1ModeDescriptor.html", null ],
@@ -56,6 +59,7 @@ var hierarchy =
     [ "xaimassist::persistence::ProfileManager", "classxaimassist_1_1persistence_1_1ProfileManager.html", null ],
     [ "xaimassist::persistence::ProfileRecord", "structxaimassist_1_1persistence_1_1ProfileRecord.html", null ],
     [ "QObject", null, [
+      [ "xaimassist::app::TrainingFlowController", "classxaimassist_1_1app_1_1TrainingFlowController.html", null ],
       [ "xaimassist::input::InputManager", "classxaimassist_1_1input_1_1InputManager.html", null ],
       [ "xaimassist::ui::UiViewModel", "classxaimassist_1_1ui_1_1UiViewModel.html", null ]
     ] ],
@@ -97,6 +101,7 @@ var hierarchy =
     [ "xaimassist::core::FrameClock::TickResult", "structxaimassist_1_1core_1_1FrameClock_1_1TickResult.html", null ],
     [ "xaimassist::world::TransformComponent", "structxaimassist_1_1world_1_1TransformComponent.html", null ],
     [ "xaimassist::persistence::UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", null ],
+    [ "xaimassist::persistence::WindowPreferences", "structxaimassist_1_1persistence_1_1WindowPreferences.html", null ],
     [ "xaimassist::world::World", "classxaimassist_1_1world_1_1World.html", null ],
     [ "xaimassist::world::WorldRenderSync", "classxaimassist_1_1world_1_1WorldRenderSync.html", null ]
 ];

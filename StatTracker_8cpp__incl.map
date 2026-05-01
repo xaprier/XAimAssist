@@ -3,9 +3,9 @@
 <area shape="rect" id="Node000002" href="$StatTracker_8hpp.html" title="Real&#45;time metric aggregation from EventBus game events." alt="" coords="302,79,460,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="663,33,449,78,448,73,662,28"/>
 <area shape="rect" id="Node000012" href="$EventBus_8hpp.html" title="Thread&#45;safe publish/subscribe event dispatch." alt="" coords="504,152,647,177"/>
-<area shape="poly" id="edge28_Node000001_Node000012" title=" " alt="" coords="658,29,607,46,584,61,566,80,560,94,559,109,566,139,561,140,554,109,555,92,561,77,581,57,604,41,656,24"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="576,79,650,104"/>
-<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="702,33,643,73,640,68,699,28"/>
+<area shape="poly" id="edge28_Node000001_Node000012" title=" " alt="" coords="658,30,609,47,588,61,571,80,565,94,564,108,569,138,563,139,558,109,560,92,567,77,585,57,607,43,656,25"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="581,79,650,104"/>
+<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="702,33,645,73,642,68,699,28"/>
 <area shape="rect" id="Node000018" title=" " alt="" coords="674,79,760,104"/>
 <area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="720,31,720,65,714,65,714,31"/>
 <area shape="rect" id="Node000019" title=" " alt="" coords="784,79,847,104"/>

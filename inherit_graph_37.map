@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classxaimassist_1_1gameplay_1_1ModeOrchestrator.html" title="Creates, starts, ticks, and stops game mode sessions." alt="" coords="5,5,172,45"/>
+<area shape="rect" id="Node000000" href="$classxaimassist_1_1gameplay_1_1ISceneCommandSink.html" title="Abstract command interface for target scene manipulation." alt="" coords="5,5,173,45"/>
+<area shape="rect" id="Node000001" href="$classxaimassist_1_1app_1_1GameplayWorldBridge.html" title="Translates gameplay spawn/update/destroy commands into World entity mutations." alt="" coords="221,5,421,45"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="187,23,221,23,221,28,187,28"/>
 </map>

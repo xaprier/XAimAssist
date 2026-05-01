@@ -9,6 +9,8 @@ var AppSettings_8hpp =
     [ "xaimassist::persistence::CrosshairPreferences", "structxaimassist_1_1persistence_1_1CrosshairPreferences.html", "structxaimassist_1_1persistence_1_1CrosshairPreferences" ],
     [ "xaimassist::persistence::FpsCounterPreferences", "structxaimassist_1_1persistence_1_1FpsCounterPreferences.html", "structxaimassist_1_1persistence_1_1FpsCounterPreferences" ],
     [ "xaimassist::persistence::UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", "structxaimassist_1_1persistence_1_1UiPreferences" ],
+    [ "xaimassist::persistence::WindowPreferences", "structxaimassist_1_1persistence_1_1WindowPreferences.html", "structxaimassist_1_1persistence_1_1WindowPreferences" ],
+    [ "xaimassist::persistence::KeyBindingsPreferences", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences.html", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences" ],
     [ "xaimassist::persistence::AppSettings", "structxaimassist_1_1persistence_1_1AppSettings.html", "structxaimassist_1_1persistence_1_1AppSettings" ],
     [ "UiLanguage", "AppSettings_8hpp.html#aa76c4f60ee06970ecfd54f8fe0bd0b93", [
       [ "English", "AppSettings_8hpp.html#aa76c4f60ee06970ecfd54f8fe0bd0b93a78463a384a5aa4fad5fa73e2f506ecfc", null ],

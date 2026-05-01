@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rawinputenabled_0',['rawInputEnabled',['../classxaimassist_1_1ui_1_1UiViewModel.html#ab6ac5bc751c3035cfed8a10fff5114d6',1,'xaimassist::ui::UiViewModel']]],
-  ['realtimestats_1',['realtimeStats',['../classxaimassist_1_1ui_1_1UiViewModel.html#a264c230c5c8a346814d6699606dae590',1,'xaimassist::ui::UiViewModel']]],
-  ['recentsessions_2',['recentSessions',['../classxaimassist_1_1ui_1_1UiViewModel.html#a241750d088418e08cfdb3fc8e7e834bd',1,'xaimassist::ui::UiViewModel']]]
+  ['pausemenuvisible_0',['pauseMenuVisible',['../classxaimassist_1_1ui_1_1UiViewModel.html#ac0b27d07bcfd293af8052572d983af70',1,'xaimassist::ui::UiViewModel']]],
+  ['performancestats_1',['performanceStats',['../classxaimassist_1_1ui_1_1UiViewModel.html#a98c9b5d74277e87cb8c6600c60f4541d',1,'xaimassist::ui::UiViewModel']]],
+  ['pitchmultiplier_2',['pitchMultiplier',['../classxaimassist_1_1ui_1_1UiViewModel.html#a5151b86597dc88c0ce5f99a7cab7dbe2',1,'xaimassist::ui::UiViewModel']]]
 ];

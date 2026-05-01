@@ -12,6 +12,7 @@ var annotated_dup =
         [ "GameplayWorldBridge", "classxaimassist_1_1app_1_1GameplayWorldBridge.html", "classxaimassist_1_1app_1_1GameplayWorldBridge" ],
         [ "RuntimeLoop", "classxaimassist_1_1app_1_1RuntimeLoop.html", "classxaimassist_1_1app_1_1RuntimeLoop" ],
         [ "RuntimeServices", "structxaimassist_1_1app_1_1RuntimeServices.html", "structxaimassist_1_1app_1_1RuntimeServices" ],
+        [ "TrainingFlowController", "classxaimassist_1_1app_1_1TrainingFlowController.html", "classxaimassist_1_1app_1_1TrainingFlowController" ],
         [ "WorldRaycastHitTest", "classxaimassist_1_1app_1_1WorldRaycastHitTest.html", "classxaimassist_1_1app_1_1WorldRaycastHitTest" ]
       ] ],
       [ "core", "namespacexaimassist_1_1core.html", [
@@ -79,6 +80,7 @@ var annotated_dup =
         [ "FpsCounterPreferences", "structxaimassist_1_1persistence_1_1FpsCounterPreferences.html", "structxaimassist_1_1persistence_1_1FpsCounterPreferences" ],
         [ "GameplayPreferences", "structxaimassist_1_1persistence_1_1GameplayPreferences.html", "structxaimassist_1_1persistence_1_1GameplayPreferences" ],
         [ "InputPreferences", "structxaimassist_1_1persistence_1_1InputPreferences.html", "structxaimassist_1_1persistence_1_1InputPreferences" ],
+        [ "KeyBindingsPreferences", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences.html", "structxaimassist_1_1persistence_1_1KeyBindingsPreferences" ],
         [ "ModeMetricAggregate", "structxaimassist_1_1persistence_1_1ModeMetricAggregate.html", "structxaimassist_1_1persistence_1_1ModeMetricAggregate" ],
         [ "ModePerformanceSummary", "structxaimassist_1_1persistence_1_1ModePerformanceSummary.html", "structxaimassist_1_1persistence_1_1ModePerformanceSummary" ],
         [ "ModePreferences", "structxaimassist_1_1persistence_1_1ModePreferences.html", "structxaimassist_1_1persistence_1_1ModePreferences" ],
@@ -91,13 +93,15 @@ var annotated_dup =
         [ "SessionValidationResult", "structxaimassist_1_1persistence_1_1SessionValidationResult.html", "structxaimassist_1_1persistence_1_1SessionValidationResult" ],
         [ "SettingsManager", "classxaimassist_1_1persistence_1_1SettingsManager.html", "classxaimassist_1_1persistence_1_1SettingsManager" ],
         [ "TargetPreferences", "structxaimassist_1_1persistence_1_1TargetPreferences.html", "structxaimassist_1_1persistence_1_1TargetPreferences" ],
-        [ "UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", "structxaimassist_1_1persistence_1_1UiPreferences" ]
+        [ "UiPreferences", "structxaimassist_1_1persistence_1_1UiPreferences.html", "structxaimassist_1_1persistence_1_1UiPreferences" ],
+        [ "WindowPreferences", "structxaimassist_1_1persistence_1_1WindowPreferences.html", "structxaimassist_1_1persistence_1_1WindowPreferences" ]
       ] ],
       [ "stats", "namespacexaimassist_1_1stats.html", [
         [ "SessionStatsSnapshot", "structxaimassist_1_1stats_1_1SessionStatsSnapshot.html", "structxaimassist_1_1stats_1_1SessionStatsSnapshot" ],
         [ "StatTracker", "classxaimassist_1_1stats_1_1StatTracker.html", "classxaimassist_1_1stats_1_1StatTracker" ]
       ] ],
       [ "ui", "namespacexaimassist_1_1ui.html", [
+        [ "I18nProvider", "classxaimassist_1_1ui_1_1I18nProvider.html", "classxaimassist_1_1ui_1_1I18nProvider" ],
         [ "UiViewModel", "classxaimassist_1_1ui_1_1UiViewModel.html", "classxaimassist_1_1ui_1_1UiViewModel" ]
       ] ],
       [ "world", "namespacexaimassist_1_1world.html", [

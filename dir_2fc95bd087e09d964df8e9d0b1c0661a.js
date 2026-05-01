@@ -9,5 +9,6 @@ var dir_2fc95bd087e09d964df8e9d0b1c0661a =
     [ "PerformanceClassifier.cpp", "PerformanceClassifier_8cpp.html", "PerformanceClassifier_8cpp" ],
     [ "RuntimeLoop.cpp", "RuntimeLoop_8cpp.html", null ],
     [ "SettingsConverter.cpp", "SettingsConverter_8cpp.html", "SettingsConverter_8cpp" ],
+    [ "TrainingFlowController.cpp", "TrainingFlowController_8cpp.html", null ],
     [ "WorldRaycastHitTest.cpp", "WorldRaycastHitTest_8cpp.html", null ]
 ];

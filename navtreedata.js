@@ -61,14 +61,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AppGameplaySettingsProvider_8cpp.html",
-"classxaimassist_1_1app_1_1Application.html",
-"classxaimassist_1_1gameplay_1_1GridShotMode.html#aa0e1963457222cebf559bd4b9223de05",
-"classxaimassist_1_1persistence_1_1SessionHistory.html#a1b7e6d46d182367dea7c41ce8e664578",
-"classxaimassist_1_1ui_1_1UiViewModel.html#a84709dabed0acbec1be4d9c043413324",
-"classxaimassist_1_1world_1_1World.html#ad748b15b1018c7122969ec05fec686a5",
-"structxaimassist_1_1app_1_1RuntimeServices.html#aa8fdc5b5ba1d0f6221581cb16b775b05",
-"structxaimassist_1_1gameplay_1_1SphereTargetSpawnRequest.html#aae0fd22a9a904f71546da0e965c5719b",
-"structxaimassist_1_1stats_1_1SessionStatsSnapshot.html#af233b423e6c00fd32e01d35791cc3ddc"
+"classes.html",
+"classxaimassist_1_1gameplay_1_1GameModeRegistry.html#a80c44d75dce74f59b8890112cee9a8d6",
+"classxaimassist_1_1persistence_1_1ProfileManager.html#a0469a362bb0a9be53a03fb3c31bcea9b",
+"classxaimassist_1_1ui_1_1UiViewModel.html#a684e2771935bf5a6054c1fa048d9d62e",
+"classxaimassist_1_1world_1_1IRenderSceneBackend.html#a2d0ae59f1274de06cb6684084b489f56",
+"namespacexaimassist_1_1gameplay.html#a08d07f0411dfd0fa48c8f19f00dc045b",
+"structxaimassist_1_1core_1_1events_1_1TargetSpawnedEvent.html#a53b2b5f556e604c97f69cb4476663f34",
+"structxaimassist_1_1persistence_1_1SensitivityPreferences.html#a3e4482fcc52c1e37670bcf11ce341fb5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
