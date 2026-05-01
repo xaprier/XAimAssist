@@ -7,6 +7,8 @@ function(xaimassist_configure_module_library target_name)
 
   target_compile_features(${target_name} PUBLIC cxx_std_17)
 
+  xaimassist_apply_compiler_options(${target_name})
+
   install(
     TARGETS ${target_name}
     EXPORT XAimAssistTargets
